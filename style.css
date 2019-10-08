@@ -1,8 +1,54 @@
+.anuncio_titulo{
+    text-align: center;
+    
+}
+.anuncio_foto{
+    width: 300px;
+}
+.anuncio{
+     /* Deixa na mesma linha */
+     display: inline-block ;
+     color: rgb(41, 41, 41);
+     width: 300px;
+     border-style: solid;
+     border-color: rgb(0, 0, 0);
+     border-width: 6px;
+     border-radius: 5px;
+     margin: 10px;
+     /* padding:2px; */
+}
+    
+
 body{
     background-color: rgb(255, 255, 255);
     margin: 0px;
     margin-bottom: 0px;
 
+}
+.bolha_mensagem{
+    position: fixed;
+    width: 20px;
+}
+#btn_buscar{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 17, 255);
+    border-width: 1px; 
+    border-radius: 10px;  
+    display: inline-block;
+    height: 20px;
+    width: 80px;
+ /* Deixa o pontador do mouse */
+    cursor: pointer;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.campo_de_busca{
+    background-color:#341f97;
+    height: 8VH;
+    top: 160px; 
+    text-align: center;
+    width: 100%;
 }
 .cabecario{
     background-color:rgb(255, 255, 255);
@@ -15,6 +61,116 @@ body{
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 
 }
+#Contato{
+    top: 4.5%;
+    left: 260px;
+    position: absolute;
+     /* Deixa o pontador do mouse */
+     cursor: pointer;
+}
+
+
+.endereco_face{
+    width: 100px;
+    position: absolute;
+    top:  6%;
+    right: 100px;
+    display: inline-block; 
+    /* Deixa o pontador do mouse */
+    cursor: pointer;
+    color:rgb(0, 0, 0);
+}
+/* Quando o mouse estiver em cima */
+.endereco_face:hover{
+    color:rgb(255, 255, 255);
+}   
+/* Quando o link for visitado */
+.endereco_face:visited{
+    color:rgb(0, 0, 0);
+}
+.entrar{
+    display: inline-block; 
+    position: absolute;
+    top: 2%;
+    right: 10px;
+    /* Deixa o pontador do mouse */
+    cursor: pointer;
+}
+
+.destaque{
+    color: white;
+    text-align: center;
+    font-size: 300%;
+}
+
+.facebook{
+
+    width: 20px;
+    position: absolute;
+    top: 6%;
+    right: 210px;
+    border-radius: 5px;
+     /* Deixa o pontador do mouse */
+     cursor: pointer;
+}
+
+.foto_bonita{
+    /* Não deixa repetir */
+    background-repeat: no-repeat;
+    
+    background-image: url("https://img.olx.com.br/images/51/512816101393901.jpg");
+    width: 100VW;
+    height: 420px;
+    /* Centraliza a imagem no meio da div */
+    background-position: center;
+    /* A imagem cobre toda a area */
+    background-size: cover;
+}
+
+
+#Home{
+    top: 4.5%;
+    left: 325px;
+    position: absolute;
+     /* Deixa o pontador do mouse */
+     cursor: pointer;
+}
+
+
+
+#id_btn_alugar{
+    /* Deixa o pontador do mouse */
+    cursor: pointer;
+}
+#id_btn_comprar{
+    background-color: #D1D1D1;
+    /* Tira a borda */
+    border:none;
+    border-radius: 5px;
+    height: 27px; 
+     /*Tira a bordinha quando fica clicado   */
+    outline: none;
+    /* Ajusta o tamanho de acordo com o conteudo */
+    width: auto;
+    cursor: pointer;
+    transition: 2s;
+
+}
+
+#id_btn_comprar:hover{
+    background-color: rgb(138, 138, 138);
+    transition: 2s;
+}
+   
+#Imoveis{
+    top: 4.5%;
+    left: 395px;
+    position: absolute;
+    /* Deixa o pontador do mouse */
+    cursor: pointer;
+}
+    
+
 .logo{
     width: 200px;
     float: left;
@@ -43,6 +199,18 @@ body{
     left: 200px;  
 
 }
+.mensagem_encontre{
+    color: white;
+    display: inline-block;
+}
+
+.nome_titulo{
+    color:rgb(255, 255, 255);
+    line-height: 30px;
+    font: bold;
+    display: inline-block;
+}
+
 .sub_menu{
    /* Fundo */
     color:rgb(0, 17, 255);
@@ -71,48 +239,10 @@ transition: 0.2s ease-in-out;
 border-bottom: 1px solid black;
 }
 
-#id_btn_comprar{
-background-color: #D1D1D1;
-/* Tira a borda */
-border:none;
-border-radius: 5px;
-height: 27px; 
- /*Tira a bordinha quando fica clicado   */
-outline: none;
-/* Ajusta o tamanho de acordo com o conteudo */
-width: auto;
-}
-
-#Contato{
-    top: 4.5%;
-    left: 260px;
-    position: absolute;
-     /* Deixa o pontador do mouse */
-     cursor: pointer;
-}
-#Imoveis{
-    top: 4.5%;
-    left: 395px;
-    position: absolute;
-     /* Deixa o pontador do mouse */
-     cursor: pointer;
-}
-#Home{
-    top: 4.5%;
-    left: 325px;
-    position: absolute;
-     /* Deixa o pontador do mouse */
-     cursor: pointer;
-}
-
-
-
-
-.nome_titulo{
-    color:rgb(255, 255, 255);
-    line-height: 30px;
-    font: bold;
-    display: inline-block;
+.rodape{
+    background-color: aquamarine;
+    width: 100%;
+    height: 100px;
 }
 
 .telefone{
@@ -129,122 +259,4 @@ width: auto;
     top:2%;
     right: 210px;
     border-radius: 5px;
-}
-
-.facebook{
-
-    width: 20px;
-    position: absolute;
-    top: 6%;
-    right: 210px;
-    border-radius: 5px;
-     /* Deixa o pontador do mouse */
-     cursor: pointer;
-} 
-.endereco_face{
-    width: 100px;
-    position: absolute;
-    top:  6%;
-    right: 100px;
-    display: inline-block; 
-    /* Deixa o pontador do mouse */
-    cursor: pointer;
-    color:rgb(0, 0, 0);
-}
-
-/* Quando o mouse estiver em cima */
-.endereco_face:hover{
-    color:rgb(255, 255, 255);
-}   
-/* Quando o link for visitado */
-.endereco_face:visited{
-    color:rgb(0, 0, 0);
-}
-
-.entrar{
-    display: inline-block; 
-    position: absolute;
-    top: 2%;
-    right: 10px;
-    /* Deixa o pontador do mouse */
-    cursor: pointer;
-}
-
-.campo_de_busca{
-    background-color:#341f97;
-    height: 8VH;
-    top: 160px; 
-    text-align: center;
-    width: 100%;
-}
-
-#btn_buscar{
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 17, 255);
-    border-width: 1px; 
-    border-radius: 10px;  
-    display: inline-block;
-    height: 20px;
-    width: 80px;
- /* Deixa o pontador do mouse */
-    cursor: pointer;
-}
-#id_btn_comprar{
-    /* Deixa o pontador do mouse */
-    cursor: pointer;
-}
-#id_btn_alugar{
-    /* Deixa o pontador do mouse */
-    cursor: pointer;
-}
-.mensagem_encontre{
-    color: white;
-    display: inline-block;
-}
-
-
-.foto_bonita{
-    /* Não deixa repetir */
-    background-repeat: no-repeat;
-    
-    background-image: url("https://img.olx.com.br/images/51/512816101393901.jpg");
-    width: 100VW;
-    height: 420px;
-    /* Centraliza a imagem no meio da div */
-    background-position: center;
-    /* A imagem cobre toda a area */
-    background-size: cover;
-}
-.destaque{
-    color: white;
-    text-align: center;
-    font-size: 300%;
-}
-.anuncio_titulo{
-text-align: center;
-
-}
-.anuncio_foto{
-    width: 300px;
-}
-.anuncio{
- /* Deixa na mesma linha */
- display: inline-block ;
- color: rgb(41, 41, 41);
- width: 300px;
- border-style: solid;
- border-color: rgb(0, 0, 0);
- border-width: 6px;
- border-radius: 5px;
- margin: 10px;
- /* padding:2px; */
-}
-.rodape{
-background-color: aquamarine;
- width: 100%;
- height: 100px;
-}
-.bolha_mensagem{
-    position: fixed;
-    width: 20px;
 }
