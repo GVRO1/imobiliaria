@@ -22,9 +22,9 @@ body{
 }
 .menu{
     /* Define o fundo */
-    background-color: rgb(42, 0, 196);
+    background-color: white;
     /* Define a letra */
-    color:rgb(255, 255, 255);
+    color:rgb(0, 26, 255);
     font-size: 120%;
     /* Define o tamanho */
     width: 250px;
@@ -45,7 +45,7 @@ body{
 }
 .sub_menu{
    /* Fundo */
-    color:white;
+    color:rgb(0, 17, 255);
     /* Letra */
     font-size: 100%;
     /* Tamanho da caixa */
@@ -55,10 +55,32 @@ body{
     float: left;
     border-right-style: solid;
     border-right-width: 1px;
-
+    transition: 0.2s ease-in-out;
     display: table;
     left: 120px;
 
+}
+
+/* Quando o mouse passa em cima do elemento */
+.sub_menu:hover{
+color: rebeccapurple;
+/* Faz transformações no elementos*/
+transform: scale(1.4);
+/* Faz transição mais suave */
+transition: 0.2s ease-in-out;
+border-bottom: 1px solid black;
+}
+
+#id_btn_comprar{
+background-color: #D1D1D1;
+/* Tira a borda */
+border:none;
+border-radius: 5px;
+height: 27px; 
+ /*Tira a bordinha quando fica clicado   */
+outline: none;
+/* Ajusta o tamanho de acordo com o conteudo */
+width: auto;
 }
 
 #Contato{
@@ -127,16 +149,16 @@ body{
     display: inline-block; 
     /* Deixa o pontador do mouse */
     cursor: pointer;
-    color:rgb(0, 119, 255);
+    color:rgb(0, 0, 0);
 }
 
 /* Quando o mouse estiver em cima */
-.endereco_face :hover{
-    color:rgb(0, 119, 255);
-}
+.endereco_face:hover{
+    color:rgb(255, 255, 255);
+}   
 /* Quando o link for visitado */
-.endereco_face :visited{
-    color:rgb(0, 119, 255);
+.endereco_face:visited{
+    color:rgb(0, 0, 0);
 }
 
 .entrar{
@@ -149,7 +171,7 @@ body{
 }
 
 .campo_de_busca{
-    background-color: rgb(0, 47, 255);
+    background-color:#341f97;
     height: 8VH;
     top: 160px; 
     text-align: center;
@@ -180,15 +202,27 @@ body{
     display: inline-block;
 }
 
+
 .foto_bonita{
+    /* Não deixa repetir */
+    background-repeat: no-repeat;
+    
     background-image: url("https://img.olx.com.br/images/51/512816101393901.jpg");
-    width: 100%;
+    width: 100VW;
     height: 420px;
+    /* Centraliza a imagem no meio da div */
+    background-position: center;
+    /* A imagem cobre toda a area */
+    background-size: cover;
 }
 .destaque{
     color: white;
     text-align: center;
     font-size: 300%;
+}
+.anuncio_titulo{
+text-align: center;
+
 }
 .anuncio_foto{
     width: 300px;
@@ -196,11 +230,14 @@ body{
 .anuncio{
  /* Deixa na mesma linha */
  display: inline-block ;
+ color: rgb(41, 41, 41);
  width: 300px;
- border-style: double;
- border-color: black;
- border-width: 1px;
- margin: 10px
+ border-style: solid;
+ border-color: rgb(0, 0, 0);
+ border-width: 6px;
+ border-radius: 5px;
+ margin: 10px;
+ /* padding:2px; */
 }
 .rodape{
 background-color: aquamarine;
