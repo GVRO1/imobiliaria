@@ -36,40 +36,38 @@
     </div>
 
     <div id="id_campo_de_busca" class="campo_de_busca">
-       <div class="mensagem_encontre"> Encontre seu imóvel</div>
-        <br>
-        
+        <div class="mensagem_encontre"> Encontre seu imóvel</div>
         <button id="id_btn_comprar" onclick="btn_comprar()">Comprar</button>
         <button id="id_btn_alugar" onclick="btn_alugar()">Alugar</button>
 
-        <select id="tipo_imovel">
-            <option value="">Tipo</option>
-            <option value="">Residencial</option>
-            <option value="">Comercial</option>
-            <option value="">Terrenos</option>
-        </select>
+        <div class="listas">
+            <select id="tipo_imovel">
+                <option value="">Tipo</option>
+                <option value="">Residencial</option>
+                <option value="">Comercial</option>
+                <option value="">Terrenos</option>
+            </select>
 
-        <select id="cidade">
-            <option value="">Cidade</option>            
-            <option value="">São Paulo</option>
-            <option value="">Itapecerica</option>
-            <option value="">Curitiba</option>
-        </select>
-        
-        <select id="valor">
-                <option value="">Valor</option>            
-                <option value="">R$0 á R$500</option>
-                <option value="">R$501 á R$1000</option>
-                <option value="">R$1001 á R$1500</option>
-                <option value="">R$1501 á R$2000</option>
-                <option value="">acima de R$2000</option>
-        </select>
-
+            <select id="cidade">
+                <option value="">Cidade</option>            
+                <option value="">São Paulo</option>
+                <option value="">Itapecerica</option>
+                <option value="">Curitiba</option>
+            </select>
+            
+            <select id="valor">
+                    <option value="">Valor</option>            
+                    <option value="">R$0 á R$500</option>
+                    <option value="">R$501 á R$1000</option>
+                    <option value="">R$1001 á R$1500</option>
+                    <option value="">R$1501 á R$2000</option>
+                    <option value="">acima de R$2000</option>
+            </select>
+        </div>
         <span id="btn_buscar" onclick="buscar()"> Buscar</span>
 
-    </div><!-- Div vazia para o cabeçario não esconder o conteudo da página --><div class="div_vazia">  </div>
+    </div>
     <div class="foto_bonita">
-        Imagem bonita aleatória
     </div>
     <div class="destaque">Destaques</div>
     <div> 
@@ -128,12 +126,12 @@
 <script>
 
 function btn_comprar(){
-    id_btn_comprar.style = "background-color: yellow";
+    id_btn_comprar.style = "background-color:rgb(126, 233, 247)";
     id_btn_alugar.style = "background-color: ";
     
 }
 function btn_alugar(){
-    id_btn_alugar.style = "background-color: yellow";
+    id_btn_alugar.style = "background-color:rgb(126, 233, 247)";
     id_btn_comprar.style = "background-color: ";
 
 }

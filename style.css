@@ -30,36 +30,48 @@ body{
     width: 20px;
 }
 #btn_buscar{
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 17, 255);
-    border-width: 1px; 
-    border-radius: 10px;  
+    background-color: rgb(245, 245, 245);
+    border:none;
+    border-radius: 5px;
+    height: 27px; 
     display: inline-block;
     height: 20px;
     width: 80px;
  /* Deixa o pontador do mouse */
     cursor: pointer;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: absolute;
+    top: 7px;
+    left: 50VW;
 }
 
-
+#btn_buscar:hover{
+    background-color: rgb(207, 207, 207);
+    transition: 1s;
+}
 .campo_de_busca{
     background-color:#341f97;
-    height: 8VH;
-    top: 160px; 
+    position: absolute;
+    height: 6VH;
+    top: 45VH; 
+    left: 50VH;
     text-align: center;
-    width: 100%;
+    width: 60VW;
+    display:inline-block;
+    border-radius: 5px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 1px;
 }
 .cabecario{
     background-color:rgb(255, 255, 255);
     border-color: black;    
     border-bottom-width: 1px;
     text-align: center;
-    height: 10%;
+    height:10VH;
     width: 100%;
     color: rgb(0, 119, 255);
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
-
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding:5px;
 }
 #Contato{
     top: 4.5%;
@@ -118,7 +130,7 @@ body{
     /* Não deixa repetir */
     background-repeat: no-repeat;
     
-    background-image: url("https://img.olx.com.br/images/51/512816101393901.jpg");
+    background-image: url("https://www.meliuz.com.br/blog/wp-content/uploads/2016/03/foto4-1.jpg");
     width: 100VW;
     height: 420px;
     /* Centraliza a imagem no meio da div */
@@ -139,11 +151,8 @@ body{
 
 
 #id_btn_alugar{
-    /* Deixa o pontador do mouse */
-    cursor: pointer;
-}
-#id_btn_comprar{
-    background-color: #D1D1D1;
+    background-color: rgb(245, 245, 245);
+
     /* Tira a borda */
     border:none;
     border-radius: 5px;
@@ -154,14 +163,37 @@ body{
     width: auto;
     cursor: pointer;
     transition: 2s;
-
+    position: absolute;
+    top: 5px;
+    left: 20VW;
+}
+#id_btn_comprar{
+    background-color: rgb(245, 245, 245);
+    /* Tira a borda */
+    border:none;
+    border-radius: 5px;
+    height: 27px; 
+     /*Tira a bordinha quando fica clicado   */
+    outline: none;
+    /* Ajusta o tamanho de acordo com o conteudo */
+    width: auto;
+    cursor: pointer;
+    transition: 2s;
+    position: absolute;
+    top: 5px;
+    left: 14VW;
 }
 
 #id_btn_comprar:hover{
-    background-color: rgb(138, 138, 138);
-    transition: 2s;
+    background-color: rgb(207, 207, 207);
+    transition: 1s;
 }
-   
+ 
+#id_btn_alugar:hover{
+    background-color: rgb(207, 207, 207);
+
+    transition: 1s;
+}
 #Imoveis{
     top: 4.5%;
     left: 395px;
@@ -175,6 +207,12 @@ body{
     width: 200px;
     float: left;
     /* display: inline-block; */
+}
+
+.listas{
+    position: absolute;
+    top: 7px;
+    left: 25VW;
 }
 .menu{
     /* Define o fundo */
@@ -200,6 +238,9 @@ body{
 
 }
 .mensagem_encontre{
+    position: absolute;
+    top:1.5vh;
+    left: 1VW;
     color: white;
     display: inline-block;
 }
