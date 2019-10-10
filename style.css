@@ -49,7 +49,7 @@ body{
 
     position: absolute;
     top: 9px;
-    left: 50VW;
+    left: 53VW;
 }
 
 #btn_buscar:hover{
@@ -60,7 +60,7 @@ body{
     background-color:#26166bb2;
     position: absolute;
     height: 6VH;
-    top: 45VH; 
+    top: 40VH; 
     left: 50VH;
     text-align: center;
     width: 60VW;
@@ -79,9 +79,17 @@ body{
     color: rgb(0, 119, 255);
     padding:5px;
 }
+
+#Cadastrar{
+    top: 4.5VH;
+    left: 16vw;
+    position: absolute;
+     /* Deixa o pontador do mouse */
+     cursor: pointer;
+}
 #Contato{
     top: 4.5%;
-    left: 260px;
+    left: 22vw;
     position: absolute;
      /* Deixa o pontador do mouse */
      cursor: pointer;
@@ -96,36 +104,42 @@ body{
 .endereco_face{
     width: 100px;
     position: absolute;
-    top:  157VH;
-    right: 20VW;
+    top:  153VH;
+    right: 23VW;
     display: inline-block; 
     /* Deixa o pontador do mouse */
     cursor: pointer;
-    color:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
 }
 .endereco_face a{
-    color:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
     text-decoration: none;
+    transition: 1s;
+    font-size: 110%;
 }
 /* Quando o mouse estiver em cima */
-.endereco_face:hover{
-    color:rgb(0, 0, 0);
+.endereco_face a:hover{
+    color:rgb(182, 250, 250);
+    transition: 1s;
+    
+
 }   
 /* Quando o link for visitado */
 .endereco_face:visited{
-    color:rgb(0, 0, 0);
+    color:rgb(255, 255, 255), 246);
 }
 .endereco_face:active{
-    color:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
 }
 .entrar{
     display: inline-block; 
     position: absolute;
-    top: 2%;
-    right: 10px;
+    top: 3vh;
+    right: 1vw;
     /* Deixa o pontador do mouse */
     cursor: pointer;
-    color:rgb(0, 0, 0);
+    color: rgb(0, 119, 255);
+    font-size: 110%;
 
 }
 
@@ -135,8 +149,8 @@ body{
 
     width: 20px;
     position: absolute;
-    top: 6%;
-    right: 210px;
+    top: 153vh;
+    right: 31vw;
     border-radius: 5px;
      /* Deixa o pontador do mouse */
      cursor: pointer;
@@ -158,17 +172,15 @@ body{
 
 #Home{
     top: 4.5%;
-    left: 325px;
+    left: 27.3VW;
     position: absolute;
      /* Deixa o pontador do mouse */
      cursor: pointer;
 }
 
 
-
 #id_btn_alugar{
     background-color: rgb(245, 245, 245);
-
     /* Tira a borda */
     border:none;
     border-radius: 5px;
@@ -178,10 +190,10 @@ body{
     /* Ajusta o tamanho de acordo com o conteudo */
     width: auto;
     cursor: pointer;
-    transition: 2s;
+    transition: 1s;
     position: absolute;
     top: 5px;
-    left: 20VW;
+    left: 22VW;
 }
 #id_btn_comprar{
     background-color: rgb(245, 245, 245);
@@ -197,7 +209,7 @@ body{
     transition: 2s;
     position: absolute;
     top: 5px;
-    left: 14VW;
+    left: 16VW;
 }
 
 #id_btn_comprar:hover{
@@ -211,8 +223,8 @@ body{
     transition: 1s;
 }
 #Imoveis{
-    top: 4.5%;
-    left: 395px;
+    top: 4.5VH;
+    left: 32.5vw;
     position: absolute;
     /* Deixa o pontador do mouse */
     cursor: pointer;
@@ -228,7 +240,7 @@ body{
 .listas{
     position: absolute;
     top: 9px;
-    left: 25VW;
+    left: 27VW;
 }
 .menu{
     /* Define o fundo */
@@ -256,9 +268,10 @@ body{
 .mensagem_encontre{
     position: absolute;
     top:1.5vh;
-    left: 1VW;
+    left: 1.5VW;
     color: white;
     display: inline-block;
+    font-size: 110%;
 }
 
 .nome_titulo{
@@ -279,6 +292,8 @@ body{
     position: absolute;
     float: left;
     border-right-style: solid;
+    padding: 5px;
+    margin: 5px;
     border-right-width: 1px;
     transition: 0.2s ease-in-out;
     display: table;
@@ -299,13 +314,13 @@ border-bottom: 1px solid black;
 .rodape{
     background-color:#341f97;
     width: 100%;
-    height: 10vh;
+    height: 5vh;
 }
 
 .telefone{
     width: auto;
     position: absolute;
-    top:   156.5VH;
+    top:   152.5VH;
     right: 2vw;
     border-radius: 5px;
     display: inline-block; 
@@ -316,7 +331,7 @@ border-bottom: 1px solid black;
 .whatsapp{
     width: 20px;
     position: absolute;
-    top: 157VH;
+    top: 153VH;
     right: 12vw;
     border-radius: 5px;
 }
