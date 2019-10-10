@@ -12,17 +12,23 @@
      width: 300px;
      border-style: solid;
      border-color: rgb(0, 0, 0);
-     border-width: 6px;
-     border-radius: 5px;
+     border-width: 2px;
+     border-radius: 2px;
      margin: 10px;
      /* padding:2px; */
+    transition: 2s;
 }
-    
+
+.anuncio:hover{
+    background-color: #48dafb71;
+    transition: 2s
+}
 
 body{
     background-color: rgb(255, 255, 255);
     margin: 0px;
     margin-bottom: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
 .bolha_mensagem{
@@ -39,7 +45,8 @@ body{
     width: 80px;
  /* Deixa o pontador do mouse */
     cursor: pointer;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
     position: absolute;
     top: 7px;
     left: 50VW;
@@ -59,7 +66,7 @@ body{
     width: 60VW;
     display:inline-block;
     border-radius: 5px;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     letter-spacing: 1px;
 }
 .cabecario{
