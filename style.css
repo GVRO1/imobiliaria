@@ -20,8 +20,8 @@
 }
 
 .anuncio:hover{
-    background-color: #48dafb71;
-    transition: 2s
+    background-color:#4f3f9559;
+    transition: 1s
 }
 
 body{
@@ -48,7 +48,7 @@ body{
     font-family: Georgia, 'Times New Roman', Times, serif;
 
     position: absolute;
-    top: 7px;
+    top: 9px;
     left: 50VW;
 }
 
@@ -57,7 +57,7 @@ body{
     transition: 1s;
 }
 .campo_de_busca{
-    background-color:#341f97;
+    background-color:#26166bb2;
     position: absolute;
     height: 6VH;
     top: 45VH; 
@@ -75,9 +75,8 @@ body{
     border-bottom-width: 1px;
     text-align: center;
     height:10VH;
-    width: 100%;
+    width: 99%;
     color: rgb(0, 119, 255);
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     padding:5px;
 }
 #Contato{
@@ -88,23 +87,35 @@ body{
      cursor: pointer;
 }
 
+.destaque{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 300%;
+}
 
 .endereco_face{
     width: 100px;
     position: absolute;
-    top:  6%;
-    right: 100px;
+    top:  157VH;
+    right: 20VW;
     display: inline-block; 
     /* Deixa o pontador do mouse */
     cursor: pointer;
     color:rgb(0, 0, 0);
 }
+.endereco_face a{
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+}
 /* Quando o mouse estiver em cima */
 .endereco_face:hover{
-    color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
 }   
 /* Quando o link for visitado */
 .endereco_face:visited{
+    color:rgb(0, 0, 0);
+}
+.endereco_face:active{
     color:rgb(0, 0, 0);
 }
 .entrar{
@@ -114,13 +125,11 @@ body{
     right: 10px;
     /* Deixa o pontador do mouse */
     cursor: pointer;
+    color:rgb(0, 0, 0);
+
 }
 
-.destaque{
-    color: white;
-    text-align: center;
-    font-size: 300%;
-}
+
 
 .facebook{
 
@@ -138,7 +147,7 @@ body{
     background-repeat: no-repeat;
     
     background-image: url("https://www.meliuz.com.br/blog/wp-content/uploads/2016/03/foto4-1.jpg");
-    width: 100VW;
+    width: 98.5VW;
     height: 420px;
     /* Centraliza a imagem no meio da div */
     background-position: center;
@@ -218,7 +227,7 @@ body{
 
 .listas{
     position: absolute;
-    top: 7px;
+    top: 9px;
     left: 25VW;
 }
 .menu{
@@ -288,23 +297,26 @@ border-bottom: 1px solid black;
 }
 
 .rodape{
-    background-color: aquamarine;
+    background-color:#341f97;
     width: 100%;
-    height: 100px;
+    height: 10vh;
 }
 
 .telefone{
-    width: 100px;
+    width: auto;
     position: absolute;
-    top:   2%;
-    right: 100px;
+    top:   156.5VH;
+    right: 2vw;
     border-radius: 5px;
     display: inline-block; 
+    color:rgb(255, 255, 255);
+    font-size: 3vh;
+
 }
 .whatsapp{
     width: 20px;
     position: absolute;
-    top:2%;
-    right: 210px;
+    top: 157VH;
+    right: 12vw;
     border-radius: 5px;
 }
