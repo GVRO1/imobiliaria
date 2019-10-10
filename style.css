@@ -143,7 +143,13 @@ body{
 
 }
 
-
+.entrar:hover{
+    color:rgb(2, 13, 173);
+    /* Faz transformações no elementos*/
+    transform: scale(1.1);
+    /* Faz transição mais suave */
+    transition: 0.2s ease-in-out;
+    }
 
 .facebook{
 
@@ -303,12 +309,11 @@ body{
 
 /* Quando o mouse passa em cima do elemento */
 .sub_menu:hover{
-color: rebeccapurple;
+color:rgb(2, 13, 173);
 /* Faz transformações no elementos*/
-transform: scale(1.4);
+transform: scale(1.1);
 /* Faz transição mais suave */
 transition: 0.2s ease-in-out;
-border-bottom: 1px solid black;
 }
 
 .rodape{
