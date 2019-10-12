@@ -1,0 +1,68 @@
+#btn_entrar{
+    position: absolute;
+    top: 28vh;
+    left: 18vw;
+}
+
+.esqueci{
+    top: 23vh;
+    left: 11vw;
+}
+
+.foto_fundo{
+  /* Não deixa repetir */
+  background-repeat: no-repeat;
+  background-image: url("https://www.meliuz.com.br/blog/wp-content/uploads/2016/03/foto4-1.jpg");
+  width: 98.5VW;
+  height: 420px;
+  /* Centraliza a imagem no meio da div */
+  background-position: center;
+  /* A imagem cobre toda a area */
+  background-size: cover;
+}
+
+.nao_cadastrado{
+    top: 23vh;
+    left: 21vw;
+
+}
+
+.tela_login{
+    height: 210px;
+    display: inline-block;
+    width: 40VW;
+    background-color:#ffffffc1;
+    border-radius: 20px;
+    position: absolute;
+    top: 30vh;
+    left: 35vw;
+}
+
+.tela_login a{
+    position: absolute;    
+    font-size: 12px;
+}
+
+
+#text_usuario{
+    position: absolute;
+    top: 4VH;
+    left:18VW;
+}
+#text_senha{
+    position: absolute;
+    top: 14VH;
+    left:18VW;
+}
+
+#senha{
+    position: absolute;
+    top: 18VH;
+    left:13.5VW;
+}
+
+#usuario{
+    position: absolute;
+    top: 8vh;
+    left: 13.5vw;
+}

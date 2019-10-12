@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../CSS/index_style.css">
+    <title>Imóbiliaria Rodrigues de Oliveira</title>
+</head>
+<body>
+    <!-- Cabeçario -->
+   <div class="cabecario">
+        <div class="nome_titulo">
+                Imobiliaria Rodrigues Oliveira
+        </div>
+        <img class="logo" src="../fotos/logo.png" alt="">  
+        <br><br>
+        <br>
+        
+        <!-- Menu e sub Menu -->
+        <ul id="sub_menu">
+            <li id="Contato" class="sub_menu" >Contato</li>
+            <li id="Imoveis" class="sub_menu">Imóveis</li>
+            <li id="Home"class="sub_menu">Home</li>
+            <li id="Cadastrar"class="sub_menu">Cadastrar</li>
+        </ul>
+
+        <div class="entrar"> Entrar</div>
+
+    </div>
+
+    <div id="id_campo_de_busca" class="campo_de_busca">
+        <div class="mensagem_encontre"> Encontre seu imóvel</div>
+        <button id="id_btn_comprar" onclick="btn_comprar()">Comprar</button>
+        <button id="id_btn_alugar" onclick="btn_alugar()">Alugar</button>
+
+        <div class="listas">
+            <select id="tipo_imovel">
+                <option value="">Tipo</option>
+                <option value="">Residencial</option>
+                <option value="">Comercial</option>
+                <option value="">Terrenos</option>
+            </select>
+
+            <select id="cidade">
+                <option value="">Cidade</option>            
+                <option value="">São Paulo</option>
+                <option value="">Itapecerica</option>
+                <option value="">Curitiba</option>
+            </select>
+            
+            <select id="valor">
+                    <option value="">Valor</option>            
+                    <option value="">R$0 á R$500</option>
+                    <option value="">R$501 á R$1000</option>
+                    <option value="">R$1001 á R$1500</option>
+                    <option value="">R$1501 á R$2000</option>
+                    <option value="">acima de R$2000</option>
+            </select>
+        </div>
+        <span id="btn_buscar" onclick="buscar()"> Buscar</span>
+
+    </div>
+    
+    <div class="foto_bonita"></div>
+
+    <div class="destaque">Destaques</div>
+    <div> 
+        <div class="anuncio"> 
+            <div class="anuncio_titulo">Apartamento - Centro </div>
+            <img class="anuncio_foto" src="../fotos/imovel1.jpeg" alt="">
+            <div class="">Tamanho: 50m2</div>            
+            <div class="">Cidade: Itapecerica</div>            
+            <div class="">Tipo: Residencial</div>            
+            <div><a href="">Ver mais</a></div>   
+        </div>
+
+        <div class="anuncio"> 
+            <div class="anuncio_titulo">Comercial - Centro </div>
+            <img class="anuncio_foto" src="../fotos/imovel2.jpeg" alt="">
+            <div class="">Tamanho: 50m2</div>            
+            <div class="">Cidade: Itapecerica</div>            
+            <div class="">Tipo: Residencial</div>       
+            <div><a href="">Ver mais</a></div>   
+        </div>
+        
+        <div class="anuncio"> 
+            <div class="anuncio_titulo">Residencia 1 - Zona Sul </div>
+            <img class="anuncio_foto" src="../fotos/imovel3.jpeg" alt="">
+            <div class="">Tamanho: 50m2</div>            
+            <div class="">Cidade: Itapecerica</div>            
+            <div class="">Tipo: Residencial</div>       
+            <div><a href="">Ver mais</a></div>   
+        </div>
+        
+        <div class="anuncio"> 
+            <div class="anuncio_titulo">Comercial - Centro </div>
+            <img class="anuncio_foto" src="../fotos/imovel4.jpeg" alt="">
+            <div class="">Tamanho: 50m2</div>            
+            <div class="">Cidade: Itapecerica</div>            
+            <div class="">Tipo: Residencial</div>
+            <div><a href="">Ver mais</a></div>   
+        </div>
+
+    </div>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nisi quaerat voluptatum cumque voluptatem corrupti alias nemo, non aut magnam porro nulla repellat neque totam deleniti harum incidunt eos architecto?
+    <!-- Bolha flutuante na tela -->
+    <div class="bolha_mensagem"><img src="../fotos/mensagem.png" alt=""></div>
+    <!-- Rodapé -->
+    <div class="rodape">
+        <!-- Facebook e Whatsapp -->
+        <img class="facebook"src="../fotos/facebook.png" alt="">
+        <img class="whatsapp"src="../fotos/whatsapp.png" alt="">
+        <div class="telefone"> 11-999901363 </div>
+        <!-- "Target blank" Abre em uma nova aba-->
+        <div class="endereco_face" > <a href="https://www.facebook.com/rodriguesoliveiraassessoria/" target="_blank">/rodriguesoliveiraassessoria</a></div>
+    </div>
+
+    </body>
+</html>
+<script>
+
+function btn_comprar(){
+    id_btn_comprar.style = "background-color:rgb(126, 233, 247)";
+    id_btn_alugar.style = "background-color: ";
+    
+}
+function btn_alugar(){
+    id_btn_alugar.style = "background-color:rgb(126, 233, 247)";
+    id_btn_comprar.style = "background-color: ";
+
+}
+function buscar(){
+    alert("Botão buscar funcionando");
+}
+function mostrar_sub(){
+}
+
+</script>
