@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../CSS/index_style.css">
-    <link rel="stylesheet" href="../CSS/login_style.css">
+    <link rel="stylesheet" href="../CSS/cadastro_style.css">
+    <script src="../js/cadastro_login.js"></script>
     <title>Imóbiliaria Rodrigues de Oliveira</title>
 </head>
 <body>
@@ -32,17 +33,27 @@
 
 
 
-    <div class="tela_login">
-        <span id="text_usuario">Usuário ou E-mail </span>
+    <div class="tela_cadastro">
+        <button id="btn_cadastrar_facebook"> <img id="facebook_cadastro" src="../fotos/logo_facebook.jpg" alt="">Cadastrar com o Facebook</button>
         <br>
-        <input type="text" name="" id="usuario"placeholder="Usuário">
+        <span id="ou">----------- OU ----------- </span>
+        <span id="text_nome"> Nome Completo </span>
         <br>
-        <span id="text_senha">Senha</span>
+        <input type="text" name="" id="nome_completo"placeholder="Fulano de Siclano">
         <br>
-        <input type="password" name="" id="senha" placeholder="Senha"> 
+        <span id="text_email">E-mail</span>
         <br>
-        <a class="esqueci"href="#">Esqueci minha senha</a> <a class="nao_cadastrado" href="cadastro.html">Não sou cadastrado</a>
-        <button onclick="#" id="btn_entrar">Entrar</button>
+        <input type="text" name="" id="email_cadastro" placeholder="exemplo@email.com.br">
+        <br>
+        <span id="text_senha">Senha(mínimo 6 caracteres)</span>
+        <br>
+        <input type="password" name="" id="senha_cadastro" placeholder="Senha"> 
+        <br>
+        <span id="text_senha_confirmar">Confirme a Senha</span>
+        <br>
+        <input type="password" name="" id="senha_confirmar" placeholder="Senha Novamente"> 
+        <br>
+        <button id="btn_cadastrar" onclick="cadastro()"><span id="text_cadastrar">Cadastrar</span></button>
     
 
     </div>

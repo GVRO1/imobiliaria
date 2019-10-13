@@ -1,0 +1,159 @@
+#btn_cadastrar{
+    position: absolute;
+    top: 54vh;
+    left: 13.5vw;
+    background-color: rgb(245, 245, 245);
+    /* Tira a borda */
+    border:none;
+    border-radius: 5px;
+    height: 40px; 
+     /*Tira a bordinha quando fica clicado   */
+    outline: none;
+    /* Ajusta o tamanho de acordo com o conteudo */
+    width: 180px;
+    cursor: pointer;
+    transition: 1s;
+}
+#btn_cadastrar:hover{
+    background-color: rgb(150, 150, 150);
+    transition: 1s;
+}
+
+#btn_cadastrar_facebook{
+    background-color: rgb(62, 92, 156);
+    position: absolute;
+    left: 10.5Vw;
+    top: 1vh;
+    color: white;
+    font-weight: 200;
+    font-size: 102% ;
+    text-align: right;
+    /* Tira a borda */
+    border:none;
+    border-radius: 5px;
+    height: 40px; 
+    width: 250px;
+     /*Tira a bordinha quando fica clicado   */
+    outline: none;
+    /* Ajusta o tamanho de acordo com o conteudo */
+    cursor: pointer;
+    transition: 1s;
+}
+
+#email_cadastro{
+    position: absolute;
+    top: 26.5VH;
+    left:12VW;
+    width: 210px;
+    height: 20px;
+    text-align: center;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: gray;
+    height: 20px;    
+}
+
+#facebook_cadastro{
+    
+    width: 35px;
+    position: absolute;
+    bottom: auto;
+    left: 0.5vw;
+    top: 0.5vh;
+    border-radius: 5px;
+}
+
+.foto_fundo{
+    /* Não deixa repetir */
+    background-repeat: no-repeat;
+    background-image: url("https://www.meliuz.com.br/blog/wp-content/uploads/2016/03/foto4-1.jpg");
+    width: 100VW;
+    height: 80.5vh;
+    /* Centraliza a imagem no meio da div */
+    background-position: center;
+    /* A imagem cobre toda a area */
+    background-size: cover;
+} 
+
+#nome_completo{
+    position: absolute;
+    top: 17VH;
+    left:12VW;
+    width: 210px;
+    height: 20px;
+    text-align: center;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: gray;
+    height: 20px;
+}
+
+#ou{
+    color: gray;
+    position: absolute;
+    top: 9vh;
+    left: 14vw;
+}
+
+#senha_cadastro{
+    position: absolute;
+    top: 37VH;
+    left:12VW;
+    width: 210px;
+    height: 20px;
+    text-align: center;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: gray;
+    height: 20px;
+}
+
+#senha_confirmar{
+    position: absolute;
+    top: 47VH;
+    left:12VW;
+    width: 210px;
+    height: 20px;
+    text-align: center;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: gray;
+    height: 20px;
+
+}
+
+.tela_cadastro{
+    height: 350px;
+    display: inline-block;
+    width: 40VW;
+    background-color:#ffffffc1;
+    border-radius: 20px;
+    position: absolute;
+    top: 24vh;
+    left: 32vw;
+}
+
+#text_cadastrar{
+font-size: 130%;
+}
+
+#text_email{
+    position: absolute;
+    top: 22VH;
+    left:18.5VW;
+}
+#text_nome{
+    position: absolute;
+    top: 13VH;
+    left:16VW;
+}
+#text_senha{
+    position: absolute;
+    top: 32VH;
+    left:12.5VW;
+}
+#text_senha_confirmar{
+    position: absolute;
+    top: 42.5VH;
+    left:15.5VW;
+}

@@ -2,9 +2,24 @@
     position: absolute;
     top: 28vh;
     left: 18vw;
+    background-color: rgb(245, 245, 245);
+    /* Tira a borda */
+    border:none;
+    border-radius: 5px;
+    height: 20px; 
+     /*Tira a bordinha quando fica clicado   */
+    outline: none;
+    /* Ajusta o tamanho de acordo com o conteudo */
+    width: auto;
+    cursor: pointer;
+    transition: 1s;
 }
-
+#btn_entrar:hover{
+    background-color: rgb(150, 150, 150);
+    transition: 1s;
+}
 .esqueci{
+    color:#0800ff;
     top: 23vh;
     left: 11vw;
 }
@@ -13,8 +28,8 @@
   /* Não deixa repetir */
   background-repeat: no-repeat;
   background-image: url("https://www.meliuz.com.br/blog/wp-content/uploads/2016/03/foto4-1.jpg");
-  width: 98.5VW;
-  height: 420px;
+  width: 100VW;
+  height: 80.5vh;
   /* Centraliza a imagem no meio da div */
   background-position: center;
   /* A imagem cobre toda a area */
@@ -24,7 +39,8 @@
 .nao_cadastrado{
     top: 23vh;
     left: 21vw;
-
+    color:#0800ff;
+    
 }
 
 .tela_login{
@@ -34,14 +50,15 @@
     background-color:#ffffffc1;
     border-radius: 20px;
     position: absolute;
-    top: 30vh;
-    left: 35vw;
+    top: 37vh;
+    left: 32vw;
 }
 
 .tela_login a{
     position: absolute;    
     font-size: 12px;
 }
+
 
 
 #text_usuario{
@@ -59,10 +76,23 @@
     position: absolute;
     top: 18VH;
     left:13.5VW;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: gray;
+    height: 20px;
+    text-align: center;
+
 }
 
 #usuario{
     position: absolute;
     top: 8vh;
     left: 13.5vw;
+    position: absolute;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: gray;
+    height: 20px;
+    text-align: center;
+
 }
