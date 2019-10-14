@@ -5,51 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../CSS/index_style.css">
-    <link rel="stylesheet" href="../CSS/login_style.css">
+    <link rel="stylesheet" href="../CSS/contato_style.css">
     <title>Imóbiliaria Rodrigues de Oliveira</title>
 </head>
 <body>
     <!-- Cabeçario -->
-   <header class="cabecario">
+    <header class="cabecario">
         <div class="nome_titulo">
                 Imobiliaria Rodrigues Oliveira
-        </div>
+            </div>
         <img class="logo" src="../fotos/logo.png" alt="">  
         <br><br>
         <br>
         
         <!-- Menu e sub Menu -->
         <ul id="sub_menu">
-            <li id="Contato" class="sub_menu" > <a href="contato.html">Contato</a></li>
+            <li id="Contato" class="sub_menu" > <a href="#">Contato</a></li>
             <li id="Imoveis" class="sub_menu">  <a href="#">Imóveis</a></li>
             <li id="Home"class="sub_menu">      <a href="index.html">Home</a></li>
             <li id="Cadastrar"class="sub_menu"> <a href="cadastro.html">Cadastrar</a></li>
         </ul>
-    
+        
         <div class="entrar"> <a href="login.html">Entrar</a> </div>
+        
+    </header>
 
-   </header>
-
-
-
-    <div class="tela_login">
-        <span id="text_usuario">Usuário ou E-mail </span>
-        <br>
-        <input type="text" name="" id="usuario"placeholder="Usuário">
-        <br>
-        <span id="text_senha">Senha</span>
-        <br>
-        <input type="password" name="" id="senha" placeholder="Senha"> 
-        <br>
-        <a class="esqueci"href="#">Esqueci minha senha</a> <a class="nao_cadastrado" href="cadastro.html">Não sou cadastrado</a>
-        <button onclick="#" id="btn_entrar">Entrar</button>
     
-
+    
+    <div class="tela_mensagem">
+   
     </div>
     <div class="foto_fundo"></div>
-      
+    
         
-        <!-- Rodapé -->
+    <!-- Rodapé -->
     <div class="rodape">
         <!-- Facebook e Whatsapp -->
         <img class="facebook"src="../fotos/facebook.png" alt="">
@@ -59,24 +48,6 @@
         <div class="endereco_face" > <a href="https://www.facebook.com/rodriguesoliveiraassessoria/" target="_blank">/rodriguesoliveiraassessoria</a></div>
     </div>
 
+    <script src="../js/cadastro_login.js"></script>
     </body>
-</html>
-<script>
-
-function btn_comprar(){
-    id_btn_comprar.style = "background-color:rgb(126, 233, 247)";
-    id_btn_alugar.style = "background-color: ";
-    
-}
-function btn_alugar(){
-    id_btn_alugar.style = "background-color:rgb(126, 233, 247)";
-    id_btn_comprar.style = "background-color: ";
-
-}
-function buscar(){
-    alert("Botão buscar funcionando");
-}
-function mostrar_sub(){
-}
-
-</script>
+    </html>

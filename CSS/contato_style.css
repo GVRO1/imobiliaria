@@ -1,0 +1,22 @@
+.foto_fundo{
+    /* Não deixa repetir */
+    background-repeat: no-repeat;
+    background-image: url("https://www.meliuz.com.br/blog/wp-content/uploads/2016/03/foto4-1.jpg");
+    width: 100VW;
+    height: 80.5vh;
+    /* Centraliza a imagem no meio da div */
+    background-position: center;
+    /* A imagem cobre toda a area */
+    background-size: cover;
+} 
+
+.tela_mensagem{
+    height: 350px;
+    display: inline-block;
+    width: 50VW;
+    background-color:#ffffffc1;
+    border-radius: 20px;
+    position: absolute;
+    top: 24vh;
+    left: 27vw;
+}
