@@ -169,7 +169,9 @@ body{
 .foto_bonita{
     /* Não deixa repetir */
     background-repeat: no-repeat;
+    /* Endereço da imagem */
     background-image: url("https://www.meliuz.com.br/blog/wp-content/uploads/2016/03/foto4-1.jpg");
+    /* Tamanho da imagem */
     width: 98.5VW;
     height: 420px;
     /* Centraliza a imagem no meio da div */
