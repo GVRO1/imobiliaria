@@ -1,3 +1,14 @@
+#email_contato{
+    position: absolute;
+    top: 12vh;
+    left: 15vw;
+}
+.fale_conosco{
+    position: absolute;
+    top: 2vh;
+    left: 22vw;
+}
+
 .foto_fundo{
     /* Não deixa repetir */
     background-repeat: no-repeat;
@@ -10,6 +21,40 @@
     background-size: cover;
 } 
 
+
+#mensagem_contato{
+    position: absolute;
+    top: 22vh;
+    left: 15vw;
+}
+
+#nome_contato{
+    position: absolute;
+    top: 7vh;
+    left: 15vw;
+}
+
+.text_email_contato{
+    position: absolute;
+    top: 12vh;
+    left: 2vw;
+}
+.text_telefone_contato{
+    position: absolute;
+    top: 17vh;
+    left: 2vw;
+}
+.text_nome_contato{
+    position: absolute;
+    top: 7vh;
+    left: 2vw;
+}
+.text_mensagem_contato{
+    position: absolute;
+    top: 22vh;
+    left: 2vw;
+}
+
 .tela_mensagem{
     height: 350px;
     display: inline-block;
@@ -20,3 +65,8 @@
     top: 24vh;
     left: 27vw;
 }
+ #telefone_contato{
+    position: absolute;
+    top: 17vh;
+    left: 15vw;
+    }
