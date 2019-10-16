@@ -71,20 +71,28 @@ body{
     padding:5px;
 }
 
-#Cadastrar {
+
+.cadastrar a {
     /* Esse tem que ser em px para não ficar torto o site quando diminuir a tela */
-    top:10px;
-    left: 116px;
-    color:rgb(0 , 17, 255);
+    display: inline-block; 
     position: absolute;
-     /* Deixa o pontador do mouse */
-     cursor: pointer;
-}
-
-#Cadastrar a{
+    /* Esse tem que ser em px para não ficar torto o site quando diminuir a tela */
+    top: 30px;
+    right: 100px;
+    /* Deixa o pontador do mouse */
+    cursor: pointer;
+    color: rgb(0, 119, 255);
+    font-size: 110%;
     text-decoration: none;
-
 }
+
+.cadastrar a:hover{
+    color:rgb(2, 13, 173);
+    /* Faz transformações no elementos*/
+    transform: scale(1.1);
+    /* Faz transição mais suave */
+    transition: 0.2s ease-in-out;
+    }
 
 #Contato a{
     text-decoration: none;
@@ -92,12 +100,11 @@ body{
 }
 #Contato{
 /* Esse tem que ser em px para não ficar torto o site quando diminuir a tela */
-    left: 205px;
+    left: 165px;
     top:10px;
     position: absolute;
      /* Deixa o pontador do mouse */
      cursor: pointer;
-    text-decoration: none;
      
 }
 
@@ -183,7 +190,7 @@ body{
 
 #Home{
     top:10px;
-    left: 278px;
+    left: 88px;
     position: absolute;
     /* Deixa o pontador do mouse */
     cursor: pointer;
@@ -238,7 +245,7 @@ text-decoration: none;
 }
 
 #Imoveis{
-    left: 358px;
+    left: 248px;
     top:10px;
     position: absolute;
     /* Deixa o pontador do mouse */
@@ -363,7 +370,6 @@ transition: 0.2s ease-in-out;
     font-size: 3vh;
 
 }
-
 
 .whatsapp{
     width: 18px;
