@@ -17,10 +17,6 @@ sequelize.authenticate().then(function(){
 }).catch(function(erro){
     console.log("Falha ao se conectar: "+erro)
 })
-var nome_completo_guardado = nome_completo.value;
-var email_guardado = email_cadastro.value;
-var senha_cadastro_guardado = senha_cadastro.value;
-var senha_confirmar_guardado = senha_confirmar.value;
 
 const Login = sequelize.define('usuarios',{ // Criou uma tabela com o nome usuario
     // Aqui dentro é definido as colunas que terão na tabela
@@ -31,21 +27,7 @@ const Login = sequelize.define('usuarios',{ // Criou uma tabela com o nome usuar
         type: Sequelize.TEXT  // Define que o tipo é text
     }
 })
-Login.sync({force: true})
+//                         Login.sync({force: true})
 
 
-
-
-if(senha_cadastro_guardado == senha_confirmar_guardado){
-    alert('Senhas iguais')
-    alert(`Nome:${nome_completo_guardado} E-mail:${email_guardado} Senha:${senha_cadastro_guardado}`)
-}
-else{
-    alert('Senhas diferentes')
-}
-function cadastro(){
-   Login.create({
-    nomeCompleto: nome_completo_guardado,
-    email:email_guardado
-})
-}
+module.exports = Login;
