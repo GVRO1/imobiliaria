@@ -1,12 +1,45 @@
+.btn_enviar_contato{
+    font-size: 110%;
+    position: absolute;
+    top: 45vh;
+    left: 20vw;
+    background-color:transparent;
+    /* Tira a borda */
+    border: none;
+    border-radius: 5px;
+    height: 40px; 
+     /*Tira a bordinha quando fica clicado   */
+    outline: none;
+    /* Ajusta o tamanho de acordo com o conteudo */
+    width: 180px;
+    cursor: pointer;
+    transition: 1s;
+
+}
+
+.btn_enviar_contato:hover {
+    background-color: rgb(150, 150, 150);
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    transition: 1s;
+}
+
 #email_contato{
     position: absolute;
+    width: 250px;
     top: 12vh;
-    left: 15vw;
+    left: 20vw; 
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: gray;
+    height: 20px;    
 }
 .fale_conosco{
     position: absolute;
-    top: 2vh;
-    left: 22vw;
+    top: 1vh;
+    left: 20vw;
+    font-size: 150%;
 }
 
 .foto_fundo{
@@ -24,35 +57,47 @@
 
 #mensagem_contato{
     position: absolute;
+    padding: 10px;
     top: 22vh;
-    left: 15vw;
+    left: 20vw;
+    padding: 0%;
+    width: 250px;
+    height: 130px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: gray;
 }
 
 #nome_contato{
     position: absolute;
     top: 7vh;
-    left: 15vw;
+    left: 20vw;
+    width: 250px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: gray;
+    height: 20px;    
 }
 
 .text_email_contato{
     position: absolute;
     top: 12vh;
-    left: 2vw;
+    left: 7vw;
 }
 .text_telefone_contato{
     position: absolute;
     top: 17vh;
-    left: 2vw;
+    left: 7vw;
 }
 .text_nome_contato{
     position: absolute;
     top: 7vh;
-    left: 2vw;
+    left: 7vw;
 }
 .text_mensagem_contato{
     position: absolute;
     top: 22vh;
-    left: 2vw;
+    left: 7vw;
 }
 
 .tela_mensagem{
@@ -68,5 +113,10 @@
  #telefone_contato{
     position: absolute;
     top: 17vh;
-    left: 15vw;
-    }
+    left: 20vw;
+    width: 250px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: gray;
+    height: 20px;    
+}
