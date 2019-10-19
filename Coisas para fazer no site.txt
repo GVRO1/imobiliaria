@@ -1,0 +1,26 @@
+Index/Home:
+Fazer um carrossel dos imovéis que não estão alugados
+Fazer um mecanismo de pesquisa de imovéis
+
+Geral:
+Terminar o rodapé
+Fazer uma pagina de imóveis
+Deixar o site responsivo
+Fazer a integração do Banco de dados
+Fazer o logo com maior resolução
+Linkar a parte do logo linkado com a pagina da Home
+
+Contato:
+Estilizar melhor a pagina de Contato
+Tentar deixar o seletor do mouse na parte superior do input 
+
+Cadastro:
+Colocar restrições na pagina de cadastro e mudar a cor de acordo com a restrição
+Tentar fazer API para se cadastrar com facebook
+Fazer o mostrar Senha e esconder senha
+
+Entrar:
+Estilizar a melhor a pagina de Entrar
+Conectar essa pagina de entrar com  o banco de dados
+Fazer o guardar senha funcionar
+Fazer pagina Esqueci minha senha
