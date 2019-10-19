@@ -20,7 +20,7 @@
 }
 .esqueci{
     color:#0800ff;
-    top: 23vh;
+    top: 24vh;
     left: 11vw;
 }
 
@@ -36,8 +36,14 @@
   background-size: cover;
 }
 
+#guardar_senha{
+    position: absolute;
+    top: 20.5VH;
+    left: 14VW;
+}
+
 .nao_cadastrado{
-    top: 23vh;
+    top: 24vh;
     left: 21vw;
     color:#0800ff;
     
@@ -60,6 +66,12 @@
 }
 
 
+#text_guardar{
+    position: absolute;
+    top: 20.8VH;
+    left: 16VW;
+    font-size: 80%;
+}
 
 #text_usuario{
     position: absolute;
@@ -68,13 +80,13 @@
 }
 #text_senha{
     position: absolute;
-    top: 14VH;
+    top: 12.5VH;
     left:18VW;
 }
 
 #senha{
     position: absolute;
-    top: 18VH;
+    top: 16VH;
     left:13.5VW;
     border-radius: 5px;
     border-width: 1px;

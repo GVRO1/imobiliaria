@@ -1,4 +1,4 @@
-#btn_cadastrar{
+    #btn_cadastrar{
     position: absolute;
     top: 54vh;
     left: 13.5vw;
@@ -75,7 +75,7 @@
     background-size: cover;
 } 
 
-#nome_completo{
+.nome{
     position: absolute;
     top: 17VH;
     left:12VW;
@@ -84,7 +84,20 @@
     text-align: center;
     border-radius: 5px;
     border-width: 1px;
-    border-color: gray;
+    border-color: rgb(128, 128, 128);
+    height: 20px;
+}
+
+.nome_completo_verde{
+    position: absolute;
+    top: 17VH;
+    left:12VW;
+    width: 210px;
+    height: 20px;
+    text-align: center;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: rgb(0, 146, 0);
     height: 20px;
 }
 
