@@ -39,8 +39,7 @@
         <span id="ou">----------- OU ----------- </span>
         <span id="text_nome"> Nome Completo </span>
         <br>
-        <input type="text" onkeyup="verificar_nome()" class="nome" id="nome_completo"placeholder="Fulano de Siclano">
-        <input type="text" onkeyup="verificar_nome()" name="" id="nome_completo"placeholder="Fulano de Siclano">
+        <input type="text" onkeyup="verifica_nome()" class="nome" id="nome_completo" placeholder="Fulano de Siclano">
         <br>
         <span id="text_email">E-mail</span>
         <br>
@@ -49,11 +48,11 @@
         <span id="text_senha">Senha(mínimo 6 caracteres)</span>
         <input type="checkbox" onclick="function_mostrar_senha()" name="" id="mostrar_senha">
         <br>
-        <input type="password" name="" id="senha_cadastro" placeholder="Senha"> 
+        <input type="password" onkeyup="verificar_senha()"  name="" id="senha_cadastro" placeholder="Senha"> 
         <br>
         <span id="text_senha_confirmar">Confirme a Senha</span>
         <br>
-        <input type="password" name="" id="senha_confirmar" placeholder="Senha Novamente"> 
+        <input type="password" name="" onkeyup="verificar_senha()" id="senha_confirmar" placeholder="Senha Novamente"> 
         <br>
         <button id="btn_cadastrar" onclick="cadastro()"> <span id="text_cadastrar">Cadastrar</span> </button>
         

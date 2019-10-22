@@ -80,6 +80,7 @@
     top: 37.5VH;
     left:28VW;
 }
+
 #nome_completo{
     position: absolute;
     top: 17VH;
@@ -93,18 +94,12 @@
     height: 20px;
 }
 
-.nome_completo_verde{
-    position: absolute;
-    top: 17VH;
-    left:12VW;
-    width: 210px;
-    height: 20px;
-    text-align: center;
-    border-radius: 5px;
-    border-width: 1px;
-    border-color: rgb(0, 146, 0);
-    height: 20px;
-}
+.correto{
+    border: 2px solid green !important;
+    }
+.errado{
+    border: 2px solid rgb(138, 0, 0) !important;
+    }
 
 #ou{
     color: gray;
