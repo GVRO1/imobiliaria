@@ -81,6 +81,14 @@
     left:28VW;
 }
 
+#mensagem_nome{
+    position: absolute;
+    top: 17.5VH;
+    left:28.5VW;
+    font-size: 80%;
+    text-align: center;
+}
+
 #nome_completo{
     position: absolute;
     top: 17VH;

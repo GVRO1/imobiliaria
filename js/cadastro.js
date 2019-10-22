@@ -5,6 +5,9 @@ function verifica_nome(){
     if(tamanho >= 5){
         if(!(nome_completo.value.startsWith(" ")) && !(nome_completo.value.endsWith(" ")) && nome_completo.value.indexOf(" ") > 0){        
             document.getElementById('nome_completo').className = 'correto';
+            mensagem_nome.innerHTML = "OK";
+            mensagem_nome.style.color = 'green';
+
         }
         else{
             document.getElementById('nome_completo').className = 'errado';
@@ -12,7 +15,26 @@ function verifica_nome(){
     }
     else{
         document.getElementById('nome_completo').className = 'errado';
+        mensagem_nome.innerHTML = "Nome Completo ";
+        mensagem_nome.style.color = 'red';
+
     }
+    // mensagens de erro
+    if(nome_completo.value.endsWith(" ")){
+     mensagem_nome.innerHTML = "Seu nome tem um espaço a mais no final";
+     mensagem_nome.style.color = 'red';
+
+    }
+    if(nome_completo.value.startsWith(" ")){
+     mensagem_nome.innerHTML = "Seu nome tem um espaço a mais no começo";
+     mensagem_nome.style.color = 'red';
+    }
+    
+    if(nome_completo.value.indexOf(" ")< 0){
+        mensagem_nome.innerHTML = "Nome Completo";
+        mensagem_nome.style.color = 'red';
+    }
+
 }
 
 function verificar_email(){
@@ -40,16 +62,14 @@ function verificar_senha(){
     }
     else{
         document.getElementById('senha_confirmar').className = 'errado';
-
     }
 }
 
 function function_mostrar_senha(){
-    if(mostrar_senha.value = true){
+    if(mostrar_senha.checked == true){
         senha_cadastro.type = 'text';
         senha_confirmar.type = 'text';
-    }   
-    else{
+    } else{
         senha_cadastro.type = 'password';
         senha_confirmar.type = 'password';
 
