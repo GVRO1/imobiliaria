@@ -55,6 +55,23 @@ if(!(email_cadastro.value.endsWith(".com")) && !(email_cadastro.value.endsWith("
     mensagem_email.innerHTML = "Seu e-mail deve terminar com '.com' ou '.br' ";
     mensagem_email.style.color = 'red';
 }
+
+if(email_cadastro.value.endsWith("@.com.br") || email_cadastro.value.endsWith("@.br") || email_cadastro.value.endsWith("@.com")){
+    mensagem_email.innerHTML = "Qual o servidor? Ex: hotmail; gmail; globo; etc";
+    mensagem_email.style.color = 'red';
+    document.getElementById('email_cadastro').className = 'errado';
+}
+if(email_cadastro.value.endsWith(" ")){
+    mensagem_email.innerHTML = "Seu email tem um espaço a mais no final";
+    mensagem_email.style.color = 'red';
+    document.getElementById('email_cadastro').className = 'errado';
+   }
+   if(email_cadastro.value.startsWith(" ")){
+    mensagem_email.innerHTML = "Seu email tem um espaço a mais no começo";
+    mensagem_email.style.color = 'red';
+    document.getElementById('email_cadastro').className = 'errado';
+   }
+
 }
 
 function verificar_senha(){
@@ -62,16 +79,26 @@ function verificar_senha(){
     if(tamanho > 5){
         document.getElementById('senha_cadastro').className = 'correto';
         senha_certa = 1;
+        mensagem_senha.innerHTML = 'OK';
+        mensagem_senha.style.color = 'green';
     }
     else{
         document.getElementById('senha_cadastro').className = 'errado';
         senha_certa = 0 ;
+        mensagem_senha.innerHTML = 'Sua senha deve conter no minimo 6 carácteres';
+        mensagem_senha.style.color = 'red';
     }
+
     if(senha_cadastro.value == senha_confirmar.value && senha_certa == 1){
         document.getElementById('senha_confirmar').className = 'correto';
+        mensagem_senha_novamente.innerHTML = 'OK';
+        mensagem_senha_novamente.style.color = 'green';
+
     }
     else{
         document.getElementById('senha_confirmar').className = 'errado';
+        mensagem_senha_novamente.innerHTML = 'Suas senhas não conhecidem';
+        mensagem_senha_novamente.style.color = 'red';
     }
 }
 

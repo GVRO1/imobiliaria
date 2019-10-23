@@ -78,7 +78,7 @@
 #mostrar_senha{
     position: absolute;
     top: 37.5VH;
-    left:28VW;
+    left:8VW;
 }
 
 #mensagem_nome{
@@ -92,6 +92,21 @@
 #mensagem_email{
     position: absolute;
     top: 27.5VH;
+    left:28.5VW;
+    font-size: 80%;
+    text-align: center;
+}
+
+#mensagem_senha{
+    position: absolute;
+    top: 37.5VH;
+    left:28.5VW;
+    font-size: 80%;
+    text-align: center;
+}
+#mensagem_senha_novamente{
+    position: absolute;
+    top: 47VH;
     left:28.5VW;
     font-size: 80%;
     text-align: center;
@@ -121,7 +136,7 @@
     color: gray;
     position: absolute;
     top: 9vh;
-    left: 14vw;
+    left: 13vw;
 }
 
 #senha_cadastro{
