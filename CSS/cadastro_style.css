@@ -89,6 +89,14 @@
     text-align: center;
 }
 
+#mensagem_email{
+    position: absolute;
+    top: 27.5VH;
+    left:28.5VW;
+    font-size: 80%;
+    text-align: center;
+}
+
 #nome_completo{
     position: absolute;
     top: 17VH;

@@ -40,11 +40,21 @@ function verifica_nome(){
 function verificar_email(){
     if(email_cadastro.value.indexOf("@") > 0 && (email_cadastro.value.endsWith(".com") || email_cadastro.value.endsWith(".br"))){
         document.getElementById('email_cadastro').className = 'correto';
+        mensagem_email.innerHTML = "OK";
+    mensagem_email.style.color = 'green';
     }
     else{
         document.getElementById('email_cadastro').className = 'errado';
     }
-
+//Mensagens de erro
+if(email_cadastro.value.indexOf("@") < 0){
+    mensagem_email.innerHTML = "Seu e-mail deve conter '@' ";
+    mensagem_email.style.color = 'red';
+}
+if(!(email_cadastro.value.endsWith(".com")) && !(email_cadastro.value.endsWith(".br"))){
+    mensagem_email.innerHTML = "Seu e-mail deve terminar com '.com' ou '.br' ";
+    mensagem_email.style.color = 'red';
+}
 }
 
 function verificar_senha(){
