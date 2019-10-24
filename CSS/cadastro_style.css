@@ -125,8 +125,20 @@
     height: 20px;
 }
 
+#notificacao_cadastro{
+    position: absolute;
+    top: 14VH;
+    left:41.5VW;
+    height: 50px;
+    width: 20VW;
+    display: inline-block;
+    background-color:#ffffffc1;
+    display: none;
+}
+
 .correto{
     border: 2px solid green !important;
+    display: block !important;
     }
 .errado{
     border: 2px solid rgb(138, 0, 0) !important;
