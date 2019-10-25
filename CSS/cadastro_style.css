@@ -14,6 +14,23 @@
     cursor: pointer;
     transition: 1s;
 }
+
+    #btn_cadastrar_vazio{
+        position: absolute;
+        top: 54vh;
+        left: 13.5vw;
+        background-color: rgb(245, 245, 245);
+        /* Tira a borda */
+        border:none;
+        border-radius: 5px;
+        height: 40px; 
+         /*Tira a bordinha quando fica clicado   */
+        outline: none;
+        /* Ajusta o tamanho de acordo com o conteudo */
+        width: 180px;
+        transition: 1s;
+        color: rgb(201, 201, 201);
+    }
 #btn_cadastrar:hover{
     background-color: rgb(150, 150, 150);
     transition: 1s;

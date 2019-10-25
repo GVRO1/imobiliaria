@@ -7,7 +7,7 @@ var email_certo = 0;
 
 function liberarCadastro() {
     if (senha_certa == 1 && senha_confirmar_certa == 1 && nome_certo == 1 && email_certo == 1) {
-alert("batat")
+    span_botao.innerHTML = `<button id="btn_cadastrar" onclick="botao_cadastrar()"> <span id="text_cadastrar">Cadastrar</span> </button>`;
     } 
 }
 
@@ -146,7 +146,6 @@ function function_mostrar_senha(){
 }
 
 
-function btn_cadastrar(){
+function botao_cadastrar(){
     document.getElementById('notificacao_cadastro').className = 'correto';
-    alert(`${nome_certo},${email_certo},${senha_certa},${senha_confirmar_certa}`)
 }
