@@ -1,14 +1,25 @@
-var btn_cadastrar = document.getElementById('btn_cadastrar');
-
+//Cria todas as variaveis
 var senha_certa = 0;
 var senha_confirmar_certa = 0;
 var nome_certo = 0;
 var email_certo = 0;
 
 function liberarCadastro() {
+    var btn_cadastrar = document.getElementById('id_btn_cadastrar_vazio');
     if (senha_certa == 1 && senha_confirmar_certa == 1 && nome_certo == 1 && email_certo == 1) {
-    span_botao.innerHTML = `<button id="btn_cadastrar" onclick="botao_cadastrar()"> <span id="text_cadastrar">Cadastrar</span> </button>`;
+        //Adiciona o CSS do botão ativo
+        btn_cadastrar.className = 'btn_cadastrar';
+        //Define que o atributo 'onclick' receberá 'botao_cadastrar()' 
+        btn_cadastrar.setAttribute('onclick','botao_cadastrar()');
     } 
+    else{
+        //Remove todo o CSS do botão
+        btn_cadastrar.classList.remove("btn_cadastrar");
+        //Adiciona o css do botão inativo
+        btn_cadastrar.className = 'btn_cadastrar_vazio';
+        //Define que o atributo 'onclick' receberá ' ' (nada)
+        btn_cadastrar.setAttribute('onclick',' ');
+    }
 }
 
 function verifica_nome(){
@@ -147,5 +158,6 @@ function function_mostrar_senha(){
 
 
 function botao_cadastrar(){
+    alert("aa");
     document.getElementById('notificacao_cadastro').className = 'correto';
 }
