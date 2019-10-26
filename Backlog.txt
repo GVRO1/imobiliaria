@@ -15,9 +15,10 @@ Estilizar melhor a pagina de Contato
 Tentar deixar o seletor do mouse na parte superior do input 
 
 Cadastro:
-Colocar restrições na pagina de cadastro e mudar a cor de acordo com a restrição
+Fazer a mensagem de envio do e-mail
+Estilizar melhor o botão de cadastrar
 Tentar fazer API para se cadastrar com facebook
-Fazer o mostrar Senha e esconder senha
+Estilizar o botao de mostrar Senha 
 
 Entrar:
 Estilizar a melhor a pagina de Entrar
