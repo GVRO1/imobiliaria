@@ -1,16 +1,16 @@
 #btn_entrar{
     position: absolute;
-    top: 28vh;
+    top: 34vh;
     left: 18vw;
     background-color: rgb(245, 245, 245);
     /* Tira a borda */
     border:none;
     border-radius: 5px;
-    height: 20px; 
+    height: 30px; 
      /*Tira a bordinha quando fica clicado   */
     outline: none;
     /* Ajusta o tamanho de acordo com o conteudo */
-    width: auto;
+    width: 50px;
     cursor: pointer;
     transition: 1s;
 }
@@ -20,7 +20,7 @@
 }
 .esqueci{
     color:#0800ff;
-    top: 24vh;
+    top: 28vh;
     left: 11vw;
 }
 
@@ -38,26 +38,27 @@
 
 #guardar_senha{
     position: absolute;
-    top: 20.5VH;
+    top: 23.5VH;
     left: 14VW;
 }
 
 .nao_cadastrado{
-    top: 24vh;
+    top: 28vh;
     left: 21vw;
     color:#0800ff;
     
 }
 
 .tela_login{
-    height: 210px;
+    height: 250px;
     display: inline-block;
     width: 40VW;
     background-color:#ffffffc1;
     border-radius: 20px;
     position: absolute;
-    top: 37vh;
-    left: 32vw;
+    transform: translate(-50%,-50%);
+    top: 50vh;
+    left: 50vw;
 }
 
 .tela_login a{
@@ -68,7 +69,7 @@
 
 #text_guardar{
     position: absolute;
-    top: 20.8VH;
+    top: 23.8VH;
     left: 16VW;
     font-size: 80%;
 }
@@ -80,13 +81,13 @@
 }
 #text_senha{
     position: absolute;
-    top: 12.5VH;
+    top: 14VH;
     left:18VW;
 }
 
 #senha{
     position: absolute;
-    top: 16VH;
+    top: 18.5VH;
     left:13.5VW;
     border-radius: 5px;
     border-width: 1px;
@@ -98,7 +99,7 @@
 
 #usuario{
     position: absolute;
-    top: 8vh;
+    top: 9vh;
     left: 13.5vw;
     position: absolute;
     border-radius: 5px;

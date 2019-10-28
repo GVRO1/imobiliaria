@@ -3,7 +3,6 @@ var senha_certa = 0;
 var senha_confirmar_certa = 0;
 var nome_certo = 0;
 var email_certo = 0;
-
 function liberarCadastro() {
     var btn_cadastrar = document.getElementById('id_btn_cadastrar_vazio');
     if (senha_certa == 1 && senha_confirmar_certa == 1 && nome_certo == 1 && email_certo == 1) {
@@ -143,21 +142,26 @@ function verificar_senha(){
     liberarCadastro()
 }
 
-function function_mostrar_senha(){
-    if(mostrar_senha.checked == true){
-        senha_cadastro.type = 'text';
-        senha_confirmar.type = 'text';
-    } else{
-        senha_cadastro.type = 'password';
-        senha_confirmar.type = 'password';
+var cadastro = document.getElementById('senha_cadastro')
+var confirmar = document.getElementById('senha_confirmar')
 
+function function_mostrar_senha(){
+    if(cadastro.type == 'password'){
+    cadastro.type = 'text';
+    confirmar.type = 'text';
+    document.getElementById('olho').setAttribute('src','../fotos/Olho_fechado.png')
+}
+else{
+    cadastro.type = 'password';
+    confirmar.type = 'password';
+    document.getElementById('olho').setAttribute('src','../fotos/Olho_aberto.png')
     }
-    
     liberarCadastro()
 }
 
 
 function botao_cadastrar(){
-    alert("aa");
     document.getElementById('notificacao_cadastro').className = 'correto';
+    text_notificacao_email.innerHTML = `${email_cadastro.value}`
+
 }

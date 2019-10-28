@@ -12,13 +12,13 @@
     /* Ajusta o tamanho de acordo com o conteudo */
     width: 180px;
     cursor: pointer;
-    transition: 1s;
+    transition: 0.5s;
     color: black !important;
 }
 
 .btn_cadastrar_vazio{
         position: absolute;
-        top: 54vh;
+        top: 360px;
         left: 13.5vw;
         background-color: rgb(245, 245, 245);
         /* Tira a borda */
@@ -29,12 +29,12 @@
          /*Tira a bordinha quando fica clicado   */
         outline: none;
         /* Ajusta o tamanho de acordo com o conteudo */
-        transition: 1s;
+        transition: 0.5s;
         color: rgb(201, 201, 201);
     }
-#btn_cadastrar:hover{
-    background-color: rgb(150, 150, 150);
-    transition: 1s;
+.btn_cadastrar:hover{
+    background-color: rgb(177, 177, 177);
+    transition: 0.5s;
 }
 
 #btn_cadastrar_facebook{
@@ -55,7 +55,7 @@
     outline: none;
     /* Ajusta o tamanho de acordo com o conteudo */
     cursor: pointer;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 #email_cadastro{
@@ -92,12 +92,6 @@
     /* A imagem cobre toda a area */
     background-size: cover;
 } 
-
-#mostrar_senha{
-    position: absolute;
-    top: 37.5VH;
-    left:8VW;
-}
 
 #mensagem_nome{
     position: absolute;
@@ -146,21 +140,47 @@
 #notificacao_cadastro{
     position: absolute;
     top: 14VH;
-    left:41.5VW;
+    left:38.5VW;
     height: 50px;
-    width: 20VW;
+    width: 400px;
     display: inline-block;
     background-color:#ffffffc1;
     display: none;
+    text-align: center;
+    
+}
+
+#olho{
+    width: 20px;
+    position: absolute;
+    top: 36.7VH;
+    left:25.6VW;
+    cursor: pointer;
+    transition: 1s;
+    /* Serve para deixar a frente da tela */
+    z-index: 1;
+}
+
+#linha_olho{
+    
+    position: absolute;
+    top: 39VH;
+    left:25.2VW;
+    height: 15px;
+    width: 1px;
+    background-color: rgb(168, 168, 168);
+    border-radius: 5px;   
+    z-index: 2;
+    transform: translate(-50%,-50%);
 }
 
 .correto{
     border: 2px solid green !important;
     display: block !important;
-    }
+}
 .errado{
     border: 2px solid rgb(138, 0, 0) !important;
-    }
+}
 
 #ou{
     color: gray;
@@ -193,7 +213,7 @@
     border-width: 1px;
     border-color: gray;
     height: 20px;
-
+    
 }
 
 .tela_cadastro{
@@ -205,13 +225,29 @@
     position: absolute;
     top: 24vh;
     left: 32vw;
+    transform: translate(-50%,-50%);
 }
 
 #text_cadastrar{
-font-size: 130%;
-
+    font-size: 130%;
 }
 
+#text_notificacao{
+    color: green;
+    position: absolute;
+    top: 1VH;
+    left:5VW;
+    font-size: 90%; 
+}
+#text_notificacao_email{
+    color: green;
+    position: absolute;
+    top: 6VH;
+    left:50%;
+    font-size: 90%; 
+    transform: translate(-50%, -50%);
+
+}
 #text_email{
     position: absolute;
     top: 22VH;

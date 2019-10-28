@@ -31,7 +31,10 @@
         </div>
     </header>
 
-    <div id="notificacao_cadastro"></div>
+    <div id="notificacao_cadastro"> 
+        <span id="text_notificacao">Um E-mail de confirmação foi enviado para</span> 
+        <span id="text_notificacao_email"></span>
+    </div>
     
     <div class="tela_cadastro">
         <button id="btn_cadastrar_facebook">
@@ -51,7 +54,9 @@
         <input type="text" name="" onkeyup="verificar_email()" id="email_cadastro" placeholder="exemplo@email.com.br">
         <br>
         <span id="text_senha">Senha(mínimo 6 caracteres)</span>
-        <input type="checkbox" onclick="function_mostrar_senha()" id="mostrar_senha">
+
+        <img id="olho"src="../fotos/Olho_aberto.png" alt="" onclick="function_mostrar_senha()">
+        <div id="linha_olho"></div>
         <div id="mensagem_senha"></div>
         <br>
         <input type="password" onkeyup="verificar_senha()" id="senha_cadastro" placeholder="Senha"> 
