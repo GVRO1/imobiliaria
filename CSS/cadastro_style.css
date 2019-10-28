@@ -225,7 +225,6 @@
     position: absolute;
     top: 24vh;
     left: 32vw;
-    transform: translate(-50%,-50%);
 }
 
 #text_cadastrar{
