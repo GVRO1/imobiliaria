@@ -34,11 +34,30 @@
     
     <div class="tela_mensagem">
     <span class="fale_conosco">Fale Conosco</span> <br>
-    <span class="text_nome_contato">Nome Completo:* </span> <input type="text" name="" id="nome_contato" placeholder="Nome Completo">
+    <span class="text_nome_contato">Nome Completo:* </span>
+    <input type="text" name="" id="nome_contato" onkeyup="verificar_nome()"  placeholder="Nome Completo">
+    <div id="mensagem_nome"></div>
     <br>
-    <span class="text_email_contato">Email:*</span> <input type="text" name="" id="email_contato" placeholder="E-mail">
+    <span class="text_email_contato">Email:*</span> 
+    <input type="text" name="" id="email_contato" onkeyup="verificar_email()" placeholder="E-mail">
+    <div id="mensagem_email"></div>
     <br>
-    <span class="text_telefone_contato"> Telefone: </span> <input type="text" name="" id="telefone_contato"placeholder="Telefone">
+    <span class="text_telefone_contato"> Telefone: </span> 
+    <input type="text" name="" id="telefone_contato"placeholder="Ex:11-9">
+    <!-- Mascará de input -->
+    <!-- let textoAjustado;
+    if(isCelular) {
+        const parte1 = textoAtual.slice(0,5);
+        const parte2 = textoAtual.slice(5,9);
+        textoAjustado = `${parte1}-${parte2}`        
+    } else {
+        const parte1 = textoAtual.slice(0,4);
+        const parte2 = textoAtual.slice(4,8);
+        textoAjustado = `${parte1}-${parte2}`
+    }
+
+    telefone.value = textoAjustado;
+} -->
     <br>
     <span class="text_mensagem_contato">Mensagem:* </span>     
     <textarea type="text" name="" id="mensagem_contato" placeholder="O que deseja?"></textarea>
@@ -58,6 +77,6 @@
         <div class="endereco_face" > <a href="https://www.facebook.com/rodriguesoliveiraassessoria/" target="_blank">/rodriguesoliveiraassessoria</a></div>
     </div>
 
-    <script src="../js/cadastro_login.js"></script>
+    <script src="../js/contato.js"></script>
     </body>
     </html>

@@ -24,6 +24,13 @@
     border-color: white;
     transition: 1s;
 }
+.correto{
+    border: 2px solid green !important;
+    display: block !important;
+}
+.errado{
+    border: 2px solid rgb(138, 0, 0) !important;
+}
 
 #email_contato{
     position: absolute;
@@ -66,6 +73,21 @@
     border-radius: 5px;
     border-width: 1px;
     border-color: gray;
+}
+
+#mensagem_nome{
+    position: absolute;
+    top: 7.5VH;
+    left:39VW;
+    font-size: 80%;
+    text-align: center;
+}
+#mensagem_email{
+    position: absolute;
+    top: 12.5VH;
+    left:39.5VW;
+    font-size: 80%;
+    text-align: center;
 }
 
 #nome_contato{
