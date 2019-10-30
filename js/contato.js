@@ -69,6 +69,49 @@ if(email_contato.value.endsWith(" ")){
    }
 
 }
+
+// Mascará de input
+//     let textoAjustado;
+//     if(isCelular) {
+//         const parte1 = textoAtual.slice(0,5);
+//         const parte2 = textoAtual.slice(5,9);
+//         textoAjustado = `${parte1}-${parte2}`        
+//     } else {
+//         const parte1 = textoAtual.slice(0,4);
+//         const parte2 = textoAtual.slice(4,8);
+//         textoAjustado = `${parte1}-${parte2}`
+//     }
+
+//     telefone.value = textoAjustado;
+// }
 function verificar_telefone(){
-if
-}
+    var tel = telefone_contato.value;
+    console.log(tel.length);
+    //Caso não for o ( no 1 caracter
+    if(!(tel.indexOf("(") == 0)){   
+        var resultado = tel.replace(/(\d{2})/, "($1")
+        telefone_contato.value = resultado; 
+        console.log('função"(" ');
+        }
+
+      
+        //Caso não for o ) no 4 caracter
+        else if( !(tel.indexOf(")") == 3)){
+            var resultado = tel.replace(/(\d{2})/, "$1)")
+            telefone_contato.value = resultado; 
+            console.log('função")"  ');
+            }
+    
+
+
+    //Caso não for o ) no 4 caracter
+        
+    else if(!(tel.indexOf("-") == 9) ){
+        var resultado1 = tel.replace(/(\d{5})(\d{1})/, "$1-$2");
+        telefone_contato.value = resultado1;
+        console.log('função"-" ');
+
+        }
+    }
+    
+

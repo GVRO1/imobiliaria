@@ -43,21 +43,7 @@
     <div id="mensagem_email"></div>
     <br>
     <span class="text_telefone_contato"> Telefone: </span> 
-    <input type="text" name="" id="telefone_contato"placeholder="Ex:11-9">
-    <!-- Mascará de input -->
-    <!-- let textoAjustado;
-    if(isCelular) {
-        const parte1 = textoAtual.slice(0,5);
-        const parte2 = textoAtual.slice(5,9);
-        textoAjustado = `${parte1}-${parte2}`        
-    } else {
-        const parte1 = textoAtual.slice(0,4);
-        const parte2 = textoAtual.slice(4,8);
-        textoAjustado = `${parte1}-${parte2}`
-    }
-
-    telefone.value = textoAjustado;
-} -->
+    <input type="text" name="" id="telefone_contato" onkeyup="verificar_telefone()" placeholder="Ex:11-9" maxlength="14">
     <br>
     <span class="text_mensagem_contato">Mensagem:* </span>     
     <textarea type="text" name="" id="mensagem_contato" placeholder="O que deseja?"></textarea>

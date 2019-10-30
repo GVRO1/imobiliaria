@@ -29,7 +29,6 @@ function verifica_nome(){
             mensagem_nome.innerHTML = "OK";
             mensagem_nome.style.color = 'green';
             nome_certo = 1
-
         }
         else{
             document.getElementById('nome_completo').className = 'errado';
