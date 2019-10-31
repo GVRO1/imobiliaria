@@ -84,34 +84,50 @@ if(email_contato.value.endsWith(" ")){
 
 //     telefone.value = textoAjustado;
 // }
-function verificar_telefone(){
-    var tel = telefone_contato.value;
-    console.log(tel.length);
-    //Caso não for o ( no 1 caracter
-    if(!(tel.indexOf("(") == 0)){   
-        var resultado = tel.replace(/(\d{2})/, "($1")
-        telefone_contato.value = resultado; 
-        console.log('função"(" ');
-        }
+function colocar_mascara(){
+var tamanho = telefone_contato.value.length;
+ 
+ console.log("tamanho",tamanho)
+if(tamanho == 11){
+ var ddd = telefone_contato.value.slice(0,2);
+ var parte1 = telefone_contato.value.slice(2,7)
+ var parte2 = telefone_contato.value.slice(7,12)
+    document.getElementById("telefone_contato").className ='correto';
+    telefone_contato.value = `(${ddd})${parte1}-${parte2}`
 
-      
-        //Caso não for o ) no 4 caracter
-        else if( !(tel.indexOf(")") == 3)){
-            var resultado = tel.replace(/(\d{2})/, "$1)")
-            telefone_contato.value = resultado; 
-            console.log('função")"  ');
-            }
-    
+}
+else if(tamanho == 10){
+    var ddd = telefone_contato.value.slice(0,2);
+    var parte1 = telefone_contato.value.slice(2,6)
+    var parte2 = telefone_contato.value.slice(6,11)
+    document.getElementById("telefone_contato").className ='correto';
+    telefone_contato.value = `(${ddd})${parte1}-${parte2}`
 
+}
+else{
+    document.getElementById("telefone_contato").className = 'errado';
+}
+}
+function arrancar_mascara(){
+    var tamanho = telefone_contato.value.length;
+   if(tamanho == 13){
+    var ddd = telefone_contato.value.slice(1,3);
+    var parte1 = telefone_contato.value.slice(4,8)
+    var parte2 = telefone_contato.value.slice(9,15)
+       telefone_contato.value = `${ddd}${parte1}${parte2}`
+       document.getElementById("telefone_contato").className ='correto';
+   }
+   if(tamanho == 14){
+   
+   var ddd_2 = telefone_contato.value.slice(1,3);
+   var parte1_2 = telefone_contato.value.slice(4,9)
+   var parte2_2 = telefone_contato.value.slice(10,15)
+      telefone_contato.value = `${ddd_2}${parte1_2}${parte2_2}`
+      document.getElementById("telefone_contato").className ='correto';
+  }
 
-    //Caso não for o ) no 4 caracter
-        
-    else if(!(tel.indexOf("-") == 9) ){
-        var resultado1 = tel.replace(/(\d{5})(\d{1})/, "$1-$2");
-        telefone_contato.value = resultado1;
-        console.log('função"-" ');
+   }
+   
 
-        }
-    }
     
 

@@ -43,7 +43,10 @@
     <div id="mensagem_email"></div>
     <br>
     <span class="text_telefone_contato"> Telefone: </span> 
-    <input type="text" name="" id="telefone_contato" onkeyup="verificar_telefone()" placeholder="Ex:11-9" maxlength="14">
+    <!-- onblur é pra quando sair da caixa de input a função verificar colocar_mascara iniciar -->
+    <!-- onfocus é para quando entrar na caixa de input a função arrancar_mascara inciar -->
+    <input type="text" name="" id="telefone_contato" onblur ="colocar_mascara()" onfocus="arrancar_mascara()"  placeholder="Ex:11-9" maxlength="12">
+    <div id="mensagem_telefone"></div>
     <br>
     <span class="text_mensagem_contato">Mensagem:* </span>     
     <textarea type="text" name="" id="mensagem_contato" placeholder="O que deseja?"></textarea>
