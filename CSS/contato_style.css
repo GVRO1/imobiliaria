@@ -1,7 +1,7 @@
 .btn_enviar_contato{
     font-size: 110%;
     position: absolute;
-    top: 45vh;
+    top: 52vh;
     left: 20vw;
     background-color:transparent;
     /* Tira a borda */
@@ -35,7 +35,7 @@
 #email_contato{
     position: absolute;
     width: 250px;
-    top: 12vh;
+    top: 14vh;
     left: 20vw; 
     border-radius: 5px;
     border-width: 1px;
@@ -65,7 +65,7 @@
 #mensagem_contato{
     position: absolute;
     padding: 10px;
-    top: 22vh;
+    top: 28vh;
     left: 20vw;
     padding: 0%;
     width: 250px;
@@ -77,14 +77,21 @@
 
 #mensagem_nome{
     position: absolute;
-    top: 7.5VH;
+    top: 7.7vh;
+    left:39VW;
+    font-size: 80%;
+    text-align: center;
+}
+#mensagem_telefone{
+    position: absolute;
+    top: 21.7VH;
     left:39VW;
     font-size: 80%;
     text-align: center;
 }
 #mensagem_email{
     position: absolute;
-    top: 12.5VH;
+    top: 14.8VH;
     left:39VW;
     font-size: 80%;
     text-align: center;
@@ -103,12 +110,12 @@
 
 .text_email_contato{
     position: absolute;
-    top: 12vh;
+    top: 14vh;
     left: 7vw;
 }
 .text_telefone_contato{
     position: absolute;
-    top: 17vh;
+    top: 21vh;
     left: 7vw;
 }
 .text_nome_contato{
@@ -118,7 +125,7 @@
 }
 .text_mensagem_contato{
     position: absolute;
-    top: 22vh;
+    top: 28vh;
     left: 7vw;
 }
 
@@ -134,7 +141,7 @@
 }
  #telefone_contato{
     position: absolute;
-    top: 17vh;
+    top: 21vh;
     left: 20vw;
     width: 250px;
     border-radius: 5px;

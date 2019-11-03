@@ -43,9 +43,16 @@
     <div id="mensagem_email"></div>
     <br>
     <span class="text_telefone_contato"> Telefone: </span> 
+    
     <!-- onblur é pra quando sair da caixa de input a função verificar colocar_mascara iniciar -->
     <!-- onfocus é para quando entrar na caixa de input a função arrancar_mascara inciar -->
-    <input type="text" name="" id="telefone_contato" onblur ="colocar_mascara()" onfocus="arrancar_mascara()"  placeholder="Ex:11-9" maxlength="12">
+    <!-- "return event.charCode >= 48 && event.charCode <= 57": esse comando deixa o usario apenas digitar numeros -->
+    <input type="text" name="" id="telefone_contato" 
+    onblur ="colocar_mascara()" onfocus="arrancar_mascara()" 
+    placeholder="Ex:(11)1213-1415" maxlength="11"
+    onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+
+
     <div id="mensagem_telefone"></div>
     <br>
     <span class="text_mensagem_contato">Mensagem:* </span>     

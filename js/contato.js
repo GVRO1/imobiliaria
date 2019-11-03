@@ -94,6 +94,8 @@ if(tamanho == 11){
  var parte2 = telefone_contato.value.slice(7,12)
     document.getElementById("telefone_contato").className ='correto';
     telefone_contato.value = `(${ddd})${parte1}-${parte2}`
+    mensagem_telefone.innerHTML = "OK";
+    mensagem_telefone.style.color = 'green';
 
 }
 else if(tamanho == 10){
@@ -102,10 +104,14 @@ else if(tamanho == 10){
     var parte2 = telefone_contato.value.slice(6,11)
     document.getElementById("telefone_contato").className ='correto';
     telefone_contato.value = `(${ddd})${parte1}-${parte2}`
+    mensagem_telefone.innerHTML = "OK";
+    mensagem_telefone.style.color = 'green';
 
 }
 else{
     document.getElementById("telefone_contato").className = 'errado';
+    mensagem_telefone.innerHTML = "Digite seu numero completo com o DDD";
+    mensagem_telefone.style.color = 'red';
 }
 }
 function arrancar_mascara(){
