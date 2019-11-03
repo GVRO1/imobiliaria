@@ -52,13 +52,17 @@
     placeholder="Ex:(11)1213-1415" maxlength="11"
     onkeypress="return event.charCode >= 48 && event.charCode <= 57">
 
-
     <div id="mensagem_telefone"></div>
     <br>
     <span class="text_mensagem_contato">Mensagem:* </span>     
-    <textarea type="text" name="" id="mensagem_contato" placeholder="O que deseja?"></textarea>
+
+    <textarea type="text" name="" id="mensagem_contato"  
+    onkeyup="verificar_mensagem()"
+    maxlength="300" placeholder="O que deseja?"></textarea>
+    <div id="caracteres_restantes">Caracteres Restantes: 300</div>
+    <div id="mensagem_mensagem"></div>
     <br>
-    <button class="btn_enviar_contato">Enviar</button>
+    <button class="btn_enviar_contato" id="enviar_mensagem" onclick="botao_enviar()">Enviar</button>
     </div>
     <div class="foto_fundo"></div>
     

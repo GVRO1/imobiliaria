@@ -10,10 +10,11 @@ Deixar o site responsivo
 Fazer a integração do Banco de dados
 Fazer o logo com maior resolução
 Linkar a parte do logo linkado com a pagina da Home
+Deixar todos os botões do mesmo padrão que a pagina de contato
 
 Contato:
 Estilizar melhor a pagina de Contato
-Tentar deixar o seletor do mouse na parte superior do input 
+Fazer a notificação de envio de mensagem do botao
 
 Cadastro:
 Tentar fazer API para se cadastrar com facebook
