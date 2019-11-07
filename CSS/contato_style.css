@@ -1,3 +1,12 @@
+
+.aviso_preenchimento{
+    font-size: 83%;;
+    position: absolute;
+    top: 55vh;
+    left: 1vw;
+    color: #5f5f5f;
+}
+
 .btn_enviar_contato{
     font-size: 110%;
     position: absolute;
@@ -5,7 +14,6 @@
     left: 20vw;
     background-color:transparent;
     /* Tira a borda */
-    border: none;
     border-radius: 5px; 
     height: 40px; 
      /*Tira a bordinha quando fica clicado   */
@@ -13,32 +21,40 @@
     /* Ajusta o tamanho de acordo com o conteudo */
     width: 180px;
     transition: 1s;
-
+    border:solid 2px #6b6b6b;
 }
 
 .btn_enviar_contato_funcionando{
-    background-color:#1f3a93 ;
-    border: none;
-    transition: 1s;
-    color:white;
-    font-size: 110%;
-    position: absolute;
     top: 51.5vh;
     left: 20vw;
+    color: rgb(255, 255, 255);
+    background-color:#1f3a93 ;
+    transition: 1s;
+    font-size: 110%;
+    position: absolute;
     border-radius: 5px; 
     height: 40px; 
      /*Tira a bordinha quando fica clicado   */
+    border: none;
+
     outline: none;
     /* Ajusta o tamanho de acordo com o conteudo */
     width: 180px;
     cursor: pointer;
     transition: 1s;
 }
+.btn_enviar_contato_funcionando:hover{
+box-shadow: 4px 5px 6px 2px rgb(95, 94, 94);
+transition: 0.5s;
+
+}
+
 #caracteres_restantes{
     position: absolute;
     top: 46.5vh;   
     left: 84.7vh;
     font-size: 82%;
+    color: #5f5f5f;
 }
 .correto{
     border: 2px solid green !important;
@@ -64,7 +80,17 @@
     left: 20vw;
     font-size: 150%;
 }
-
+#notificacao_cadastro{
+    position: absolute;
+    top: 14VH;
+    left:38.5VW;
+    height: 50px;
+    width: 400px;
+    display: inline-block;
+    background-color:#ffffffc1;
+    display: none;
+    text-align: center;
+}
 .foto_fundo{
     /* Não deixa repetir */
     background-repeat: no-repeat;
@@ -77,7 +103,11 @@
     background-size: cover;
 } 
 
-
+.input_normal{
+    border-width: 1px;
+    border-color: gray;
+    height: 20px;
+}
 #mensagem_contato{
     position: absolute;
     padding: 10px;
@@ -131,6 +161,11 @@
     left: 39vw;
 }
 
+textarea {
+    /* resize: none  impede que o ususario possa redimensionar a area do textarea*/
+    resize: none;
+}
+
 .text_email_contato{
     position: absolute;
     top: 14vh;
@@ -150,6 +185,13 @@
     position: absolute;
     top: 28vh;
     left: 7vw;
+}
+#text_notificacao{
+    color: green;
+    position: absolute;
+    top: 1.5VH;
+    left:0VW;
+    font-size: 90%; 
 }
 
 .tela_mensagem{

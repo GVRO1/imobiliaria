@@ -7,7 +7,7 @@ function liberarCadastro() {
     var btn_cadastrar = document.getElementById('id_btn_cadastrar_vazio');
     if (senha_certa == 1 && senha_confirmar_certa == 1 && nome_certo == 1 && email_certo == 1) {
         //Adiciona o CSS do botão ativo
-        btn_cadastrar.className = 'btn_cadastrar';
+        btn_cadastrar.className = 'btn_cadastrar_funcionando';
         //Define que o atributo 'onclick' receberá 'botao_cadastrar()' 
         btn_cadastrar.setAttribute('onclick','botao_cadastrar()');
     } 
@@ -15,7 +15,7 @@ function liberarCadastro() {
         //Remove todo o CSS do botão
         btn_cadastrar.classList.remove("btn_cadastrar");
         //Adiciona o css do botão inativo
-        btn_cadastrar.className = 'btn_cadastrar_vazio';
+        btn_cadastrar.className = 'btn_cadastrar';
         //Define que o atributo 'onclick' receberá ' ' (nada)
         btn_cadastrar.setAttribute('onclick',' ');
     }

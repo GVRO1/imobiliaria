@@ -1,39 +1,42 @@
     .btn_cadastrar{
+        font-size: 110%;
+        color: rgba(99, 99, 99, 0.863);
+        position: absolute;
+        top: 55.5vh;
+        left: 13.5vw;
+        background-color:transparent;
+        /* Tira a borda */
+        border-radius: 5px; 
+        height: 40px; 
+         /*Tira a bordinha quando fica clicado   */
+        outline: none;
+        /* Ajusta o tamanho de acordo com o conteudo */
+        width: 180px;
+        transition: 1s;
+    border:solid 2px #6b6b6b;
+
+}
+
+.btn_cadastrar_funcionando{
+    color: rgb(255, 255, 255);
+    background-color:#1f3a93 ;
+    border: none;
+    transition: 1s;
+    font-size: 110%;
     position: absolute;
-    top: 54vh;
+    top: 55.5vh;
     left: 13.5vw;
-    background-color: rgb(245, 245, 245);
-    /* Tira a borda */
-    border:none;
-    border-radius: 5px;
+    border-radius: 5px; 
     height: 40px; 
      /*Tira a bordinha quando fica clicado   */
     outline: none;
     /* Ajusta o tamanho de acordo com o conteudo */
     width: 180px;
     cursor: pointer;
-    transition: 0.5s;
-    color: black !important;
-}
-
-.btn_cadastrar_vazio{
-        position: absolute;
-        top: 360px;
-        left: 13.5vw;
-        background-color: rgb(245, 245, 245);
-        /* Tira a borda */
-        border:none;
-        border-radius: 5px;
-        width: 180px;
-        height: 40px; 
-         /*Tira a bordinha quando fica clicado   */
-        outline: none;
-        /* Ajusta o tamanho de acordo com o conteudo */
-        transition: 0.5s;
-        color: rgb(201, 201, 201);
+    transition: 1s;
     }
-.btn_cadastrar:hover{
-    background-color: rgb(177, 177, 177);
+.btn_cadastrar_funcionando:hover{
+   box-shadow: 4px 5px 6px 2px rgb(95, 94, 94);
     transition: 0.5s;
 }
 
@@ -57,6 +60,12 @@
     cursor: pointer;
     transition: 0.5s;
 }
+#btn_cadastrar_facebook:hover{
+    box-shadow: 4px 5px 6px 2px rgb(95, 94, 94);
+    transition: 0.5s;
+
+}
+
 
 #email_cadastro{
     position: absolute;
@@ -147,7 +156,6 @@
     background-color:#ffffffc1;
     display: none;
     text-align: center;
-    
 }
 
 #olho{
@@ -217,7 +225,7 @@
 }
 
 .tela_cadastro{
-    height: 350px;
+    height: 410px;
     display: inline-block;
     width: 40VW;
     background-color:#ffffffc1;
@@ -227,9 +235,6 @@
     left: 32vw;
 }
 
-#text_cadastrar{
-    font-size: 130%;
-}
 
 #text_notificacao{
     color: green;
@@ -245,8 +250,8 @@
     left:50%;
     font-size: 90%; 
     transform: translate(-50%, -50%);
-
 }
+
 #text_email{
     position: absolute;
     top: 22VH;

@@ -13,14 +13,11 @@ Linkar a parte do logo linkado com a pagina da Home
 Deixar todos os botões do mesmo padrão que a pagina de contato
 
 Contato:
-Estilizar melhor a pagina de Contato
-Fazer a notificação de envio de mensagem do botao
 
 Cadastro:
 Tentar fazer API para se cadastrar com facebook
 
 Entrar:
-Estilizar a melhor a pagina de Entrar
 Conectar essa pagina de entrar com  o banco de dados
 Fazer o guardar senha funcionar
 Fazer pagina Esqueci minha senha

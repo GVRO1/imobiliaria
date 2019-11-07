@@ -1,22 +1,25 @@
 #btn_entrar{
+    font-size: 110%;
     position: absolute;
-    top: 34vh;
-    left: 18vw;
-    background-color: rgb(245, 245, 245);
+    top: 32.5vh;
+    left: 14.5vw;
+    background-color:transparent;
     /* Tira a borda */
-    border:none;
-    border-radius: 5px;
-    height: 30px; 
+    border-radius: 5px; 
+    height: 34px; 
      /*Tira a bordinha quando fica clicado   */
     outline: none;
     /* Ajusta o tamanho de acordo com o conteudo */
-    width: 50px;
-    cursor: pointer;
+    width: 150px;
     transition: 1s;
+    border:solid 2px #6b6b6b;
 }
 #btn_entrar:hover{
-    background-color: rgb(150, 150, 150);
-    transition: 1s;
+    border: none;
+    color: white;
+    background-color:#1f3a93 ;
+    box-shadow: 4px 5px 6px 2px rgb(95, 94, 94);
+    transition: 0.5s;
 }
 .esqueci{
     color:#0800ff;

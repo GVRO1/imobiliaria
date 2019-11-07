@@ -135,6 +135,11 @@ else{
     mensagem_telefone.style.color = 'red';
     telefone = 0;
 }
+if(telefone_contato.value == ""){
+    document.getElementById("telefone_contato").className = 'input_normal';
+    mensagem_telefone.innerHTML = "";
+
+}
 validar_botao()
 }
 function arrancar_mascara(){
@@ -182,16 +187,19 @@ function verificar_mensagem(){
 }
 
 function validar_botao(){
-if(nome == 1 && mensagem == 1 && telefone == 1 && email == 1 ){
+if(nome == 1 && mensagem == 1 && email == 1 ){
     document.getElementById("enviar_mensagem").className = `btn_enviar_contato_funcionando`;
+    document.getElementById("enviar_mensagem").setAttribute("onclick","botao_enviar()");
 }
 else{
     document.getElementById("enviar_mensagem").className = `btn_enviar_contato`;
+    document.getElementById("enviar_mensagem").setAttribute("onclick","");
 
 }
 }
 
 function botao_enviar(){
-    
+    document.getElementById('notificacao_cadastro').className = 'correto';
+    text_notificacao_email.innerHTML = `${email_cadastro.value}`
 }
 
