@@ -1,9 +1,7 @@
 Index/Home:
-Fazer um carrossel dos imovéis que não estão alugados
 Fazer um mecanismo de pesquisa de imovéis
 
 Geral:
-Terminar o rodapé
 Fazer uma pagina de imóveis
 Fazer uma pagina de Esqueci minha senha
 Deixar o site responsivo

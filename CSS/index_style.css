@@ -28,36 +28,43 @@ body{
     background-color: rgb(255, 255, 255);
     margin: 0px;
     padding: 0px;
-    font-family: Georgia, 'Times New Roman', Times, serif!important;
+    font-family: Georgia, Times, serif!important;
     font-size:  !important;
 }
 
 #btn_buscar{
-    background-color: rgb(245, 245, 245);
-    border:none;
-    border-radius: 5px;
-    display: inline-block;
-    height: 20px;
-    width: 80px;
- /* Deixa o pontador do mouse */
-    cursor: pointer;
+    background-color: #1f3a93;
+    color:#ffffff ;
+    border: white solid 1px;
+    transition: 1s;
+    font-size: 110%;
     position: absolute;
+    border-radius: 5px; 
+    height: 26px; 
+     /*Tira a bordinha quando fica clicado   */
+    outline: none;
+    /* Ajusta o tamanho de acordo com o conteudo */
+    width: 65px;
+    cursor: pointer;
+    transition: 1s;
+    position: absolute;
+    font-size: 90%;
     top: 9px;
-    left: 53VW;
+    left: 753px;
 }
 
 #btn_buscar:hover{
-    background-color: rgb(207, 207, 207);
-    transition: 1s;
+    box-shadow: 3px 3px 3px 1px rgb(0, 0, 0);
+    transition: 0.5s;
 }
 .campo_de_busca{
     background-color:#26166bb2;
     position: absolute;
-    height: 6VH;
+    height: 7VH;
     top: 40VH; 
     left: 50VH;
     text-align: center;
-    width: 60VW;
+    width: 61VW;
     display:inline-block;
     border-radius: 5px;
     letter-spacing: 1px;
@@ -83,7 +90,7 @@ body{
     /* Deixa o pontador do mouse */
     cursor: pointer;
     color: rgb(0, 119, 255);
-    font-size: 140%!important;
+    font-size: 120%!important;
     text-decoration: none;
 
 }
@@ -121,8 +128,8 @@ body{
 .endereco_face{
     width: 100px;
     position: absolute;
-    bottom:  auto;
-    right: 25VW;
+    top:10px;
+    right: 26vw;
     display: inline-block; 
     /* Deixa o pontador do mouse */
     cursor: pointer;
@@ -155,7 +162,7 @@ body{
     /* Deixa o pontador do mouse */
     cursor: pointer;
     color: rgb(0, 119, 255);
-    font-size: 140%;
+    font-size: 120%;
     text-decoration: none;
 
 
@@ -172,7 +179,8 @@ body{
     }
 
 .facebook{
-
+position:absolute;
+top: 10px;
     width: 20px;
     position: absolute;
     bottom: auto;
@@ -208,47 +216,97 @@ text-decoration: none;
 
 
 #id_btn_alugar{
-    background-color: rgb(245, 245, 245);
-    /* Tira a borda */
-    border:none;
-    border-radius: 5px;
-    height: 20px; 
+    
+    color: #1f3a93;
+    background-color:#ffffff ;
+    border: none;
+    transition: 1s;
+    font-size: 110%;
+    position: absolute;
+    border-radius: 5px; 
+    height: 26px; 
      /*Tira a bordinha quando fica clicado   */
     outline: none;
     /* Ajusta o tamanho de acordo com o conteudo */
-    width: auto;
+    width: 65px;
     cursor: pointer;
     transition: 1s;
     position: absolute;
-    top: 0.5vw;
-    left: 22VW;
-
+    top: 9px;
+    left: 21.5VW;
+    font-size: 90%;
 }
+.btn_alugar_selecionado{
+color: rgb(255, 255, 255)!important;
+background-color:#1f3a93 !important;
+border: none;
+transition: 1s;
+font-size: 110%;
+position: absolute;
+border-radius: 5px; 
+height: 26px; 
+ /*Tira a bordinha quando fica clicado   */
+outline: none;
+/* Ajusta o tamanho de acordo com o conteudo */
+width: 65px;
+cursor: pointer;
+transition: 1s;
+position: absolute;
+top: 9px;
+left: 16VW;
+font-size: 90%;
+}
+
 #id_btn_comprar{
-    background-color: rgb(245, 245, 245);
-    /* Tira a borda */
-    border:none;
-    border-radius: 5px;
-    height: 20px; 
+    background-color: rgb(255, 255, 255);
+    color:#1f3a93 ;
+    border: none;
+    transition: 1s;
+    font-size: 110%;
+    position: absolute;
+    border-radius: 5px; 
+    height: 26px; 
      /*Tira a bordinha quando fica clicado   */
     outline: none;
     /* Ajusta o tamanho de acordo com o conteudo */
-    width: auto;
+    width: 65px;
     cursor: pointer;
-    transition: 2s;
+    transition: 1s;
     position: absolute;
-    top: 0.5vw;
+    top: 9px;
     left: 16VW;
+    font-size: 90%;
+}
+
+.btn_comprar_selecionado{
+    color: rgb(255, 255, 255)!important;
+    background-color:#1f3a93 !important;
+    border: none;
+    transition: 1s;
+    font-size: 110%;
+    position: absolute;
+    border-radius: 5px; 
+    height: 26px; 
+     /*Tira a bordinha quando fica clicado   */
+    outline: none;
+    /* Ajusta o tamanho de acordo com o conteudo */
+    width: 65px;
+    cursor: pointer;
+    transition: 1s;
+    position: absolute;
+    top: 9px;
+    left: 16VW;
+    font-size: 90%;
 }
 
 #id_btn_comprar:hover{
-    background-color: rgb(207, 207, 207);
-    transition: 1s;
+    box-shadow: 3px 3px 3px 1px rgb(0, 0, 0);
+    transition: 0.5s;
 }
  
 #id_btn_alugar:hover{
-    background-color: rgb(207, 207, 207);
-    transition: 1s;
+    box-shadow: 3px 3px 3px 1px rgb(0, 0, 0);
+    transition: 0.5s;
 }
 
 #Imoveis{
@@ -326,7 +384,7 @@ text-decoration: none;
     transition: 0.2s ease-in-out;
     display: table;
     left: 120px;
-    font-size: 120%;
+    font-size: 100%;
 
 
 }
@@ -359,11 +417,19 @@ transform: scale(1.1);
 transition: 0.2s ease-in-out;
 }
 
+.rodape1{
+    background-color:#1f3a93;
+    width: 100%;
+    bottom: -40vh;
+    height: 35px;
+    padding-top: 5px;
+    position: absolute;
+}
 .rodape{
     background-color:#1f3a93;
     width: 100%;
     bottom: 0vh;
-    height: 25px;
+    height: 35px;
     padding-top: 5px;
     position:fixed;
 }
@@ -383,60 +449,67 @@ transition: 0.2s ease-in-out;
 .whatsapp{
     width: 18px;
     position: absolute;
-    bottom: auto;
+    top: 10px;
     right: 11vw;
     border-radius: 5px;
-}   
+}       
 
-/* bootstrap */
-body{
-    background:#000;
+/* Bootstrap */
+.team{
+    background-color: rgba(17, 5, 128, 0);
+}
+.name{
+    text-align: center;
+    position: absolute;
+    left: -15px;
+    color: rgb(0, 0, 0);
+    z-index: 2;
+}
+p{
+    color: rgb(0, 0, 0);
+    font-size: 13px;
+}
+
+#imovel1{
+    width:214px;
+    position: absolute;
+    top: 1px;
+    left: 10px;
+}
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    position: relative;
+    top: 270px;
+    width: 259px;
+    height: 300px;
+    padding: 0px;
+    margin: 0px;
   }
   
-  section.awSlider .carousel{
-    display:table;
-    z-index:2;
-    -moz-box-shadow: 0 0 4px #444;
-      -webkit-box-shadow: 0 0 4px #444;
-      box-shadow: 0 0 15px rgba(1,1,1,.5);
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.801);
   }
   
-  section.awSlider{
-    margin:30px auto;
-    padding:30px;
-    position:relative;
-    display:table;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+  /* Add some padding inside the card container */
+  .texto1 {
+    position: relative;
+    top: 0px;
+    left: 1px;
+    height: 364px;
+    width: 257px;
+    display: block;  
   }
-  
-  section.awSlider:hover > img{
-    -ms-transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-    opacity:1;
-  }
-  
-  section.awSlider img{
-     pointer-events: none;
-  }
-  
-  section.awSlider > img{
-    position:absolute;
-    top:30px;
-    z-index:1;
-    transition:all .3s;
-    filter: blur(1.8vw);
-    -webkit-filter: blur(2vw);
-    -moz-filter: blur(2vw); 
-    -o-filter: blur(2vw); 
-    -ms-filter: blur(2vw);
-    -ms-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-    opacity:.5;
-  }
+
+#descricao{
+    position: relative;
+    top: 215px;
+    left: 0px;
+    height: 264px;
+    width: 257px;
+}
+#link{
+    float: right;   
+}

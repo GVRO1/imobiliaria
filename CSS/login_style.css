@@ -13,6 +13,7 @@
     width: 150px;
     transition: 1s;
     border:solid 2px #6b6b6b;
+    cursor:pointer;
 }
 #btn_entrar:hover{
     border: none;

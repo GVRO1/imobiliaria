@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../CSS/index_style.css">
+
+<!-- bootstrap -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <title>Imóbiliaria Rodrigues de Oliveira</title>
 </head>
 <body>
@@ -58,54 +62,134 @@
                     <option value="">acima de R$2000</option>
             </select>
         </div>
-        <span id="btn_buscar" onclick="buscar()"> Buscar</span>
+        <button id="btn_buscar" onclick="buscar()"> Buscar</button>
 
     </div>
     
     <div class="foto_bonita"></div>
 
     <div class="destaque">Destaques</div>
-    <div> 
-        <div class="anuncio"> 
-            <div class="anuncio_titulo">Apartamento - Centro </div>
-            <img class="anuncio_foto" src="../fotos/imovel1.jpeg" alt="">
-            <div class="">Tamanho: 50m2</div>            
-            <div class="">Cidade: Itapecerica</div>            
-            <div class="">Tipo: Residencial</div>            
-            <div><a href="">Ver mais</a></div>   
-        </div>
+   
 
-        <div class="anuncio"> 
-            <div class="anuncio_titulo">Comercial - Centro </div>
-            <img class="anuncio_foto" src="../fotos/imovel2.jpeg" alt="">
-            <div class="">Tamanho: 50m2</div>            
-            <div class="">Cidade: Itapecerica</div>            
-            <div class="">Tipo: Residencial</div>       
-            <div><a href="">Ver mais</a></div>   
-        </div>
-        
-        <div class="anuncio"> 
-            <div class="anuncio_titulo">Residencia 1 - Zona Sul </div>
-            <img class="anuncio_foto" src="../fotos/imovel3.jpeg" alt="">
-            <div class="">Tamanho: 50m2</div>            
-            <div class="">Cidade: Itapecerica</div>            
-            <div class="">Tipo: Residencial</div>       
-            <div><a href="">Ver mais</a></div>   
-        </div>
-        
-        <div class="anuncio"> 
-            <div class="anuncio_titulo">Comercial - Centro </div>
-            <img class="anuncio_foto" src="../fotos/imovel4.jpeg" alt="">
-            <div class="">Tamanho: 50m2</div>            
-            <div class="">Cidade: Itapecerica</div>            
-            <div class="">Tipo: Residencial</div>
-            <div><a href="">Ver mais</a></div>   
-        </div>
 
-    </div>
+      <section class="team">
+        <div class="container">
+            <div class="row">
+    
+                <div class="col-lg-12">
+    
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                          
+                            <div class="carousel-item active">
+    
+                                <div class="row">
+
+                                   
+                                        <div class="col-lg-3">
+                                                <img src="../fotos/imovel1.jpeg" id="imovel1">
+                                                    <p id="descricao">
+                                                    <a href="#"><b>Apartamento em Itapecerica</b></a><br>    
+                                                    Tipo : Residencial <br>
+                                                    Área : 50m2 <br>
+                                                </p>
+                                                </div>
+                                              <div class="col-lg-3">
+                                                <img src="../fotos/imovel2.jpeg" id="imovel1">
+                                                    <p id="descricao">
+                                                    <a href="#"><b>Comercio - Centro de Itapecerica</b></a><br>    
+                                                    Tipo : Comercial <br>
+                                                    Área : 50m2 <br>
+                                                </p>
+                                                </div>
+
+                                                <div class="col-lg-3">
+                                                        <img src="../fotos/imovel3.jpeg" id="imovel1">
+                                                            <p id="descricao">
+                                                            <a href="#"><b>Casa - Zona Sul de São Paulo</b></a><br>    
+                                                            Tipo : Residencial <br>
+                                                            Área : 50m2 <br>
+                                                        </p>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                                <img src="../fotos/imovel4.jpeg" id="imovel1">
+                                                                    <p id="descricao">
+                                                                    <a href="#"><b>Comercio - Centro de Itapecerica</b></a><br>    
+                                                                    Tipo : Comercial <br>
+                                                                    Área : 50m2 <br>
+                                                                </p>
+                                                                </div>
+                                </div>
+                                </div>
+                
+                            <div class="carousel-item">
+    
+                                <div class="row">
+    
+                                        <div class="col-lg-3">
+                                                <img src="../fotos/imovel5.jpeg" id="imovel1">
+                                                    <p id="descricao">
+                                                    <a href="#"><b>Galpão - Zonal Sul de São Paulo</b></a><br>    
+                                                    Tipo : Comercial <br>
+                                                    Área : 50m2 <br>
+                                                </p>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                        <img src="../fotos/imovel6.jpeg" id="imovel1">
+                                                            <p id="descricao">
+                                                            <a href="#"><b>Comercio - Centro de Itapecerica</b></a><br>    
+                                                            Tipo : Comercial <br>
+                                                            Área : 50m2 <br>
+                                                        </p>
+                                                        </div>
+    
+                                                        <div class="col-lg-3">
+                                                                <img src="../fotos/imovel7.jpeg" id="imovel1">
+                                                                    <p id="descricao">
+                                                                    <a href="#"><b>Comercio - Zona Sul de São Paulo</b></a><br>    
+                                                                    Tipo : Comercial <br>
+                                                                    Área : 50m2 <br>
+                                                                </p>
+                                                                </div>
+    
+                                                                <div class="col-lg-3">
+                                                                        <img src="../fotos/imovel8.jpeg" id="imovel1">
+                                                                            <p id="descricao">
+                                                                            <a href="#"><b>Galpão - Centro de Itapecerica</b></a><br>    
+                                                                            Tipo : Comercial <br>
+                                                                            Área : 50m2 <br>
+                                                                        </p>
+                                                                        </div>
+    
+                          </div>
+    
+                        </div>
+    
+    
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+    
+                </div>
+    
+            </div>
+        </div>
+    </section>
 
     <!-- Rodapé -->
-    <div class="rodape">
+    <div class="rodape1">
         <!-- Facebook e Whatsapp -->
         <img class="facebook"src="../fotos/facebook.png" alt="">
         <img class="whatsapp"src="../fotos/whatsapp.png" alt="">
@@ -113,83 +197,10 @@
         <!-- "Target blank" Abre em uma nova aba-->
         <div class="endereco_face" > <a href="https://www.facebook.com/rodriguesoliveiraassessoria/" target="_blank">/rodriguesoliveiraassessoria</a></div>
     </div>
-    </body>
 
-    <section class="awSlider">
-      <div  class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target=".carousel" data-slide-to="0" class="active"></li>
-          <li data-target=".carousel" data-slide-to="1"></li>
-          <li data-target=".carousel" data-slide-to="2"></li>
-          <li data-target=".carousel" data-slide-to="3"></li>
-        </ol>
-    
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-          <div class="item active">
-            <img src="http://www.adobewordpress.com/wp-content/uploads/2014/02/wallpaper-thumb-941.jpg">
-            <div class="carousel-caption">Görsel #1</div>
-          </div>
-          <div class="item">
-            <img src="http://www.adobewordpress.com/wp-content/uploads/2014/02/wallpaper-thumb-101.jpg">
-            <div class="carousel-caption">Görsel #2</div>
-          </div>
-          <div class="item">
-            <img src="http://www.adobewordpress.com/wp-content/uploads/2014/02/wallpaper-thumb-1051.jpg">
-            <div class="carousel-caption">Görsel #3</div>
-          </div>
-          <div class="item">
-            <img src="http://www.adobewordpress.com/wp-content/uploads/2013/07/wallpaper-thumb-74.jpg">
-            <div class="carousel-caption">Görsel #4</div>
-          </div>
-        </div>
-    
-        <!-- Controls -->
-        <a class="left carousel-control" href=".carousel" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Geri</span>
-        </a>
-        <a class="right carousel-control" href=".carousel" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">İleri</span>
-        </a>
-      </div>
-    </section>
-</html>
-<script>
-
-function btn_comprar(){
-    id_btn_comprar.style = "background-color:rgb(126, 233, 247)";
-    id_btn_alugar.style = "background-color: ";
-    
-}
-function btn_alugar(){
-    id_btn_alugar.style = "background-color:rgb(126, 233, 247)";
-    id_btn_comprar.style = "background-color: ";
-
-}
-function buscar(){
-    alert("Botão buscar funcionando");
-}
-function mostrar_sub(){
-}
-$('section.awSlider .carousel').carousel({
-	pause: "hover",
-  interval: 2000
-});
-
-var startImage = $('section.awSlider .item.active > img').attr('src');
-$('section.awSlider').append('<img src="' + startImage + '">');
-
-$('section.awSlider .carousel').on('slid.bs.carousel', function () {
- var bscn = $(this).find('.item.active > img').attr('src');
-	$('section.awSlider > img').attr('src',bscn);
-});
-
-
-/* 
-Philips ambilight tv
-Üzerine gleince duruyor slide
-*/
-</script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="../js/index.js"></script>
+  </body>
+    </html>
