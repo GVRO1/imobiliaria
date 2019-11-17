@@ -1,0 +1,118 @@
+#btn_enviar{
+    font-size: 110%;
+    position: absolute;
+    top: 21vh;
+    left: 9.5vw;
+    background-color: transparent;
+    border-radius: 5px;
+    height: 30px;
+    outline: none;
+    width: 120px;
+    transition: 1s;
+    border: solid 2px #6b6b6b;
+}
+#btn_enviar:hover{
+    top: 21vh;
+    left: 9.5vw;
+    color: rgb(255, 255, 255);
+    background-color:#1f3a93 ;
+    transition: 1s;
+    font-size: 110%;
+    position: absolute;
+    border-radius: 5px; 
+    height: 30px; 
+     /*Tira a bordinha quando fica clicado   */
+    border: none;
+
+    outline: none;
+    /* Ajusta o tamanho de acordo com o conteudo */
+    width: 120px;
+    cursor: pointer;
+    transition: 1s;
+box-shadow: 4px 5px 6px 2px rgb(95, 94, 94);
+transition: 0.5s;
+}
+
+#digite{
+    position: absolute;
+    top: 2vh;
+    left: 9vw;
+    font-size: 115%;
+
+}
+
+#erro{
+    color: red;
+    font-size: 80%;
+    position: absolute;
+    top: 13.5vh;
+    left: 7.5vw;
+    display: none;
+}
+
+#esqueci{
+    position: absolute;
+    top: 1vh;
+    left: 6.5vw;
+    font-size: 170%
+}
+
+#esqueci_email{
+    position: absolute;
+    top: 17vh;
+    left: 9.5vw;
+    font-size: 85%;
+}
+
+#email{
+    position: absolute;
+    top: 8VH;
+    left: 6VW;
+    width: 210px;
+    text-align: center;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: gray;
+    height: 20px;
+}
+
+.foto_fundo{
+    /* Não deixa repetir */
+    background-repeat: no-repeat;
+    background-image: url("https://www.meliuz.com.br/blog/wp-content/uploads/2016/03/foto4-1.jpg");
+    width: 100VW;
+    height: 87.5vh;
+    /* Centraliza a imagem no meio da div */
+    background-position: center;
+    /* A imagem cobre toda a area */
+    background-size: cover;
+} 
+#notificacao{
+    position: absolute;
+    top: 21VH;
+    left: 35.5VW;
+    height: 50px;
+    width: 400px;
+    display: inline-block;
+    background-color:#ffffffc1;
+    display: none;
+    text-align: center;
+    border: 2px solid green;
+}
+.tela_mensagem{
+    height: 13vw;
+    display: inline-block;
+    width: 28VW;
+    background-color: #ffffffc1;
+    border-radius: 20px;
+    position: absolute;
+    top: 39vh;
+    left: 36vw;
+}
+#text_notificacao{
+    color: green;
+    position: absolute;
+    top: 1.5VH;
+    left:0VW;
+    font-size: 90%; 
+}

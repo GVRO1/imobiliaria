@@ -3,14 +3,11 @@ Fazer um mecanismo de pesquisa de imovéis
 
 Geral:
 Fazer uma pagina de imóveis
-Fazer uma pagina de Esqueci minha senha
+Fazer uma pagina de Esqueci meu E-mail
 Deixar o site responsivo
 Fazer a integração do Banco de dados
 Fazer o logo com maior resolução
 Linkar a parte do logo linkado com a pagina da Home
-Deixar todos os botões do mesmo padrão que a pagina de contato
-
-Contato:
 
 Cadastro:
 Tentar fazer API para se cadastrar com facebook
@@ -18,4 +15,3 @@ Tentar fazer API para se cadastrar com facebook
 Entrar:
 Conectar essa pagina de entrar com  o banco de dados
 Fazer o guardar senha funcionar
-Fazer pagina Esqueci minha senha
