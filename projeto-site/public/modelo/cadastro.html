@@ -35,17 +35,17 @@
     function cadastrar() {
         aguardar();
         var formulario = new URLSearchParams(new FormData(form_cadastro));
+        //Vai até o caminho usuario/cadastrar
         fetch("/usuarios/cadastrar", {
             method: "POST",
             body: formulario
         }).then(function (response) {
             
             if (response.ok) {
-
+                //Se der certo vai para pagina login.html
                 window.location.href='login.html';
 
             } else {
-
                 console.log('Erro de cadastro!');
                 response.text().then(function (resposta) {
                     div_erro.innerHTML = resposta;
