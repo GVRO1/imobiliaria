@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,23 +9,24 @@
     <link rel="stylesheet" href="../CSS/login_style.css">
     <title>Imóbiliaria Rodrigues de Oliveira</title>
 </head>
+
 <body>
     <!-- Cabeçario -->
     <header class="cabecario">
         <div class="nome_titulo">
-                Imobiliaria Rodrigues Oliveira
+            Imobiliaria Rodrigues Oliveira
         </div>
-        <img class="logo" src="../fotos/logo.png" alt="">  
+        <img class="logo" src="../fotos/logo.png" alt="">
         <br><br>
         <br>
-        
+
         <!-- Menu e sub Menu -->
         <ul id="sub_menu">
-            <li id="Contato" class="sub_menu" > <a href="contato.html">Contato</a></li>
-            <li id="Imoveis" class="sub_menu">  <a href="#">Imóveis</a></li>
-            <li id="Home"class="sub_menu">      <a href="index.html">Home</a></li>
+            <li id="Contato" class="sub_menu"> <a href="contato.html">Contato</a></li>
+            <li id="Imoveis" class="sub_menu"> <a href="#">Imóveis</a></li>
+            <li id="Home" class="sub_menu"> <a href="index.html">Home</a></li>
         </ul>
-        
+
         <div class="cadastrar"> <a href="cadastro.html">Cadastrar</a> </div>
         <div class="entrar"> <a href="login.html">Entrar</a> </div>
 
@@ -35,67 +37,70 @@
 
     <div class="tela_login">
         <form id="form_login" method="post" onsubmit="return entrar()">
-        <span id="text_usuario">Usuário ou E-mail </span>
-        <br>
-        <input type="text" id="usuario"placeholder="Usuário" name="nome">
-        <br>
-        <span id="text_senha">Senha</span>
-        <br>
-        <input type="password" id="senha" placeholder="Senha" name="senha"> 
-        <br>
-        <input type="checkbox" id="guardar_senha" value="1">  <span id="text_guardar">Guardar minha senha</span>
+            <span id="text_usuario">Usuário ou E-mail </span>
+            <br>
+            <input type="text" id="usuario" placeholder="Usuário" name="nome">
+            <br>
+            <span id="text_senha">Senha</span>
+            <br>
+            <input type="password" id="senha" placeholder="Senha" name="senha">
+            <br>
+            <input type="checkbox" id="guardar_senha" value="1"> <span id="text_guardar">Guardar minha senha</span>
 
-        <br>
-        <a class="esqueci" href="esqueci_senha.html">Esqueci minha senha</a> <a class="nao_cadastrado" href="cadastro.html">Não sou cadastrado</a>
-        <button type="submit" id="btn_entrar">Entrar</button>
-    </form>
+            <br>
+            <a class="esqueci" href="esqueci_senha.html">Esqueci minha senha</a> <a class="nao_cadastrado"
+                href="cadastro.html">Não sou cadastrado</a>
+            <button type="submit" id="btn_entrar">Entrar</button>
+        </form>
 
     </div>
     <div class="foto_fundo"></div>
-      
-        
-        <!-- Rodapé -->
+
+
+    <!-- Rodapé -->
     <div class="rodape">
         <!-- Facebook e Whatsapp -->
-        <img class="facebook"src="../fotos/facebook.png" alt="">
-        <img class="whatsapp"src="../fotos/whatsapp.png" alt="">
+        <img class="facebook" src="../fotos/facebook.png" alt="">
+        <img class="whatsapp" src="../fotos/whatsapp.png" alt="">
         <div class="telefone"> 11-999901363 </div>
         <!-- "Target blank" Abre em uma nova aba-->
-        <div class="endereco_face" > <a href="https://www.facebook.com/rodriguesoliveiraassessoria/" target="_blank">/rodriguesoliveiraassessoria</a></div>
+        <div class="endereco_face"> <a href="https://www.facebook.com/rodriguesoliveiraassessoria/"
+                target="_blank">/rodriguesoliveiraassessoria</a></div>
     </div>
-<script>
-    
- function entrar() {
-             var formulario = new URLSearchParams(new FormData(form_login));
-        fetch("/usuarios/autenticar", {
-            method: "POST",
-            body: formulario
-        }).then(resposta => {
-            
-            if (resposta.ok) {
+    <script>
 
-                resposta.json().then(json => {
+        function entrar() {
+            var formulario = new URLSearchParams(new FormData(form_login));
+            fetch("/usuarios/autenticar", {
+                method: "POST",
+                body: formulario
+            }).then(resposta => {
 
-                    sessionStorage.login_usuario_meuapp = json.Email;
-                    sessionStorage.nome_usuario_meuapp = json.nome;
-                    
-                    window.location.href = 'index.html';
-                });
+                if (resposta.ok) {
 
-            } else {
+                    resposta.json().then(json => {
 
-                console.log('Erro de login!');
-                alert('Erro de login!');
+                        sessionStorage.login_usuario_meuapp = json.Email;
+                        sessionStorage.nome_usuario_meuapp = json.nome;
 
-                response.text().then(texto => {
-                    console.error(texto);
-                });
-            }
+                        window.location.href = 'index.html';
+                    });
 
-            
-        });
-        return false;
-    }
-</script>
-    </body>
+                } else {
+
+                    console.log('Erro de login!');
+                    alert('Erro de login!');
+
+                    response.text().then(texto => {
+                        console.error(texto);
+                    });
+                }
+
+
+            });
+            return false;
+        }
+    </script>
+</body>
+
 </html>
