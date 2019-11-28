@@ -34,20 +34,21 @@
 
 
     <div class="tela_login">
+        <form id="form_login" method="post" onsubmit="return entrar()">
         <span id="text_usuario">Usuário ou E-mail </span>
         <br>
-        <input type="text" name="" id="usuario"placeholder="Usuário">
+        <input type="text" id="usuario"placeholder="Usuário" name="nome">
         <br>
         <span id="text_senha">Senha</span>
         <br>
-        <input type="password" name="" id="senha" placeholder="Senha"> 
+        <input type="password" id="senha" placeholder="Senha" name="senha"> 
         <br>
         <input type="checkbox" id="guardar_senha" value="1">  <span id="text_guardar">Guardar minha senha</span>
 
         <br>
-        <a class="esqueci"href="esqueci_senha.html">Esqueci minha senha</a> <a class="nao_cadastrado" href="cadastro.html">Não sou cadastrado</a>
-        <button onclick="" id="btn_entrar">Entrar</button>
-    
+        <a class="esqueci" href="esqueci_senha.html">Esqueci minha senha</a> <a class="nao_cadastrado" href="cadastro.html">Não sou cadastrado</a>
+        <button type="submit" id="btn_entrar">Entrar</button>
+    </form>
 
     </div>
     <div class="foto_fundo"></div>
@@ -62,6 +63,39 @@
         <!-- "Target blank" Abre em uma nova aba-->
         <div class="endereco_face" > <a href="https://www.facebook.com/rodriguesoliveiraassessoria/" target="_blank">/rodriguesoliveiraassessoria</a></div>
     </div>
+<script>
+    
+ function entrar() {
+             var formulario = new URLSearchParams(new FormData(form_login));
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            body: formulario
+        }).then(resposta => {
+            
+            if (resposta.ok) {
 
+                resposta.json().then(json => {
+
+                    sessionStorage.login_usuario_meuapp = json.Email;
+                    sessionStorage.nome_usuario_meuapp = json.nome;
+                    
+                    window.location.href = 'index.html';
+                });
+
+            } else {
+
+                console.log('Erro de login!');
+                alert('Erro de login!');
+
+                response.text().then(texto => {
+                    console.error(texto);
+                });
+            }
+
+            
+        });
+        return false;
+    }
+</script>
     </body>
 </html>

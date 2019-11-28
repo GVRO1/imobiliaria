@@ -45,13 +45,14 @@
         <span id="ou">----------- OU ----------- </span>
         <span id="text_nome"> Nome Completo </span>
         <br>
-        <input type="text" onkeyup="verifica_nome()" class="nome" id="nome_completo" placeholder="Fulano de Siclano"> 
+        <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
+        <input type="text" onkeyup="verifica_nome()" class="nome" id="nome_completo" placeholder="Fulano de Siclano" name="nome"> 
         <div id="mensagem_nome"></div>
         <br>
         <span id="text_email">E-mail</span>
         <div id="mensagem_email"></div>
         <br>
-        <input type="text" name="" onkeyup="verificar_email()" id="email_cadastro" placeholder="exemplo@email.com.br">
+        <input type="text" name="email" onkeyup="verificar_email()" id="email_cadastro" placeholder="exemplo@email.com.br">
         <br>
         <span id="text_senha">Senha(mínimo 6 caracteres)</span>
 
@@ -59,7 +60,7 @@
         <div id="linha_olho"></div>
         <div id="mensagem_senha"></div>
         <br>
-        <input type="password" onkeyup="verificar_senha()" id="senha_cadastro" placeholder="Senha"> 
+        <input type="password" onkeyup="verificar_senha()" id="senha_cadastro" placeholder="Senha" name="senha"> 
         <br>
         <span id="text_senha_confirmar">Confirme a Senha</span>
         <br>
@@ -68,10 +69,11 @@
         <br>
         <span id="span_botao"> 
             <button id="id_btn_cadastrar_vazio" class="btn_cadastrar" onclick="">
-                <span id="text_cadastrar" >Cadastrar</span>
-            </button>
-        </span>
-    </div>
+                    <span id="text_cadastrar" >Cadastrar</span>
+                </button>
+            </span>
+        </div>
+    </form>
     <div class="foto_fundo"></div>
     
         
@@ -85,6 +87,29 @@
         <div class="endereco_face" > <a href="https://www.facebook.com/rodriguesoliveiraassessoria/" target="_blank">/rodriguesoliveiraassessoria</a></div>
     </div>
     <script src="../js/cadastro.js"></script>
+    <script>
+    function cadastrar() {
+        var formulario = new URLSearchParams(new FormData(form_cadastro));
+        //Vai até o caminho usuario/cadastrar
+        fetch("/usuarios/cadastrar", {
+            method: "POST",
+            body: formulario
+        }).then(function (response) {
+            
+            if (response.ok) {
+                //Se der certo vai para pagina login.html
+                window.location.href='login.html';
+
+            } else {
+                console.log('Erro de cadastro!');
+                response.text().then(function (resposta) {
+                });
+            }
+        });
+
+        return false;
+    }
+    </script>
     </body>
     </html>
 
