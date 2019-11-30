@@ -53,7 +53,7 @@ module.exports = (sequelize, DataTypes) => {
 	}, 
 	{
 		//nome da tabela
-		tableName: 'Usuario', 
+		tableName: 'UsuarioImobiliaria', 
 		freezeTableName: true, 
 		underscored: true,
 		timestamps: false,
