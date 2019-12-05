@@ -1,0 +1,609 @@
+.anuncio_titulo{
+    text-align: center;
+    
+}
+.anuncio_foto{
+    width: 300px;
+}
+.anuncio{
+     /* Deixa na mesma linha */
+     display: inline-block ;
+     color: rgb(41, 41, 41);
+     width: 300px;
+     border-style: solid;
+     border-color: rgb(0, 0, 0);
+     border-width: 2px;
+     border-radius: 2px;
+     margin: 10px;
+     /* padding:2px; */
+    transition: 2s;
+}
+
+.anuncio:hover{
+    background-color:#4f3f9559;
+    transition: 1s
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
+    padding: 0px;
+    font-family: Georgia, Times, serif!important;
+    font-size:  !important;
+}
+
+#btn_buscar{
+    background-color: #1f3a93;
+    color:#ffffff ;
+    border: white solid 1px;
+    transition: 1s;
+    font-size: 110%;
+    position: absolute;
+    border-radius: 5px; 
+    height: 26px; 
+     /*Tira a bordinha quando fica clicado   */
+    outline: none;
+    /* Ajusta o tamanho de acordo com o conteudo */
+    width: 65px;
+    cursor: pointer;
+    transition: 1s;
+    position: absolute;
+    font-size: 90%;
+    top: 9px;
+    left: 753px;
+}
+
+#btn_buscar:hover{
+    box-shadow: 3px 3px 3px 1px rgb(0, 0, 0);
+    transition: 0.5s;
+}
+.campo_de_busca{
+    background-color:#26166bb2;
+    position: absolute;
+    height: 7VH;
+    top: 40VH; 
+    left: 50VH;
+    text-align: center;
+    width: 61VW;
+    display:inline-block;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+.cabecario{
+    background-color:rgb(255, 255, 255);
+    text-align: center;
+    /* Esse tem que ser em px para não ficar torto o site quando diminuir a tela */
+    height:68px;
+    width: 99%;
+    color: rgb(0, 119, 255);
+    padding:5px;
+}
+
+
+.cadastrar a {
+    /* Esse tem que ser em px para não ficar torto o site quando diminuir a tela */
+    display: inline-block; 
+    position: absolute;
+    /* Esse tem que ser em px para não ficar torto o site quando diminuir a tela */
+    top: 30px;
+    right: 100px;
+    /* Deixa o pontador do mouse */
+    cursor: pointer;
+    color: rgb(0, 119, 255);
+    font-size: 120%!important;
+    text-decoration: none;
+
+}
+
+.cadastrar a:hover{
+    color:rgb(2, 13, 173);
+    /* Faz transformações no elementos*/
+    transform: scale(1.1);
+    /* Faz transição mais suave */
+    transition: 0.2s ease-in-out;
+    text-decoration: none;
+
+    }
+
+#Contato a{
+    text-decoration: none;
+
+}
+#Contato{
+/* Esse tem que ser em px para não ficar torto o site quando diminuir a tela */
+    left: 165px;
+    top:10px;
+    position: absolute;
+     /* Deixa o pontador do mouse */
+     cursor: pointer;
+     
+}
+
+.destaque{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 300%;
+}
+
+.endereco_face{
+    width: 100px;
+    position: absolute;
+    top:10px;
+    right: 26vw;
+    display: inline-block; 
+    /* Deixa o pontador do mouse */
+    cursor: pointer;
+    color:rgb(255, 255, 255);
+}
+.endereco_face a{
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    transition: 1s;
+    font-size: 110%;
+}
+/* Quando o mouse estiver em cima */
+.endereco_face a:hover{
+    color:rgb(182, 250, 250);
+    transition: 1s;
+}   
+/* Quando o link for visitado */
+.endereco_face:visited{
+    color:rgb(255, 255, 255), 246);
+}
+.endereco_face:active{
+    color:rgb(255, 255, 255);
+}
+.entrar a{
+    display: inline-block; 
+    position: absolute;
+    /* Esse tem que ser em px para não ficar torto o site quando diminuir a tela */
+    top: 30px;
+    right: 30px;
+    /* Deixa o pontador do mouse */
+    cursor: pointer;
+    color: rgb(0, 119, 255);
+    font-size: 120%;
+    text-decoration: none;
+
+
+}
+
+.entrar a:hover{
+    color:rgb(2, 13, 173);
+    /* Faz transformações no elementos*/
+    transform: scale(1.1);
+    /* Faz transição mais suave */
+    transition: 0.2s ease-in-out;
+    text-decoration: none;
+
+    }
+
+.facebook{
+position:absolute;
+top: 10px;
+    width: 20px;
+    position: absolute;
+    bottom: auto;
+    right: 34vw;
+    border-radius: 5px;
+}
+
+
+
+#Home{
+    top:10px;
+    left: 88px;
+    position: absolute;
+    /* Deixa o pontador do mouse */
+    cursor: pointer;
+}
+#Home a{
+text-decoration: none;
+}
+
+
+#id_btn_alugar{
+    
+    color: #1f3a93;
+    background-color:#ffffff ;
+    border: none;
+    transition: 1s;
+    font-size: 110%;
+    position: absolute;
+    border-radius: 5px; 
+    height: 26px; 
+     /*Tira a bordinha quando fica clicado   */
+    outline: none;
+    /* Ajusta o tamanho de acordo com o conteudo */
+    width: 65px;
+    cursor: pointer;
+    transition: 1s;
+    position: absolute;
+    top: 9px;
+    left: 21.5VW;
+    font-size: 90%;
+}
+.btn_alugar_selecionado{
+color: rgb(255, 255, 255)!important;
+background-color:#1f3a93 !important;
+border: none;
+transition: 1s;
+font-size: 110%;
+position: absolute;
+border-radius: 5px; 
+height: 26px; 
+ /*Tira a bordinha quando fica clicado   */
+outline: none;
+/* Ajusta o tamanho de acordo com o conteudo */
+width: 65px;
+cursor: pointer;
+transition: 1s;
+position: absolute;
+top: 9px;
+left: 16VW;
+font-size: 90%;
+}
+
+#id_btn_comprar{
+    background-color: rgb(255, 255, 255);
+    color:#1f3a93 ;
+    border: none;
+    transition: 1s;
+    font-size: 110%;
+    position: absolute;
+    border-radius: 5px; 
+    height: 26px; 
+     /*Tira a bordinha quando fica clicado   */
+    outline: none;
+    /* Ajusta o tamanho de acordo com o conteudo */
+    width: 65px;
+    cursor: pointer;
+    transition: 1s;
+    position: absolute;
+    top: 9px;
+    left: 16VW;
+    font-size: 90%;
+}
+
+.btn_comprar_selecionado{
+    color: rgb(255, 255, 255)!important;
+    background-color:#1f3a93 !important;
+    border: none;
+    transition: 1s;
+    font-size: 110%;
+    position: absolute;
+    border-radius: 5px; 
+    height: 26px; 
+     /*Tira a bordinha quando fica clicado   */
+    outline: none;
+    /* Ajusta o tamanho de acordo com o conteudo */
+    width: 65px;
+    cursor: pointer;
+    transition: 1s;
+    position: absolute;
+    top: 9px;
+    left: 16VW;
+    font-size: 90%;
+}
+
+#id_btn_comprar:hover{
+    box-shadow: 3px 3px 3px 1px rgb(0, 0, 0);
+    transition: 0.5s;
+}
+ 
+#id_btn_alugar:hover{
+    box-shadow: 3px 3px 3px 1px rgb(0, 0, 0);
+    transition: 0.5s;
+}
+
+#Imoveis{
+    left: 248px;
+    top:10px;
+    position: absolute;
+    /* Deixa o pontador do mouse */
+    cursor: pointer;
+    
+}
+#Imoveis a{
+    text-decoration: none;
+}
+    
+
+.logo{
+    width: 200px;
+    float: left;
+    /* display: inline-block; */
+}
+
+.listas{
+    position: absolute;
+    top: 9px;
+    left: 27VW;
+}
+.menu{
+    /* Define o fundo */
+    background-color: white;
+    /* Define a letra */
+    color:rgb(0, 26, 255);
+    font-size: 120%;
+    /* Define o tamanho */
+    width: 250px;
+    padding: 5px;
+    display: table;
+    float: left;
+    text-align: left;
+    /* margin-left: 10%; */
+    /* Localização da pagina */
+    position: absolute;
+    top: 3%;
+    left: 200px;  
+    
+}
+.mensagem_encontre{
+    position: absolute;
+    top:1.5vh;
+    left: 1.5VW;
+    color: white;
+    display: inline-block;
+    font-size: 110%;
+}
+
+.nome_titulo{
+    color:rgb(255, 255, 255);
+    line-height: 30px;
+    font: bold;
+    display: inline-block;
+}
+
+.sub_menu  {
+   /* Fundo */
+    color:rgb(0, 17, 255);
+    /* Letra */
+    font-size: 100%;
+    /* Tamanho da caixa */
+    width: 60px!important;
+    text-align: center;
+    position: absolute;
+    float: left;
+    padding: 5px;
+    margin: 5px;
+    border-right-width: 1px;
+    transition: 0.2s ease-in-out;
+    display: table;
+    left: 120px;
+    font-size: 100%;
+
+
+}
+
+.sub_menu a{
+    /* Fundo */
+     color:rgb(0, 17, 255);
+     /* Letra */
+     font-size: 100%;
+     /* Tamanho da caixa */
+     width: 60px;
+     text-align: center;
+     position: absolute;
+     float: left;
+     border-right-style: solid;
+     padding: 5px;
+     margin: 5px;
+     border-right-width: 1px;
+     transition: 0.2s ease-in-out;
+     display: table;
+     left: 120px;
+    
+ }
+/* Quando o mouse passa em cima do elemento */
+.sub_menu a:hover{
+color:rgb(2, 13, 173);
+/* Faz transformações no elementos*/
+transform: scale(1.1);
+/* Faz transição mais suave */
+transition: 0.2s ease-in-out;
+}
+
+.rodape1{
+    background-color:#1f3a93;
+    width: 100%;
+    bottom: -40vh;
+    height: 35px;
+    padding-top: 5px;
+    position: absolute;
+}
+.rodape{
+    background-color:#1f3a93;
+    width: 100%;
+    bottom: 0vh;
+    height: 35px;
+    padding-top: 5px;
+    position:fixed;
+}
+
+.telefone{
+    width: auto;
+    position: absolute;
+    bottom: auto;
+    right: 2vw;
+    border-radius: 5px;
+    display: inline-block; 
+    color:rgb(255, 255, 255);
+    font-size: 3vh;
+
+}
+
+.whatsapp{
+    width: 18px;
+    position: absolute;
+    top: 10px;
+    right: 11vw;
+    border-radius: 5px;
+}       
+
+/* Bootstrap */
+.team{
+    background-color: rgba(17, 5, 128, 0);
+}
+.name{
+    text-align: center;
+    position: absolute;
+    left: -15px;
+    color: rgb(0, 0, 0);
+    z-index: 2;
+}
+p{
+    color: rgb(0, 0, 0);
+    font-size: 13px;
+}
+
+#imovel1{
+    width:214px;
+    position: absolute;
+    top: 1px;
+    left: 10px;
+}
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    position: relative;
+    top: 270px;
+    width: 259px;
+    height: 300px;
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.801);
+  }
+  
+  /* Add some padding inside the card container */
+  .texto1 {
+    position: relative;
+    top: 0px;
+    left: 1px;
+    height: 364px;
+    width: 257px;
+    display: block;  
+  }
+
+#descricao{
+    position: relative;
+    top: 215px;
+    left: 0px;
+    height: 264px;
+    width: 257px;
+}
+#link{
+    float: right;   
+}
+#com_login{
+    /* Esse tem que ser em px para não ficar torto o site quando diminuir a tela */
+    display: inline-block; 
+    position: absolute;
+    /* Esse tem que ser em px para não ficar torto o site quando diminuir a tela */
+    top: 30px;
+    right: 10px;
+    /* Deixa o pontador do mouse */
+    cursor: pointer;
+    color: rgb(0, 119, 255);
+    font-size: 120%!important;
+    display: none;
+    background-color: #ffffff;
+    width: 500px;
+    height: 30px;
+}
+#sair{
+display: inline-block; 
+position: absolute;
+/* Esse tem que ser em px para não ficar torto o site quando diminuir a tela */
+top: 3px;
+right: 19px;
+/* Deixa o pontador do mouse */
+cursor: pointer;
+color: rgb(0, 119, 255);
+font-size: 95%!important;
+text-decoration: none;
+}
+#usuario{
+position: absolute;
+top: 3px;
+right: 79px;
+font-size: 100%;
+text-decoration: none;
+color: rgb(0, 119, 255);
+
+}
+.foto_fundo_imoveis{
+    /* Não deixa repetir */
+    background-repeat: no-repeat;
+    background-image: url("https://www.meliuz.com.br/blog/wp-content/uploads/2016/03/foto4-1.jpg");
+    width: 100VW;
+    height: 87.5vh;
+    /* Centraliza a imagem no meio da div */
+    background-position: center;
+    /* A imagem cobre toda a area */
+    background-size: cover;
+    opacity: 0.6;
+} 
+#filtros{
+    height: 375px;
+    display: inline-block;
+    width: 166px;
+    background-color: #ffffffc1;
+    border-radius: 20px;
+    position: absolute;
+    top: 21vh;
+    left: 4vw;
+    font-family: Georgia, Times, serif!important;
+}
+.titulo{
+    margin-left: 30px;
+    position: relative;
+    left: 2vw;
+    top: 2vh;
+    font-size: 115%;
+}
+.subfiltro_localizacao{
+    margin-left: -9px;
+    position: relative;
+    left: 31px;
+    top: 49px;
+    width: 200px;
+    font-size: 75%;
+}
+.subtitulo_localizacao{
+    position: relative;
+    left: -73px;
+    top: 46px
+}
+.subfiltro_tipo{
+    margin-left: -9px;
+    position: relative;
+    left: 31px;
+    top: 66px;
+    width: 200px;
+    font-size: 75%;
+}
+.subtitulo_tipo{
+    position: relative;
+    left: 15px;
+    top: 61px;
+}
+.subfiltro_valores{
+    margin-left: -9px;
+    position: relative;
+    left: 30px;
+    top: 87px;
+    width: 200px;
+    font-size: 75%;
+}
+
+.subtitulo_valores{
+    position: relative;
+    left: 1vw;
+    top: 12vh
+}

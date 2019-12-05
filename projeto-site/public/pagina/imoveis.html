@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../CSS/imoveis.css">
+    <link rel="stylesheet" href="../CSS/contato_style.css">
+    <title>Imóbiliaria Rodrigues de Oliveira</title>
+</head>
+
+<body>
+    <!-- Cabeçario -->
+    <header class="cabecario">
+        <div class="nome_titulo">
+            Imobiliaria Rodrigues Oliveira
+        </div>
+        <img class="logo" src="../fotos/logo.png" alt="">
+        <br><br>
+        <br>
+
+        <!-- Menu e sub Menu -->
+        <ul id="sub_menu">
+            <li id="Contato" class="sub_menu"> <a href="contato.html">Contato</a></li>
+            <li id="Imoveis" class="sub_menu"> <a href="imoveis.html">Imóveis</a></li>
+            <li id="Home" class="sub_menu"> <a href="index.html">Home</a></li>
+        </ul>
+
+        <div class="cadastrar"> <a href="cadastro.html">Cadastrar</a> </div>
+        <div class="entrar"> <a href="login.html">Entrar</a> </div>
+
+        <span id="com_login">
+            <div>
+                <a href="#" id="usuario">Ronaldo</a>
+            </div>
+            <div>
+                <a id="sair" onclick="logoff()">Sair</a>
+            </div>
+        </span>
+
+    </header>
+
+
+
+    <div class="foto_fundo_imoveis"></div>
+    <div id="filtros">
+        <span class="titulo">Filtros</span>
+        <span class="subtitulo_localizacao">Localização </span> 
+        <div class="subfiltro_localizacao">
+            <input type="checkbox" name="" id=""> São Paulo <br>
+            <input type="checkbox" name="" id=""> Itapecerica <br>
+            <input type="checkbox" name="" id=""> Curitiba
+        </div>
+        <span class="subtitulo_tipo">Tipo </span> 
+        <div class="subfiltro_tipo">
+            <input type="checkbox" name="" id=""> Residencial <br>
+            <input type="checkbox" name="" id=""> Terrenos <br>
+            <input type="checkbox" name="" id=""> Comercial
+        </div>
+        <span class="subtitulo_valores">Valores </span> 
+        <div class="subfiltro_valores">
+            <input type="checkbox" name="" id=""> R$0 á R$500 <br>
+            <input type="checkbox" name="" id=""> R$501 á R$1000  <br>
+            <input type="checkbox" name="" id=""> R$1001 á R$1500 <br>
+            <input type="checkbox" name="" id=""> R$1501 á R$2000 <br>
+            <input type="checkbox" name="" id=""> acima de R$2000
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <div class="rodape">
+        <!-- Facebook e Whatsapp -->
+        <img class="facebook" src="../fotos/facebook.png" alt="">
+        <img class="whatsapp" src="../fotos/whatsapp.png" alt="">
+        <div class="telefone"> 11-999901363 </div>
+        <!-- "Target blank" Abre em uma nova aba-->
+        <div class="endereco_face"> <a href="https://www.facebook.com/rodriguesoliveiraassessoria/"
+                target="_blank">/rodriguesoliveiraassessoria</a></div>
+    </div>
+
+    <script src="../js/contato.js"></script>
+    <script src="../js/funcoes.js"></script>
+</body>
+
+</html>
