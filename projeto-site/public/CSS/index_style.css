@@ -513,3 +513,40 @@ p{
 #link{
     float: right;   
 }
+#com_login{
+    /* Esse tem que ser em px para não ficar torto o site quando diminuir a tela */
+    display: inline-block; 
+    position: absolute;
+    /* Esse tem que ser em px para não ficar torto o site quando diminuir a tela */
+    top: 30px;
+    right: 10px;
+    /* Deixa o pontador do mouse */
+    cursor: pointer;
+    color: rgb(0, 119, 255);
+    font-size: 120%!important;
+    display: none;
+    background-color: #ffffff;
+    width: 500px;
+    height: 30px;
+}
+#sair{
+display: inline-block; 
+position: absolute;
+/* Esse tem que ser em px para não ficar torto o site quando diminuir a tela */
+top: 3px;
+right: 19px;
+/* Deixa o pontador do mouse */
+cursor: pointer;
+color: rgb(0, 119, 255);
+font-size: 95%!important;
+text-decoration: none;
+}
+#usuario{
+position: absolute;
+top: 3px;
+right: 79px;
+font-size: 100%;
+text-decoration: none;
+color: rgb(0, 119, 255);
+
+}

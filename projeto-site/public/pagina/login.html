@@ -39,7 +39,7 @@
         <form id="form_login" method="post" onsubmit="return entrar()">
             <span id="text_usuario">Usuário ou E-mail </span>
             <br>
-            <input type="text" id="usuario" placeholder="Usuário" name="nome">
+            <input type="text" id="usuario_login" placeholder="Usuário" name="nome">
             <br>
             <span id="text_senha">Senha</span>
             <br>
@@ -81,7 +81,8 @@
                     resposta.json().then(json => {
 
                         sessionStorage.login_usuario_meuapp = json.Email;
-                        sessionStorage.nome_usuario_meuapp = json.nome;
+                        sessionStorage.senha_usuario_meuapp = json.Senha;
+                        sessionStorage.nome_usuario_meuapp = json.NomeUsuario;
 
                         window.location.href = 'index.html';
                     });
