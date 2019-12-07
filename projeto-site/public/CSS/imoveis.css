@@ -77,6 +77,8 @@ body{
     width: 99%;
     color: rgb(0, 119, 255);
     padding:5px;
+    position: fixed;
+    z-index: 10;
 }
 
 
@@ -538,16 +540,16 @@ color: rgb(0, 119, 255);
 
 }
 .foto_fundo_imoveis{
-    /* Não deixa repetir */
     background-repeat: no-repeat;
-    background-image: url("https://www.meliuz.com.br/blog/wp-content/uploads/2016/03/foto4-1.jpg");
+    background-image: url(https://www.meliuz.com.br/blog/wp-content/uploads/2016/03/foto4-1.jpg);
     width: 100VW;
     height: 87.5vh;
-    /* Centraliza a imagem no meio da div */
     background-position: center;
-    /* A imagem cobre toda a area */
     background-size: cover;
+    position: fixed;
     opacity: 0.6;
+    /* position: absolute; */
+    top: 12vh;  
 } 
 #filtros{
     height: 155px;
@@ -647,4 +649,40 @@ color: rgb(0, 119, 255);
 #pesquisar:hover{
     box-shadow: 1px 4px 8px 0px rgba(0, 0, 0, 0.63);
     transition: 0.5s;
+}
+
+.imovel{
+    position: relative;
+    top: 47vh;
+    left: 28vh;
+    background-color: #ffffffbf;
+    display: inline-block;
+    width: 71vw;
+    height: 30vh;
+    box-shadow: 1px 0px 20px 3px #00000057;
+    border-radius: 10px;
+}
+.foto{
+    width: 187px;
+}
+.preco{
+    position: relative;
+    top: -29vh;
+    left: 17vw;
+    font-size: 200%;
+}
+.descricao{
+    position: relative;
+    top: -22vh;
+    left: 2vw;
+}
+.tamanho{
+    position: relative;
+    top: -10vh;
+    left: -3vw;
+}
+.mes{
+    position: relative;
+    top: -29vh;
+    left: 17vw;
 }
