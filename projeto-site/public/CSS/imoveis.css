@@ -550,60 +550,101 @@ color: rgb(0, 119, 255);
     opacity: 0.6;
 } 
 #filtros{
-    height: 375px;
+    height: 155px;
     display: inline-block;
-    width: 166px;
+    width: 510px;
     background-color: #ffffffc1;
     border-radius: 20px;
     position: absolute;
-    top: 21vh;
-    left: 4vw;
+    top: 1vh;
+    left: 12vw;
     font-family: Georgia, Times, serif!important;
+    transform: translate(50%, 50%);
 }
 .titulo{
-    margin-left: 30px;
+       
     position: relative;
-    left: 2vw;
-    top: 2vh;
-    font-size: 115%;
+    left: 15vw;
+    top: -1vh;
+    font-size: 175%;
 }
-.subfiltro_localizacao{
-    margin-left: -9px;
+#subfiltro_localizacao{
+    margin-left: -40px;
     position: relative;
-    left: 31px;
-    top: 49px;
-    width: 200px;
-    font-size: 75%;
+    left: -74px;
+    top: 65px;
+    width: 113px;
+    font-size: 105%;
+    margin-top: 19px;
+    border-radius: 8px;
+    background-color: #0011ff00;
+    border-color: #8c8c8c;
+    color: #4215b1;
+    text-align: center;
 }
 .subtitulo_localizacao{
     position: relative;
-    left: -73px;
-    top: 46px
+    left: -16px;
+    top: 31px;
+    font-size: 140%;
+
 }
-.subfiltro_tipo{
-    margin-left: -9px;
+#subfiltro_tipo{
     position: relative;
-    left: 31px;
-    top: 66px;
-    width: 200px;
-    font-size: 75%;
+    left: -9.5vw;
+    top: 65px;
+    width: 127px;
+    font-size: 105%;
+    border-radius: 8px;
+    background-color: #0011ff00;
+    border-color: #8c8c8c;
+    color: #4215b1;
+    text-align: center;
 }
 .subtitulo_tipo{
     position: relative;
-    left: 15px;
-    top: 61px;
+    left: -2vw;
+    top: 30px;
+    font-size: 140%;
 }
-.subfiltro_valores{
+#subfiltro_valores{
     margin-left: -9px;
     position: relative;
-    left: 30px;
-    top: 87px;
-    width: 200px;
-    font-size: 75%;
+    left: 18vw;
+    top: 38px;
+    width: 166px;
+    font-size: 105%;
+    border-radius: 8px;
+    background-color: #0011ff00;
+    border-color: #8c8c8c;
+    color: #4215b1;
+    text-align: center;
 }
 
 .subtitulo_valores{
     position: relative;
-    left: 1vw;
-    top: 12vh
+    left: 27vw;
+    top: 0.8vh;
+    font-size: 140%;
+}
+#pesquisar{
+    position: relative;
+    left: 15vw;
+    top: 18.5vh;
+    background-color: #1f3a93;
+    color: #ffffff;
+    border: white solid 1px;
+    transition: 1s;
+    border-radius: 10px;
+    height: 31px;
+    outline: none;
+    width: 80px;
+    cursor: pointer;
+    transition: 1s;
+    position: absolute;
+    font-size: 90%;
+}
+#pesquisar:hover{
+    box-shadow: 1px 4px 8px 0px rgba(0, 0, 0, 0.63);
+    transition: 0.5s;
 }

@@ -44,29 +44,39 @@
 
 
     <div class="foto_fundo_imoveis"></div>
+    <!-- Começo do Filtro -->
     <div id="filtros">
         <span class="titulo">Filtros</span>
-        <span class="subtitulo_localizacao">Localização </span> 
-        <div class="subfiltro_localizacao">
-            <input type="checkbox" name="" id=""> São Paulo <br>
-            <input type="checkbox" name="" id=""> Itapecerica <br>
-            <input type="checkbox" name="" id=""> Curitiba
-        </div>
-        <span class="subtitulo_tipo">Tipo </span> 
-        <div class="subfiltro_tipo">
-            <input type="checkbox" name="" id=""> Residencial <br>
-            <input type="checkbox" name="" id=""> Terrenos <br>
-            <input type="checkbox" name="" id=""> Comercial
-        </div>
-        <span class="subtitulo_valores">Valores </span> 
-        <div class="subfiltro_valores">
-            <input type="checkbox" name="" id=""> R$0 á R$500 <br>
-            <input type="checkbox" name="" id=""> R$501 á R$1000  <br>
-            <input type="checkbox" name="" id=""> R$1001 á R$1500 <br>
-            <input type="checkbox" name="" id=""> R$1501 á R$2000 <br>
-            <input type="checkbox" name="" id=""> acima de R$2000
-        </div>
+        <span class="subtitulo_localizacao">Onde? </span> 
+        <select name="" id="subfiltro_localizacao">
+                <option value=""> São Paulo </option>
+                <option value=""> Itapecerica </option>
+                <option value=""> Curitiba </option>
+        </select>
+        <span class="subtitulo_tipo">O que? </span> 
+            <select name="" id="subfiltro_tipo">
+                    <option value=""> Residendial </option>
+                    <option value=""> Terrenos </option>
+                    <option value=""> Curitiba </option>
+            </select>
+            
+        <span class="subtitulo_valores">Quanto? </span> 
+        <select name="" id="subfiltro_valores">
+            <option value=""> R$0 á R$500 </option>
+            <option value=""> R$501 á R$1000</option>
+            <option value=""> R$1001 á R$1500</option>
+            <option value="">acima de R$2000</option>
+        </select>
+        <button id="pesquisar">Procurar</button>
     </div>
+    <!-- Fim do Filtro -->
+    <!-- Começo da pesquisa -->
+    <div id="resultado">
+
+
+    </div>
+
+
 
     <!-- Rodapé -->
     <div class="rodape">
