@@ -562,6 +562,7 @@ color: rgb(0, 119, 255);
     left: 12vw;
     font-family: Georgia, Times, serif!important;
     transform: translate(50%, 50%);
+    box-shadow: 1px 0px 20px 3px #00000057;
 }
 .titulo{
        
@@ -673,16 +674,26 @@ color: rgb(0, 119, 255);
 }
 .descricao{
     position: relative;
-    top: -22vh;
+    top: -19vh;
     left: 2vw;
 }
 .tamanho{
     position: relative;
-    top: -10vh;
-    left: -3vw;
+    top: -11.5vh;
+    left: -32vw;
 }
 .mes{
     position: relative;
     top: -29vh;
     left: 17vw;
+}
+.tipo{
+    position: relative;
+    top: -27vh;
+    left: 12vw;
+}
+.localizacao{
+    position: relative;
+    top: -15vh;
+    left: 18vw;
 }
