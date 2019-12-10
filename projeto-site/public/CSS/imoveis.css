@@ -690,10 +690,12 @@ color: rgb(0, 119, 255);
 .tipo{
     position: relative;
     top: -27vh;
-    left: 12vw;
+    /* left: 12vw; */
+    margin-left: -72px;
 }
 .localizacao{
     position: relative;
     top: -15vh;
-    left: 18vw;
+    /* left: -47vw; */
+    margin-left: 245px;
 }

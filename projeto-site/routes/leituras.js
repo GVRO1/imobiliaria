@@ -1,26 +1,15 @@
 var express = require('express');
 var router = express.Router();
 var sequelize = require('../models').sequelize;
-var Leitura = require('../models').Leitura;
+var imoveis = require('../models').imoveis;
 
 /* Recuperar as últimas N leituras */
-router.get('/ultimas', function(req, res, next) {
+router.get('/imoveis', function(req, res, next) {
 	
-	// quantas são as últimas leituras que quer? 8 está bom?
-	const limite_linhas = 7;
-
-	console.log(`Recuperando as últimas ${limite_linhas} leituras`);
-	
-	// alterar  os nomes da tabela de acordo com o nome da tabela e do nome dos campo
-
-	const instrucaoSql = `select top ${limite_linhas} 
-						luminosidade_externa, 
-						hora,                  
-						FORMAT(hora,'HH:mm:ss') as momento_grafico 
-						from eventos order by idEventos desc`;
+	const instrucaoSql = `select * from imoveis order by idImovel desc`;
 
 	sequelize.query(instrucaoSql, {
-		model: Leitura,
+		model: imoveis,
 		mapToModel: true 
 	  })
 	  .then(resultado => {

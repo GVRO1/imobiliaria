@@ -6,36 +6,61 @@ https://codewithhugo.com/sequelize-data-types-a-practical-guide/
 */
 
 module.exports = (sequelize, DataTypes) => {
-    let Leitura = sequelize.define('Leitura',{	
+    let imoveis = sequelize.define('imoveis',{	
 		//nome das colunas
-		idEventos: {
-			field:"idEventos",
+		idImovel: {
+			field:"idImovel",
 			type: DataTypes.INTEGER,
 			primaryKey: true,
 			autoIncrement: true
 		},	
-		luminosidade_externa: {
-			field:"luminosidade_externa",
-			type: DataTypes.REAL,
+		endereco: {
+			field:"endereco",
+			type: DataTypes.STRING,
 			allowNull: false
 		},
-		Hora: {
-			field:"Hora",
-			type: DataTypes.DATE,
+		nomeImovel: {
+			field:"nomeImovel",
+			type: DataTypes.STRING,
 			allowNull: false
 		},
-		momento_grafico: {
-			type: DataTypes.VIRTUAL, // campo 'falso' (não existe na tabela). Deverá ser preenchido 'manualmente' no select
+		preco: {
+			type: DataTypes.INTEGER,
 			allowNull: true
+		},
+		fkUsuario: {
+			field:"fkUsuario",
+			type: DataTypes.INTEGER,
+			allowNull: false
+		},
+		descricao: {
+			field:"descricao",
+			type: DataTypes.STRING,
+			allowNull: false
+		},
+		tamanho: {
+			field:"tamanho",
+			type: DataTypes.INTEGER,
+			allowNull: false
+		},
+		tipo: {
+			field:"tipo",
+			type: DataTypes.STRING,
+			allowNull: false
+		},
+		negocio: {
+			field:"negocio",
+			type: DataTypes.STRING,
+			allowNull: false
 		}
 	}, 
 	{
 		//Nome da tabela
-		tableName: 'Eventos', 
+		tableName: 'imoveis', 
 		freezeTableName: true, 
 		underscored: true,
 		timestamps: false,
 	});
 
-    return Leitura;
+    return imoveis;
 };
