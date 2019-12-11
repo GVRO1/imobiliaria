@@ -406,19 +406,12 @@ transform: scale(1.1);
 transition: 0.2s ease-in-out;
 }
 
-.rodape1{
-    background-color:#1f3a93;
-    width: 100%;
-    bottom: -40vh;
-    height: 35px;
-    padding-top: 5px;
-    position: absolute;
-}
+
 .rodape{
     background-color:#1f3a93;
     width: 100%;
-    bottom: 0vh;
     height: 35px;
+    bottom: 0vh;
     padding-top: 5px;
     position:fixed;
 }
@@ -662,40 +655,51 @@ color: rgb(0, 119, 255);
     height: 30vh;
     box-shadow: 1px 0px 20px 3px #00000057;
     border-radius: 10px;
+    margin-top: 20px;
 }
 .foto{
     width: 187px;
 }
 .preco{
-    position: relative;
-    top: -29vh;
+    position: absolute;
+    top: 3vh;
     left: 17vw;
     font-size: 200%;
 }
 .descricao{
-    position: relative;
-    top: -19vh;
-    left: 2vw;
-}
-.tamanho{
-    position: relative;
-    top: -11.5vh;
-    left: -32vw;
-}
-.mes{
-    position: relative;
-    top: -29vh;
+    position: absolute;
+    top: 11vh;
     left: 17vw;
 }
+.tamanho{
+    position: absolute;
+    top: 23.5vh;
+    left: 17vw;
+}
+.mes{
+    position: absolute;
+    top: 5vh;
+    left: 29vw;
+}
 .tipo{
-    position: relative;
-    top: -27vh;
-    /* left: 12vw; */
-    margin-left: -72px;
+    position: absolute;
+    top: 5vh;
+    left: 44vw;
 }
 .localizacao{
-    position: relative;
-    top: -15vh;
-    /* left: -47vw; */
-    margin-left: 245px;
+    position: absolute;
+    top: 19vh;
+    left: 17vw;
+}
+.negocio{
+    position: absolute;
+    top: 5vh;
+    left: 60vw;
+}
+#fantasma{
+    background-color: #1f3a93;
+    width: 100%;
+    height: 35px;
+    position: absolute;
+    bottom: 0vw;
 }
