@@ -747,3 +747,12 @@ color: rgb(0, 119, 255);
     left: -0.5vw;
     font-size: 110%;
 }
+
+#cadastrar_imovel a{
+    text-decoration: none;
+    left: 323px !important;
+    top: -73px !important;
+    position: absolute;
+    cursor: pointer;
+    width: 148px;
+}
