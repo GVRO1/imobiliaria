@@ -47,35 +47,42 @@
     <!-- Começo do Filtro -->
     <div id="filtros">
         <span class="titulo">Filtros</span>
-        <span class="subtitulo_localizacao">Onde? </span> 
+        <span class="subtitulo_localizacao">Localização</span> 
         <select name="" id="subfiltro_localizacao_estado">
+                <option value="Cidade" disabled selected> Cidade </option>
                 <option value="Indiferente"> Indiferente </option>
                 <option value="São Paulo"> São Paulo </option>
                 <option value="Paraná"> Paraná </option>
         </select>
         <select name="" id="subfiltro_localizacao_cidade">
+                <option value="Estado" disabled selected> Estado </option>
                 <option value="Indiferente"> Indiferente </option>
                 <option value="São Paulo"> São Paulo </option>
                 <option value="Itapecerica"> Itapecerica </option>
                 <option value="Curitiba"> Curitiba </option>
         </select>
         
-        <span class="subtitulo_tipo"> O que? </span> 
+        <span class="subtitulo_tipo"> Tipo </span> 
             <select name="" id="subfiltro_tipo">
+                    <option value="Tipo" disabled selected> Tipo </option>
                     <option value="Indiferente"> Indiferente </option>
                     <option value="Residencial"> Residencial </option>
                     <option value="Terreno"> Terreno </option>
                     <option value="Comercial"> Comercial </option>
             </select>
             
-        <span class="subtitulo_valores">Quanto? </span> 
-        <select name="" id="subfiltro_valores">
+        <span class="subtitulo_valores">Faixa de Preço </span> 
+        <input id="minimo"type="text" placeholder="min">
+        <span id="a_valor">á</span>
+        <input id="maximo"type="text" placeholder="max">
+        <!-- <select name="" id="subfiltro_valores">
+            <option value="Tipo" disabled selected> R$ </option>
             <option value="Indiferente"> Indiferente </option>
             <option value="500"> R$0 á R$500 </option>
             <option value="1000"> R$501 á R$1000</option>
             <option value="1500"> R$1001 á R$1500</option>
             <option value="2001">acima de R$2000</option>
-        </select>
+        </select> -->
 
         <button id="id_btn_comprar" onclick="btn_comprar()">Comprar</button>
         <button id="id_btn_alugar" onclick="btn_alugar()">Alugar</button>

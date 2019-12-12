@@ -205,24 +205,19 @@ text-decoration: none;
 
 
 #id_btn_alugar{
-    
     color: #1f3a93;
-    background-color:#ffffff ;
-    border: none;
+    background-color: #ffffff00;
+    border: solid 1px gray;
     transition: 1s;
     font-size: 110%;
-    position: absolute;
-    border-radius: 5px; 
-    height: 26px; 
-     /*Tira a bordinha quando fica clicado   */
+    position: relative;
+    height: 26px;
     outline: none;
-    /* Ajusta o tamanho de acordo com o conteudo */
     width: 65px;
     cursor: pointer;
     transition: 1s;
-    position: absolute;
-    top: 9px;
-    left: 21.5VW;
+    top: 18.5vh;
+    left: -15.3VW;
     font-size: 90%;
 }
 .btn_alugar_selecionado{
@@ -231,8 +226,6 @@ background-color:#1f3a93 !important;
 border: none;
 transition: 1s;
 font-size: 110%;
-position: absolute;
-border-radius: 5px; 
 height: 26px; 
  /*Tira a bordinha quando fica clicado   */
 outline: none;
@@ -240,31 +233,28 @@ outline: none;
 width: 65px;
 cursor: pointer;
 transition: 1s;
-position: absolute;
+position: relative;
 top: 9px;
 left: 16VW;
 font-size: 90%;
 }
 
 #id_btn_comprar{
-    background-color: rgb(255, 255, 255);
-    color:#1f3a93 ;
-    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    color: #1f3a93;
+    border: solid 1px gray;
     transition: 1s;
     font-size: 110%;
-    position: absolute;
-    border-radius: 5px; 
-    height: 26px; 
-     /*Tira a bordinha quando fica clicado   */
+    position: relative;
+    /* border-radius: 5px; */
+    height: 26px;
     outline: none;
-    /* Ajusta o tamanho de acordo com o conteudo */
-    width: 65px;
+    width: 68px;
     cursor: pointer;
     transition: 1s;
-    position: absolute;
-    top: 9px;
-    left: 16VW;
-    font-size: 90%;
+    top: 8.5vw;
+    left: -15VW;
+    font-size: 90%
 }
 
 .btn_comprar_selecionado{
@@ -273,8 +263,7 @@ font-size: 90%;
     border: none;
     transition: 1s;
     font-size: 110%;
-    position: absolute;
-    border-radius: 5px; 
+    position: relative;
     height: 26px; 
      /*Tira a bordinha quando fica clicado   */
     outline: none;
@@ -282,7 +271,6 @@ font-size: 90%;
     width: 65px;
     cursor: pointer;
     transition: 1s;
-    position: absolute;
     top: 9px;
     left: 16VW;
     font-size: 90%;
@@ -556,20 +544,20 @@ color: rgb(0, 119, 255);
     /* left: 12vw; */
     font-family: Georgia, Times, serif!important;
     /* transform: translate(50%, 50%); */
-    box-shadow: inset 0px 12px 7px 0px #00000029
+    box-shadow: inset 0px 12px 7px 0px #00000029;
+    color: #404040;
 }
 .titulo{
-       
     position: relative;
-    left: 15vw;
-    top: -1vh;
+    left: 50vw;
+    top: 0vh;
     font-size: 175%;
 }
 #subfiltro_localizacao_estado{
     margin-left: -40px;
     position: relative;
-    left: -74px;
-    top: 65px;
+    left: 20vw;
+    top: 12vh;
     width: 113px;
     font-size: 105%;
     margin-top: 19px;
@@ -582,8 +570,8 @@ color: rgb(0, 119, 255);
 #subfiltro_localizacao_cidade{
     margin-left: -40px;
     position: relative;
-    left: -74px;
-    top: 65px;
+    left: 23vw;
+    top: 12vh;
     width: 113px;
     font-size: 105%;
     margin-top: 19px;
@@ -595,15 +583,15 @@ color: rgb(0, 119, 255);
 }
 .subtitulo_localizacao{
     position: relative;
-    left: -16px;
-    top: 31px;
+    left: 28vw;
+    top: 5vh;
     font-size: 140%;
 
 }
 #subfiltro_tipo{
     position: relative;
-    left: -9.5vw;
-    top: 65px;
+    left: 19.5vw;
+    top: 12vh;
     width: 127px;
     font-size: 105%;
     border-radius: 8px;
@@ -614,15 +602,15 @@ color: rgb(0, 119, 255);
 }
 .subtitulo_tipo{
     position: relative;
-    left: -2vw;
-    top: 30px;
+    left: 27vw;
+    top: 5vh;
     font-size: 140%;
 }
 #subfiltro_valores{
     margin-left: -9px;
     position: relative;
-    left: 18vw;
-    top: 38px;
+    left: 16vw;
+    top: 12vh;
     width: 166px;
     font-size: 105%;
     border-radius: 8px;
@@ -635,25 +623,25 @@ color: rgb(0, 119, 255);
 .subtitulo_valores{
     position: relative;
     left: 27vw;
-    top: 0.8vh;
+    top: 4.8vh;
     font-size: 140%;
 }
 #pesquisar{
-    position: relative;
-    left: 15vw;
-    top: 18.5vh;
-    background-color: #1f3a93;
-    color: #ffffff;
-    border: white solid 1px;
-    transition: 1s;
-    border-radius: 10px;
-    height: 31px;
-    outline: none;
-    width: 80px;
-    cursor: pointer;
-    transition: 1s;
-    position: absolute;
-    font-size: 90%;
+     /* position: relative; */
+     left: 50vw;
+     top: 27.5vh;
+     background-color: #1f3a93;
+     color: #ffffff;
+     border: white solid 1px;
+     transition: 1s;
+     border-radius: 10px;
+     height: 31px;
+     outline: none;
+     width: 80px;
+     cursor: pointer;
+     transition: 1s;
+     position: absolute;
+     font-size: 90%;
 }
 #pesquisar:hover{
     box-shadow: 1px 4px 8px 0px rgba(0, 0, 0, 0.63);
@@ -717,4 +705,33 @@ color: rgb(0, 119, 255);
     height: 35px;
     position: absolute;
     bottom: 0vw;
+}
+#minimo{
+    position: relative;
+    top: 12vh;
+    left: 14vw;
+    width: 70px;
+    height: 31px;
+    border-radius: 8px;
+    border: solid 1px gray;
+    text-align: center;
+    background-color: #ffffff85;
+}
+#maximo{
+    position: relative;
+    top: 12vh;
+    left: 17vw;
+    width: 70px;
+    height: 31px;
+    border-radius: 8px;
+    border: solid 1px gray;
+    text-align: center;
+    background-color: #ffffff85;
+}
+#a_valor{
+    font-size: 125%;
+    position: relative;
+    top: 12.5vh;
+    left: 15.5vw;
+    color: #404040;
 }
