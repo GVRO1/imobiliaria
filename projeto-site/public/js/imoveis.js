@@ -8,7 +8,7 @@ var tipo = [];
 var negocio = [];
 var imagem = [];
 var negocio_busca = 'Indiferente';
-
+fore();
 if (sessionStorage.login_usuario_meuapp.length == 0) {
     com_login.style.display = 'none';
 }
@@ -74,7 +74,6 @@ function fore() {
                 negocio = [];
                 resultado.innerHTML = " "
                 imagem = [];
-
                 for (i = 0; i < resposta.length; i++) {
                     var registro = resposta[i];
                     // aqui, após registro. use os nomes 
@@ -92,7 +91,7 @@ function fore() {
                     imagem.push(registro.imagem);
 
                     resultado.innerHTML += `
-                <div class="imovel">
+                    <div class="imovel">
                             <img class="foto" src="${imagem[i]}" alt="">
                         <span class="preco">R$${preco[i]},00</span> <span class="mes">/mês</span>
                         <span class="descricao">${descricao[i]}</span>
@@ -104,6 +103,8 @@ function fore() {
                     </div>
                                         `;
                     }
+                    tamanho_resultado.innerHTML = ` <span id="numero_resultado">${negocio.length}</span> Imóveis disponiveis`;
+
                 }else{
                     alert('Não há resultados ...');
                 }

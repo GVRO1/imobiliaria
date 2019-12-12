@@ -90,6 +90,7 @@ router.post('/busca', function(req, res, next) {
 	else{
 		negocioQuery = `AND negocio = '${dados.negocio_busca}' `
 	}
+
 	var instrucaoSql = `SELECT * FROM imoveis, CEP 
 						WHERE fkimovel = idImovel
 						${cidadeQuery} 

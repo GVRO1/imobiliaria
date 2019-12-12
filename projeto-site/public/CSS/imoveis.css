@@ -650,7 +650,7 @@ color: rgb(0, 119, 255);
 
 .imovel{
     position: relative;
-    top: 47vh;
+    top: 56vh;
     left: 28vh;
     background-color: #ffffffbf;
     display: inline-block;
@@ -734,4 +734,16 @@ color: rgb(0, 119, 255);
     top: 12.5vh;
     left: 15.5vw;
     color: #404040;
+}
+#tamanho_resultado{
+    position: relative;
+    top: 53.5vh;
+    left: 13.5vw;
+    font-size: 130%;;
+}
+#numero_resultado{
+    position: relative;
+    top: -0.5vh;
+    left: -0.5vw;
+    font-size: 110%;
 }
