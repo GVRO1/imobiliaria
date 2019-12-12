@@ -532,9 +532,10 @@ text-decoration: none;
 color: rgb(0, 119, 255);
 
 }
-.foto_fundo_imoveis{
+.fundo_imoveis{
     background-repeat: no-repeat;
-    background-image: url(https://www.meliuz.com.br/blog/wp-content/uploads/2016/03/foto4-1.jpg);
+    /* background-image: url(https://www.meliuz.com.br/blog/wp-content/uploads/2016/03/foto4-1.jpg); */
+    background-color: #ffffff;
     width: 100VW;
     height: 87.5vh;
     background-position: center;
@@ -542,20 +543,20 @@ color: rgb(0, 119, 255);
     position: fixed;
     opacity: 0.6;
     /* position: absolute; */
-    top: 12vh;  
+    top: 12vh;
 } 
 #filtros{
-    height: 155px;
     display: inline-block;
-    width: 510px;
-    background-color: #ffffffc1;
-    border-radius: 20px;
+    height: 220px;
+    width: 100%;
+    background-color: #efefef;
+    /* border-radius: 20px; */
     position: absolute;
-    top: 1vh;
-    left: 12vw;
+    top: 12vh;
+    /* left: 12vw; */
     font-family: Georgia, Times, serif!important;
-    transform: translate(50%, 50%);
-    box-shadow: 1px 0px 20px 3px #00000057;
+    /* transform: translate(50%, 50%); */
+    box-shadow: inset 0px 12px 7px 0px #00000029
 }
 .titulo{
        
@@ -564,7 +565,21 @@ color: rgb(0, 119, 255);
     top: -1vh;
     font-size: 175%;
 }
-#subfiltro_localizacao{
+#subfiltro_localizacao_estado{
+    margin-left: -40px;
+    position: relative;
+    left: -74px;
+    top: 65px;
+    width: 113px;
+    font-size: 105%;
+    margin-top: 19px;
+    border-radius: 8px;
+    background-color: #0011ff00;
+    border-color: #8c8c8c;
+    color: #4215b1;
+    text-align: center;
+}
+#subfiltro_localizacao_cidade{
     margin-left: -40px;
     position: relative;
     left: -74px;
