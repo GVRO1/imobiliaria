@@ -1,10 +1,14 @@
-var endereco = [];
+var cidade = [];
+var estado = [];
 var nomeImovel = [];
 var preco = [];
 var descricao = [];
 var tamanho = [];
 var tipo = [];
 var negocio = [];
+var imagem = [];
+var negocio_busca = 'Indiferente';
+
 if (sessionStorage.login_usuario_meuapp.length == 0) {
     com_login.style.display = 'none';
 }
@@ -16,21 +20,27 @@ else {
 function btn_comprar(){
     id_btn_comprar.classList = "btn_comprar_selecionado";
     id_btn_alugar.classList.remove("btn_alugar_selecionado");
-
+    negocio_busca = 'comprar';
+    console.log(negocio_busca);
     
 }
 function btn_alugar(){
     id_btn_alugar.classList = "btn_alugar_selecionado";
     id_btn_comprar.classList.remove("btn_comprar_selecionado");
-
+    negocio_busca = 'alugar';
+    console.log(negocio_busca);
 }
 function fore() {
 
     var busca = {
         tipoImovel: subfiltro_tipo.value,
-        valor: subfiltro_valores.value,
-        localizacao: subfiltro_localizacao.value
+        minimo_valor: minimo.value,
+        maximo_valor: maximo.value,
+        cidade: subfiltro_localizacao_cidade.value,
+        estado: subfiltro_localizacao_estado.value,
+        negocio_busca: negocio_busca,
     };
+    console.log("busca",busca);
 
     // var meuJson = { variavel_1: 'xpto', variavel_2: 'abcd' };
 
@@ -55,7 +65,7 @@ function fore() {
                 var resposta = await response.json();
                 if(resposta.length >= 1){
                     resposta.reverse();
-                endereco = [];
+                cidade = [];
                 nomeImovel = [];
                 preco = [];
                 descricao = [];
@@ -63,27 +73,31 @@ function fore() {
                 tipo = [];
                 negocio = [];
                 resultado.innerHTML = " "
+                imagem = [];
+
                 for (i = 0; i < resposta.length; i++) {
                     var registro = resposta[i];
                     // aqui, após registro. use os nomes 
                     // dos atributos que vem no JSON 
                     // que gerou na consulta ao banco de dados
 
-                    endereco.push(registro.endereco);
+                    cidade.push(registro.cidade);
+                    estado.push(registro.estado);
                     nomeImovel.push(registro.nomeImovel);
                     preco.push(registro.preco);
                     descricao.push(registro.descricao);
                     tamanho.push(registro.tamanho);
                     tipo.push(registro.tipo);
                     negocio.push(registro.negocio);
+                    imagem.push(registro.imagem);
 
                     resultado.innerHTML += `
                 <div class="imovel">
-                            <img class="foto" src="../fotos/imovel1.jpeg" alt="">
+                            <img class="foto" src="${imagem[i]}" alt="">
                         <span class="preco">R$${preco[i]},00</span> <span class="mes">/mês</span>
                         <span class="descricao">${descricao[i]}</span>
                         <span class="tamanho">${tamanho[i]} m²</span>
-                        <span class="localizacao">${endereco[i]}</span>
+                        <span class="localizacao">${cidade[i]},${estado[i]}</span>
                         <span class="tipo">${tipo[i]}</span>
                         <span class="negocio">${negocio[i]}</span>
 
