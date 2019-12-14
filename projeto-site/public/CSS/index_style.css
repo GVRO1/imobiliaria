@@ -236,7 +236,7 @@ text-decoration: none;
     left: 21.5VW;
     font-size: 90%;
 }
-.btn_alugar_selecionado{
+.btn_selecionado{
 color: rgb(255, 255, 255)!important;
 background-color:#1f3a93 !important;
 border: none;
@@ -278,26 +278,6 @@ font-size: 90%;
     font-size: 90%;
 }
 
-.btn_comprar_selecionado{
-    color: rgb(255, 255, 255)!important;
-    background-color:#1f3a93 !important;
-    border: none;
-    transition: 1s;
-    font-size: 110%;
-    position: absolute;
-    border-radius: 5px; 
-    height: 26px; 
-     /*Tira a bordinha quando fica clicado   */
-    outline: none;
-    /* Ajusta o tamanho de acordo com o conteudo */
-    width: 65px;
-    cursor: pointer;
-    transition: 1s;
-    position: absolute;
-    top: 9px;
-    left: 16VW;
-    font-size: 90%;
-}
 
 #id_btn_comprar:hover{
     box-shadow: 3px 3px 3px 1px rgb(0, 0, 0);

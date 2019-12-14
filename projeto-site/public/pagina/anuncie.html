@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../CSS/index_style.css">
+    <link rel="stylesheet" href="../CSS/anuncie.css">
+
+    <title>Imóbiliaria Rodrigues de Oliveira</title>
+</head>
+
+<body>
+    <!-- Cabeçario -->
+    <header class="cabecario">
+        <div class="nome_titulo">
+            Imobiliaria Rodrigues Oliveira
+        </div>
+        <img class="logo" src="../fotos/logo.png" alt="">
+        <br><br>
+        <br>
+
+        <!-- Menu e sub Menu -->
+        <ul id="sub_menu">
+            <li id="Contato" class="sub_menu"> <a href="contato.html">Contato</a></li>
+            <li id="Imoveis" class="sub_menu"> <a href="imoveis.html">Imóveis</a></li>
+            <li id="Home" class="sub_menu"> <a href="index.html">Home</a></li>
+            <li id="cadastrar_imovel" class="sub_menu"> <a href="#">Anuncie seu imovel</a></li>
+        </ul>
+
+        <div class="cadastrar"> <a href="cadastro.html">Cadastrar</a> </div>
+        <div class="entrar"> <a href="login.html">Entrar</a> </div>
+
+        <span id="com_login">
+            <div>
+                <a href="#" id="usuario">Ronaldo</a>
+            </div>
+            <div>
+                <a id="sair" onclick="logoff()">Sair</a>
+            </div>
+        </span>
+
+    </header>
+
+
+
+    <div class="fundo_imoveis"></div>
+    <!-- Começo do Filtro -->
+    <div id="filtros">
+        <span id="text_estilo">  Você gostaria de: </span>
+        <button id="btn_comprar" class="btn_escolha" onclick="comprar()">Comprar</button>
+        <button id="btn_alugar" class="btn_escolha" onclick="alugar()">Alugar</button>
+        <span id="text_tipo"> Qual o tipo do seu imóvel? </span>
+        <button id="btn_residencial" class="btn_escolha" onclick="residencial()">Residencial</button>
+        <button id="btn_comercial" class="btn_escolha" onclick="comercial()">Comercial</button>
+        <button id="btn_terreno" class="btn_escolha" onclick="terreno()">Terreno</button>
+        <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
+            <span id="text_nome"> Titulo do imovel </span>
+            <input type="text" onkeyup="#" class="nome" id="titulo_imovel" placeholder="Ex: Casa Grande SP"
+                name="titulo">
+            <div id="mensagem_nome"></div>
+            <br>
+            <span id="text_preco">Preço</span>
+            <br>
+            <input type="text" name="preco" onkeyup="#" id="preco_imovel" placeholder="Ex: 9999.99">
+            <br>
+            <span id="text_tamanho">Tamanho</span>
+            <br>
+            <input type="text" onkeyup="#" id="tamanho_imovel" placeholder="50m²" name="tamanho">
+            <br>
+            <span id="span_botao">
+                <button id="id_btn_anunciar_vazio" class="btn_anunciar" onclick="#">
+                    <span id="text_anunciar">Anunciar</span>
+                </button>
+            </span>
+        </form>
+    </div>
+    <!-- Fim do Filtro -->
+
+    </div>
+
+    <!-- Rodapé -->
+    <div class="rodape">
+        <!-- Facebook e Whatsapp -->
+        <img class="facebook" src="../fotos/facebook.png" alt="">
+        <img class="whatsapp" src="../fotos/whatsapp.png" alt="">
+        <div class="telefone"> 11-999901363 </div>
+        <!-- "Target blank" Abre em uma nova aba-->
+        <div class="endereco_face"> <a href="https://www.facebook.com/rodriguesoliveiraassessoria/"
+                target="_blank">/rodriguesoliveiraassessoria</a></div>
+    </div>
+
+    <script src="../js/anuncie.js"></script>
+    <script src="../js/funcoes.js"></script>
+</body>
+
+</html>

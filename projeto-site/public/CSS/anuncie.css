@@ -1,0 +1,200 @@
+.btn_anunciar{
+    font-size: 110%;
+    color: rgba(99, 99, 99, 0.863);
+    position: absolute;
+    top: 37.5vh;
+    left: 19.5vw;
+    background-color:transparent;
+    /* Tira a borda */
+    border-radius: 5px; 
+    height: 40px; 
+        /*Tira a bordinha quando fica clicado   */
+    outline: none;
+    /* Ajusta o tamanho de acordo com o conteudo */
+    width: 180px;
+    transition: 1s;
+    border:solid 2px #6b6b6b;
+}
+
+.btn_anunciar_funcionando{
+    color: rgb(255, 255, 255);
+    background-color:#1f3a93 ;
+    border: none;
+    transition: 1s;
+    font-size: 110%;
+    position: absolute;
+    top: 55.5vh;
+    left: 13.5vw;
+    border-radius: 5px; 
+    height: 40px; 
+     /*Tira a bordinha quando fica clicado   */
+    outline: none;
+    /* Ajusta o tamanho de acordo com o conteudo */
+    width: 180px;
+    cursor: pointer;
+    transition: 1s;
+    }
+.btn_anunciar_funcionando:hover{
+   box-shadow: 4px 5px 6px 2px rgb(95, 94, 94);
+    transition: 0.5s;
+}
+
+#filtros{
+    display: inline-block;
+    height: 220px;
+    width: 100%;
+    background-color: #efefef;
+    /* border-radius: 20px; */
+    position: absolute;
+    top: 12vh;
+    left: 0vw;
+    font-family: Georgia, Times, serif!important;
+    /* transform: translate(50%, 50%); */
+    box-shadow: inset 0px 12px 7px 0px #00000029;
+    color: #404040;
+}
+#text_nome{
+    position: absolute;
+    top: 20vh;
+    left: 15vw;
+}
+#titulo_imovel{
+    position: absolute;
+    top: 20vh;
+    left: 25vw;
+    width: 250px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: gray;
+    height: 20px;
+}
+#text_preco{
+    position: absolute;
+    top: 25vh;
+    left: 20vw;
+}
+#preco_imovel{
+    position: absolute;
+    top: 25vh;
+    left: 25vw;
+    width: 50px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: gray;
+    height: 20px;
+}
+#text_tamanho{
+    position: absolute;
+    top: 30vh;
+    left: 18vw;
+}
+#tamanho_imovel{
+    position: absolute;
+    top: 30vh;
+    left: 25vw;
+    width: 34px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: gray;
+    height: 20px;
+}
+#text_estilo{
+    position: absolute;
+    top: 9vh;
+    left: 15vw; 
+}
+#text_tipo{
+    position: absolute;
+    top: 15vh;
+    left: 10vw;
+}
+#btn_comprar{
+    background-color: rgb(255, 255, 255);
+    color: #1f3a93;
+    border: none;
+    transition: 1s;
+    font-size: 110%;
+    position: absolute;
+    border-radius: 5px;
+    height: 26px;
+    outline: none;
+    width: 65px;
+    cursor: pointer;
+    transition: 1s;
+    position: absolute;
+    top: 8vh;
+    left: 25VW;
+    font-size: 90%;
+}
+#btn_alugar{
+    background-color: rgb(255, 255, 255);
+    color: #1f3a93;
+    border: none;
+    transition: 1s;
+    font-size: 110%;
+    position: absolute;
+    border-radius: 5px;
+    height: 26px;
+    outline: none;
+    width: 65px;
+    cursor: pointer;
+    transition: 1s;
+    position: absolute;
+    top: 8vh;
+    left: 31VW;
+    font-size: 90%;
+}
+#btn_comercial{
+    background-color: rgb(255, 255, 255);
+    color: #1f3a93;
+    border: none;
+    transition: 1s;
+    font-size: 110%;
+    position: absolute;
+    border-radius: 5px;
+    height: 26px;
+    outline: none;
+    width: 77px;
+    cursor: pointer;
+    transition: 1s;
+    position: absolute;
+    top: 14vh;
+    left: 33VW;
+    font-size: 90%;
+}
+#btn_residencial{
+    background-color: rgb(255, 255, 255);
+    color: #1f3a93;
+    border: none;
+    transition: 1s;
+    font-size: 110%;
+    position: absolute;
+    border-radius: 5px;
+    height: 26px;
+    outline: none;
+    width: 86px;
+    cursor: pointer;
+    transition: 1s;
+    position: absolute;
+    top: 14vh;
+    left: 25VW;
+    font-size: 90%;
+}
+#btn_terreno{
+    background-color: rgb(255, 255, 255);
+    color: #1f3a93;
+    border: none;
+    transition: 1s;
+    font-size: 110%;
+    position: absolute;
+    border-radius: 5px;
+    height: 26px;
+    outline: none;
+    width: 65px;
+    cursor: pointer;
+    transition: 1s;
+    position: absolute;
+    top: 14vh;
+    left: 40.5VW;
+    font-size: 90%;
+}
