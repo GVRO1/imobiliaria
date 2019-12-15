@@ -198,3 +198,20 @@
     left: 40.5VW;
     font-size: 90%;
 }
+#mensagem_contato{
+    position: absolute;
+    padding: 10px;
+    top: 9vh;
+    left: 55vw;
+    padding: 0%;
+    width: 250px;
+    height: 130px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: gray;
+}
+.text_mensagem_contato{
+    position: absolute;
+    top: 9vh;
+    left: 48vw;
+}

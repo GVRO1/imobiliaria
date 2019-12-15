@@ -55,24 +55,31 @@
         <button id="btn_residencial" class="btn_escolha" onclick="residencial()">Residencial</button>
         <button id="btn_comercial" class="btn_escolha" onclick="comercial()">Comercial</button>
         <button id="btn_terreno" class="btn_escolha" onclick="terreno()">Terreno</button>
-        <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
-            <span id="text_nome"> Titulo do imovel </span>
+
+        <form id="form_cadastro" method="post" onsubmit="return cadastrar_imovel()">
+
+            <span id="text_nome"> Titulo: </span>
             <input type="text" onkeyup="#" class="nome" id="titulo_imovel" placeholder="Ex: Casa Grande SP"
                 name="titulo">
             <div id="mensagem_nome"></div>
             <br>
-            <span id="text_preco">Preço</span>
+            <span id="text_preco">Preço:</span>
             <br>
             <input type="text" name="preco" onkeyup="#" id="preco_imovel" placeholder="Ex: 9999.99">
             <br>
-            <span id="text_tamanho">Tamanho</span>
+            <span id="text_tamanho">Tamanho:</span>
             <br>
             <input type="text" onkeyup="#" id="tamanho_imovel" placeholder="50m²" name="tamanho">
             <br>
             <span id="span_botao">
-                <button id="id_btn_anunciar_vazio" class="btn_anunciar" onclick="#">
+            <span class="text_mensagem_contato">Descrição: </span>     
+
+            <textarea type="text" id="mensagem_contato"  
+                onkeyup="#"
+                maxlength="300" placeholder="Descreva seu imovel" name="descricao"></textarea>
+            <button id="id_btn_anunciar_vazio" class="btn_anunciar">
                     <span id="text_anunciar">Anunciar</span>
-                </button>
+            </button>
             </span>
         </form>
     </div>
