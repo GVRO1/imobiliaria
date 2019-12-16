@@ -1,17 +1,59 @@
-Index/Home:
-Fazer um mecanismo de pesquisa de imovéis
 
-Geral:
-Fazer uma pagina de imóveis
-Fazer uma pagina de Esqueci meu E-mail
-Deixar o site responsivo
-Fazer a integração do Banco de dados
+
+                                            BACKLOG DO MVP DO SITE
+
+Index/Home:
 Fazer o logo com maior resolução
+Trocar o carrousel por dados do banco de dados
+Organizar os Códigos
+    HTML: Código organizado
+    CSS:
+    JS:Código organizado
 Linkar a parte do logo linkado com a pagina da Home
+Deixar a pagina responsiva
+Fazer filtro do inicio funcionar
+
+Contato: 
+Procurar uma ferramenta fresh desk para enviar os dados da pagina
+Organizar os Códigos
+    HTML: Código organizado
+    CSS:
+    JS:Código organizado
+Deixar a pagina responsiva
+
+Imoveis:
+Deixar a parte dos filtros mais bonitos
+Aumentar a foto e organizar melhor o arranjo dos arquivos da busca
+Tirar o bug do rodapé ficar em cima do ultimo resultado
+Organizar os Códigos
+Deixar a pagina responsiva
+
+Anuncie seu imovel:
+Verificar por que a rota não é encontrada na conexão com o banco de dados
+Organizar melhor para ficar visualmente mais bonito
+Organizar os Códigos
+Deixar a pagina responsiva
 
 Cadastro:
 Tentar fazer API para se cadastrar com facebook
+Fazer a validação do botao funcionar
+Organizar os Códigos
+Deixar a pagina responsiva
 
 Entrar:
-Conectar essa pagina de entrar com  o banco de dados
 Fazer o guardar senha funcionar
+Trocar no html em vez de "usuário ou email" para só email
+Organizar os Códigos
+Deixar a pagina responsiva
+
+Esqueci minha senha:
+Fazer funcionar
+Organizar os Códigos
+    HTML: Código organizado
+    CSS:
+    JS:Código organizado
+Deixar a pagina responsiva
+
+                                            IMPLEMENTAÇÕES FUTURAS
+
+Idéias: Fazer um lembrete de quando o inquilino tem que pagar o aluguel
