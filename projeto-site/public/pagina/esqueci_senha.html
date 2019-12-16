@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,62 +9,50 @@
     <link rel="stylesheet" href="../CSS/esqueci_senha.css">
     <title>Imóbiliaria Rodrigues de Oliveira</title>
 </head>
+
 <body>
-    <!-- Cabeçario -->
+    <!-- Começo do Cabeçario -->
     <header class="cabecario">
         <div class="nome_titulo">
-                    Imobiliaria Rodrigues Oliveira
-            </div>
-            <img class="logo" src="../fotos/logo.png" alt="">  
-            <br><br>
-            <br>
-            
-            <!-- Menu e sub Menu -->
-            <ul id="sub_menu">
-                <li id="Contato" class="sub_menu" > <a href="contato.html">Contato</a></li>
-                <li id="Imoveis" class="sub_menu">  <a href="imoveis.html">Imóveis</a></li>
-                <li id="Home"class="sub_menu">      <a href="index.html">Home</a></li>
-            </ul>
-            
-            <div class="cadastrar"> <a href="cadastro.html">Cadastrar</a> </div>
-            <div class="entrar"> <a href="login.html">Entrar</a> </div>
-    
-            <span id="com_login"> 
-                <div>
-                   <a href="#" id="usuario">Ronaldo</a>
-                </div>
-                <div>
-                 <a id="sair" onclick="logoff()">Sair</a> 
-                </div>
-           </span>
+            Imobiliaria Rodrigues Oliveira
+        </div>
+        <img class="logo" src="../fotos/logo.png" alt="">
 
+        <!-- Menu e sub Menu -->
+        <ul id="sub_menu">
+            <li id="Contato" class="sub_menu"> <a href="contato.html">Contato</a></li>
+            <li id="Imoveis" class="sub_menu"> <a href="imoveis.html">Imóveis</a></li>
+            <li id="Home" class="sub_menu"> <a href="index.html">Home</a></li>
+        </ul>
+        <div class="cadastrar"> <a href="cadastro.html">Cadastrar</a> </div>
+        <div class="entrar"> <a href="login.html">Entrar</a> </div>
     </header>
 
-    <div id="notificacao"> 
-        <span id="text_notificacao">Um E-mail de confirmação foi enviado para ${}</span> 
+    <div id="notificacao">
+        <span id="text_notificacao">Um E-mail de confirmação foi enviado para ${}</span>
     </div>
-    
+
     <div class="tela_mensagem">
         <span id="digite">Digite seu E-mail</span>
         <input type="text" id="email">
         <span id="erro">*Esse E-mail não foi cadastrado</span>
         <a id="esqueci_email" href="#">Esqueci meu E-mail</a>
-        <button id="btn_enviar" onclick="enviar()" >Enviar</button>
-
+        <button id="btn_enviar" onclick="enviar()">Enviar</button>
     </div>
     <div class="foto_fundo"></div>
-    
-        
+
     <!-- Rodapé -->
     <div class="rodape">
         <!-- Facebook e Whatsapp -->
-        <img class="facebook"src="../fotos/facebook.png" alt="">
-        <img class="whatsapp"src="../fotos/whatsapp.png" alt="">
+        <img class="facebook" src="../fotos/facebook.png" alt="">
+        <img class="whatsapp" src="../fotos/whatsapp.png" alt="">
         <div class="telefone"> 11-999901363 </div>
         <!-- "Target blank" Abre em uma nova aba-->
-        <div class="endereco_face" > <a href="https://www.facebook.com/rodriguesoliveiraassessoria/" target="_blank">/rodriguesoliveiraassessoria</a></div>
+        <div class="endereco_face"> 
+            <a href="https://www.facebook.com/rodriguesoliveiraassessoria/" target="_blank">/rodriguesoliveiraassessoria</a>
+        </div>
     </div>
 
     <script src="../js/esqueci_senha.js"></script>
-    </body>
-    </html>
+</body>
+</html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,88 +9,83 @@
     <link rel="stylesheet" href="../CSS/contato_style.css">
     <title>Imóbiliaria Rodrigues de Oliveira</title>
 </head>
+
 <body>
-    <!-- Cabeçario -->
+    <!--   Começo do Cabeçario -->
     <header class="cabecario">
         <div class="nome_titulo">
-                    Imobiliaria Rodrigues Oliveira
+            Imobiliaria Rodrigues Oliveira
+        </div>
+        <img class="logo" src="../fotos/logo.png" alt="">
+        <!-- Menu e sub Menu -->
+        <ul id="sub_menu">
+            <li id="Contato" class="sub_menu"> <a href="contato.html">Contato</a></li>
+            <li id="Imoveis" class="sub_menu"> <a href="imoveis.html">Imóveis</a></li>
+            <li id="Home" class="sub_menu"> <a href="index.html">Home</a></li>
+        </ul>
+
+        <div class="cadastrar"> <a href="cadastro.html">Cadastrar</a> </div>
+        <div class="entrar"> <a href="login.html">Entrar</a> </div>
+        <!-- Parte que só aparece se for ja estiver logado -->
+        <span id="com_login">
+            <div>
+                <a href="#" id="usuario">Ronaldo</a>
             </div>
-            <img class="logo" src="../fotos/logo.png" alt="">  
-            <br><br>
-            <br>
-            
-            <!-- Menu e sub Menu -->
-            <ul id="sub_menu">
-                <li id="Contato" class="sub_menu" > <a href="contato.html">Contato</a></li>
-                <li id="Imoveis" class="sub_menu">  <a href="imoveis.html">Imóveis</a></li>
-                <li id="Home"class="sub_menu">      <a href="index.html">Home</a></li>
-            </ul>
-            
-            <div class="cadastrar"> <a href="cadastro.html">Cadastrar</a> </div>
-            <div class="entrar"> <a href="login.html">Entrar</a> </div>
-    
-            <span id="com_login"> 
-                <div>
-                   <a href="#" id="usuario">Ronaldo</a>
-                </div>
-                <div>
-                 <a id="sair" onclick="logoff()">Sair</a> 
-                </div>
-           </span>
+            <div>
+                <a id="sair" onclick="logoff()">Sair</a>
+            </div>
+        </span>
 
     </header>
+    <!-- Fim do cabeçario -->
 
-    <div id="notificacao_cadastro"> 
-        <span id="text_notificacao">Sua mensagem foi enviada com sucesso, retornaremos assim que possivel</span> 
+    <div id="notificacao_cadastro">
+        <span id="text_notificacao">Sua mensagem foi enviada com sucesso, retornaremos assim que possivel</span>
     </div>
-    
+
     <div class="tela_mensagem">
-    <span class="fale_conosco">Fale Conosco</span> <br>
-    <span class="text_nome_contato">Nome Completo:* </span>
-    <input type="text" name="" id="nome_contato" onkeyup="verificar_nome()"  placeholder="Nome Completo">
-    <div id="mensagem_nome"></div>
-    <br>
-    <span class="text_email_contato">Email:*</span> 
-    <input type="text" name="" id="email_contato" onkeyup="verificar_email()" placeholder="E-mail">
-    <div id="mensagem_email"></div>
-    <br>
-    <span class="text_telefone_contato"> Telefone: </span> 
-    
-    <!-- onblur é pra quando sair da caixa de input a função verificar colocar_mascara iniciar -->
-    <!-- onfocus é para quando entrar na caixa de input a função arrancar_mascara inciar -->
-    <!-- "return event.charCode >= 48 && event.charCode <= 57": esse comando deixa o usario apenas digitar numeros -->
-    <input type="text" name="" id="telefone_contato" 
-    onblur ="colocar_mascara()" onfocus="arrancar_mascara()" 
-    placeholder="Ex:(11)1213-1415" maxlength="11"
-    onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+        <span class="fale_conosco">Fale Conosco</span>
+        <span class="text_nome_contato">Nome Completo:* </span>
+        <input type="text" name="" id="nome_contato" onkeyup="verificar_nome()" placeholder="Nome Completo">
+        <div id="mensagem_nome"></div>
+        <span class="text_email_contato">Email:*</span>
+        <input type="text" name="" id="email_contato" onkeyup="verificar_email()" placeholder="E-mail">
+        <div id="mensagem_email"></div>
+        <span class="text_telefone_contato"> Telefone: </span>
 
-    <div id="mensagem_telefone"></div>
-    <br>
-    <span class="text_mensagem_contato">Mensagem:* </span>     
+        <!-- onblur é pra quando sair da caixa de input a função verificar colocar_mascara iniciar -->
+        <!-- onfocus é para quando entrar na caixa de input a função arrancar_mascara inciar -->
+        <!-- "return event.charCode >= 48 && event.charCode <= 57": esse comando deixa o usario apenas digitar numeros -->
+        <input type="text" name="" id="telefone_contato" onblur="colocar_mascara()" onfocus="arrancar_mascara()"
+            placeholder="Ex:(11)1213-1415" maxlength="11"
+            onkeypress="return event.charCode >= 48 && event.charCode <= 57">
 
-    <textarea type="text" name="" id="mensagem_contato"  
-    onkeyup="verificar_mensagem()"
-    maxlength="300" placeholder="O que deseja?"></textarea>
-    <div id="caracteres_restantes">Caracteres Restantes: 300</div>
-    <div id="mensagem_mensagem"></div>
-    <br>
-    <span class="aviso_preenchimento">Preencha todos os campos marcados com *</span>
-    <button class="btn_enviar_contato" id="enviar_mensagem" onclick="">Enviar</button>
+
+        <div id="mensagem_telefone"></div>
+        <span class="text_mensagem_contato">Mensagem:* </span>
+
+        <textarea type="text" name="" id="mensagem_contato" onkeyup="verificar_mensagem()" maxlength="300"
+            placeholder="O que deseja?"></textarea>
+        <div id="caracteres_restantes">Caracteres Restantes: 300</div>
+        <div id="mensagem_mensagem"></div>
+        <span class="aviso_preenchimento">Preencha todos os campos marcados com *</span>
+        <button class="btn_enviar_contato" id="enviar_mensagem" onclick="">Enviar</button>
     </div>
     <div class="foto_fundo"></div>
-    
-        
+
+
     <!-- Rodapé -->
     <div class="rodape">
         <!-- Facebook e Whatsapp -->
-        <img class="facebook"src="../fotos/facebook.png" alt="">
-        <img class="whatsapp"src="../fotos/whatsapp.png" alt="">
+        <img class="facebook" src="../fotos/facebook.png" alt="">
+        <img class="whatsapp" src="../fotos/whatsapp.png" alt="">
         <div class="telefone"> 11-999901363 </div>
         <!-- "Target blank" Abre em uma nova aba-->
-        <div class="endereco_face" > <a href="https://www.facebook.com/rodriguesoliveiraassessoria/" target="_blank">/rodriguesoliveiraassessoria</a></div>
+        <div class="endereco_face"> <a href="https://www.facebook.com/rodriguesoliveiraassessoria/"
+                target="_blank">/rodriguesoliveiraassessoria</a></div>
     </div>
 
     <script src="../js/contato.js"></script>
     <script src="../js/funcoes.js"></script>
-    </body>
-    </html>
+</body>
+</html>
