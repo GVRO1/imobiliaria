@@ -2,18 +2,15 @@
     font-size: 110%;
     color: rgba(99, 99, 99, 0.863);
     position: absolute;
-    top: 37.5vh;
-    left: 19.5vw;
-    background-color:transparent;
-    /* Tira a borda */
-    border-radius: 5px; 
-    height: 40px; 
-        /*Tira a bordinha quando fica clicado   */
+    top: 70.5vh;
+    left: 44.5vw;
+    background-color: transparent;
+    border-radius: 5px;
+    height: 40px;
     outline: none;
-    /* Ajusta o tamanho de acordo com o conteudo */
     width: 180px;
     transition: 1s;
-    border:solid 2px #6b6b6b;
+    border: solid 2px #6b6b6b;
 }
 
 .btn_anunciar_funcionando{
@@ -214,4 +211,80 @@
     position: absolute;
     top: 9vh;
     left: 48vw;
+}
+#text_endereco{
+    position: absolute;
+    top: 42vh;
+    left: 34vw;
+    font-size: 148%;
+}
+#inp_cep{
+    position: absolute;
+    top: 50vh;
+    left: 23vw;
+}
+#text_cep{
+    position: absolute;
+    top: 50vh;
+    left: 19vw
+}
+#inp_estado{
+    position: absolute;
+    top: 55vh;
+    left: 23vw;
+}
+#text_estado{
+    position: absolute;
+    top: 55vh;
+    left: 18vw;
+}
+#inp_cidade{
+    position: absolute;
+    top: 60vh;
+    left: 23vw
+}
+#text_cidade{
+    position: absolute;
+    top: 60vh;
+    left: 18vw;
+}
+#inp_bairro{
+    position: absolute;
+    top: 65vh;
+    left: 23vw;
+}
+#text_bairro{
+    position: absolute;
+    top: 65vh;
+    left: 18vw;
+}
+#inp_rua{
+    position: absolute;
+    top: 70vh;
+    left: 23vw;
+}
+#text_rua{
+    position: absolute;
+    top: 70vh;
+    left: 19vw;
+}
+#inp_numero{
+    position: absolute;
+    top: 50vh;
+    left: 48vw;
+}
+#text_numero{
+    position: absolute;
+    top: 50vh;
+    left: 42vw;
+}
+#inp_complemento{
+    position: absolute;
+    top: 55vh;
+    left: 48vw;
+}
+#text_complemento{
+    position: absolute;
+    top: 55vh;
+    left: 40vw;
 }

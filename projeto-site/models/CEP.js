@@ -6,58 +6,58 @@ https://codewithhugo.com/sequelize-data-types-a-practical-guide/
 */
 
 module.exports = (sequelize, DataTypes) => {
-    let imoveis = sequelize.define('imoveis',{
+    let cep = sequelize.define('cep',{
 		//Nome do campo
-		idImovel: {
+		idCEP: {
 			//Quando der erro colocar esse field
-			field: "idImovel",
+			field: "idCEP",
 			type: DataTypes.INTEGER,
 			primaryKey: true,
 			autoIncrement: true
 		},		
-		nomeImovel: {
-			field: "nomeImovel",
+		cidade: {
+			field: "cidade",
 			type: DataTypes.STRING,
 			allowNull: false
 		},
-		preco: {
-			field: "preco",
-			type: DataTypes.INTEGER,
+		bairro: {
+			field: "bairro",
+			type: DataTypes.STRING,
 			allowNull: false
 		},
-		fkUsuario: {
-			field: "fkUsuario",
+		rua: {
+			field: "rua",
 			type: DataTypes.STRING,
 			allowNull: true //Permitido nulo
 		},
-		descricao: {
-			field: "descricao",
+		complemento: {
+			field: "complemento",
 			type: DataTypes.STRING,
 			allowNull: false
 		},
-		tipo: {
-			field: "tipo",
+		fkimovel: {
+			field: "fkimovel",
 			type: DataTypes.STRING,
-			allowNull: false
+			allowNull: true
 		},
-		negocio: {
-			field: "negocio",
+		estado: {
+			field: "estado",
 			type: DataTypes.STRING,
-			allowNull: false
+			allowNull: true
 		},
-		imagem: {
-			field: "imagem",
+		nCEP: {
+			field: "nCEP",
 			type: DataTypes.STRING,
 			allowNull: true
 		}
 	}, 
 	{
 		//nome da tabela
-		tableName: 'imoveis', 
+		tableName: 'CEP', 
 		freezeTableName: true, 
 		underscored: true,
 		timestamps: false,
 	});
 
-    return imoveis;	
+    return cep;	
 };

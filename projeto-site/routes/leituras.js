@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 var sequelize = require('../models').sequelize;
 var imoveis = require('../models').imoveis;
+var cep = require('../models').cep;
 
 /* Recuperar as últimas N leituras */
 router.get('/imoveis', function(req, res, next) {
@@ -37,6 +38,47 @@ router.get('/tempo-real', function (req, res, next) {
 		});
   
 });
+
+
+
+/* Cadastrar usuário */
+router.post('/cadastrar_imoveis', function(req, res, next) {
+	console.log('Criando um usuário');
+	
+	imoveis.create({
+		nomeImovel : req.body.titulo,
+		preco : req.body.preco,
+		descricao: req.body.descricao,
+		tamanho: req.body.tamanho,
+		tipo: req.body.tipo,
+		negocio:req.body.negocio
+	}).then(resultado => {
+		console.log(`Registro criado: ${resultado}`)
+        res.send(resultado);
+    }).catch(erro => {
+		console.error(erro);
+		res.status(500).send(erro.message);
+  	});
+	cep.create({
+		cidade : req.body.cidade,
+		bairro : req.body.bairro,
+		rua: req.body.rua,
+		complemento: req.body.complemento,
+		numero: req.body.numero,
+		estado:req.body.estado,
+		nCEP:req.body.cep
+	}).then(resultado => {
+		console.log(`Registro criado: ${resultado}`)
+        res.send(resultado);
+    }).catch(erro => {
+		console.error(erro);
+		res.status(500).send(erro.message);
+  	});
+});
+
+
+
+
 
 router.post('/busca', function(req, res, next) {
 	
