@@ -33,6 +33,7 @@ Verificar por que a rota não é encontrada na conexão com o banco de dados
 Organizar melhor para ficar visualmente mais bonito
 Organizar os Códigos
 Deixar a pagina responsiva
+Diferentes usuarios conseguirem cadastrar o imovel 
 
 Cadastro:
 Tentar fazer API para se cadastrar com facebook

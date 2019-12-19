@@ -28,7 +28,12 @@ module.exports = (sequelize, DataTypes) => {
 		rua: {
 			field: "rua",
 			type: DataTypes.STRING,
-			allowNull: true //Permitido nulo
+			allowNull: false //Não Permitido nulo
+		},
+		numero: {
+			field: "numero",
+			type: DataTypes.INTEGER,
+			allowNull: false //Não Permitido nulo
 		},
 		complemento: {
 			field: "complemento",
@@ -38,17 +43,17 @@ module.exports = (sequelize, DataTypes) => {
 		fkimovel: {
 			field: "fkimovel",
 			type: DataTypes.STRING,
-			allowNull: true
+			allowNull: false
 		},
 		estado: {
 			field: "estado",
 			type: DataTypes.STRING,
-			allowNull: true
+			allowNull: false
 		},
 		nCEP: {
 			field: "nCEP",
 			type: DataTypes.STRING,
-			allowNull: true
+			allowNull: false
 		}
 	}, 
 	{

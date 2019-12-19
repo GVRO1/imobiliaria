@@ -1,5 +1,13 @@
 var tipo = ""
 var negocio_busca =""
+var fkUsuario = sessionStorage.id_usuario_meuapp;
+if (sessionStorage.login_usuario_meuapp.length == 0) {
+    com_login.style.display = 'none';
+}else {
+    com_login.style.display = 'block';
+    var nomeSobrenome = sessionStorage.nome_usuario_meuapp.split(" ");
+    usuario.innerHTML = `${nomeSobrenome[0]} ${nomeSobrenome[nomeSobrenome.length - 1]}`;
+}
 function comprar(){
     btn_comprar.classList = "btn_selecionado";
     btn_alugar.classList.remove("btn_selecionado");
@@ -40,21 +48,56 @@ function terreno(){
     
 }
 // Cadastro 
+var maximo;
+fetch('/leituras/imoveis', {cache:'no-store'}).then(function (response) {
+    if (response.ok) {
+        response.json().then(function (resposta) {
+            
+            resposta.reverse();
+
+            for (i = 0; i < resposta.length; i++) {
+                var registro = resposta[i];
+                // aqui, após registro. use os nomes 
+                // dos atributos que vem no JSON 
+                // que gerou na consulta ao banco de dados
+
+                maximo = registro.maximo
+            }
+            maximo += 1
+        });
+    } else {
+        console.error('Nenhum dado encontrado ou erro na API');
+    }
+})
+.catch(function (error) {
+    console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
+});
+
+console.log("maximo:",maximo)
 function cadastrar_imovel() {
-    var formulario = new URLSearchParams(new FormData(form_cadastro));
     var tipos = {
-        tipo: tipo.value,
-        negocio: negocio_busca.value,
-        nomeImovel : titulo.value,
-		preco : preco.value,
-		descricao: descricao.value,
-		tamanho: tamanho.value,
+        tipo: tipo,
+        negocio: negocio_busca,
+        nomeImovel : titulo_imovel.value,
+		preco : preco_imovel.value,
+		descricao: mensagem_contato.value,
+        tamanho: tamanho_imovel.value,
+
+        cidade : inp_cidade.value,
+        bairro : inp_bairro.value,
+        rua: inp_rua.value,
+        complemento: inp_complemento.value,
+        numero: inp_numero.value,
+        estado:inp_estado.value,
+        nCEP:inp_cep.value,
+
+        fkUsuario: fkUsuario,
+        fkImovel: maximo
     };
     console.log("tipos",tipos);
     //Vai até o caminho usuario/cadastrar
     fetch("/leituras/cadastrar_imoveis", {
-        method: "POST",
-        body: formulario,
+        // body: formulario,
         cache: 'no-store',
         method: "POST",
         headers: {
@@ -70,7 +113,7 @@ function cadastrar_imovel() {
         
         if (response.ok) {
             //Se der certo vai para pagina login.html
-            window.location.href='login.html';
+            window.location.href='imoveis.html';
 
         } else {
             console.log('Erro de cadastro!');
@@ -82,5 +125,11 @@ function cadastrar_imovel() {
         
     });
 
-    return false;
+    return false;    
 }
+
+
+
+
+
+

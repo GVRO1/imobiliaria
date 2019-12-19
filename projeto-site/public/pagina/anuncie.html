@@ -56,7 +56,7 @@
         <button id="btn_comercial" class="btn_escolha" onclick="comercial()">Comercial</button>
         <button id="btn_terreno" class="btn_escolha" onclick="terreno()">Terreno</button>
 
-        <form id="form_cadastro" method="post" onsubmit="return cadastrar_imovel()">
+        <!-- <form id="form_cadastro" method="post" onsubmit="return cadastrar_imovel()"> -->
 
             <span id="text_nome"> Titulo: </span>
             <input type="text" onkeyup="#" class="nome" id="titulo_imovel" placeholder="Ex: Casa Grande SP"
@@ -81,27 +81,27 @@
             <span id="text_endereco">Endereço</span>
 
              <span id="text_cep">CEP</span>
-             <input type="text" name="cep" id="inp_cep">
+             <input type="text" id="inp_cep">
              <span id="text_estado" >Estado</span>
-             <input type="text" name="estado" id="inp_estado">
+             <input type="text"  id="inp_estado">
              <span id="text_cidade">Cidade</span>
-             <input type="text" name="cidade" id="inp_cidade">
+             <input type="text" id="inp_cidade">
              <span id="text_bairro">Bairro</span>
-             <input type="text" name="bairro" id="inp_bairro">
+             <input type="text" id="inp_bairro">
              <span id="text_rua">Rua</span>
-             <input type="text" name="rua" id="inp_rua">
+             <input type="text" id="inp_rua">
              <span id="text_numero">Numero</span>
-             <input type="number" name="numero" id="inp_numero">
+             <input type="number" id="inp_numero">
              <span id="text_complemento">Complemento: </span>     
             <textarea type="text" id="inp_complemento"  
                 onkeyup="#"
                 maxlength="300" placeholder="Complemento" name="complemento"></textarea>
 
-            <button id="id_btn_anunciar_vazio" class="btn_anunciar">
+            <button id="id_btn_anunciar_vazio" class="btn_anunciar" onclick="cadastrar_imovel()">
                     <span id="text_anunciar">Anunciar</span>
             </button>
             </span>
-        </form>
+        <!-- </form> -->
     </div>
     <!-- Fim do Filtro -->
 

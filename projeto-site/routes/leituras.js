@@ -7,7 +7,7 @@ var cep = require('../models').cep;
 /* Recuperar as últimas N leituras */
 router.get('/imoveis', function(req, res, next) {
 	
-	const instrucaoSql = `select * from imoveis order by idImovel desc`;
+	const instrucaoSql = `select max(idImovel) as "maximo" from imoveis`;
 
 	sequelize.query(instrucaoSql, {
 		model: imoveis,
@@ -46,12 +46,13 @@ router.post('/cadastrar_imoveis', function(req, res, next) {
 	console.log('Criando um usuário');
 	
 	imoveis.create({
-		nomeImovel : req.body.titulo,
+		nomeImovel : req.body.nomeImovel,
 		preco : req.body.preco,
 		descricao: req.body.descricao,
 		tamanho: req.body.tamanho,
 		tipo: req.body.tipo,
-		negocio:req.body.negocio
+		negocio:req.body.negocio,
+		fkUsuario: req.body.fkUsuario // isso pega a informação no cache do navegador para cadastrar no usuario
 	}).then(resultado => {
 		console.log(`Registro criado: ${resultado}`)
         res.send(resultado);
@@ -59,14 +60,16 @@ router.post('/cadastrar_imoveis', function(req, res, next) {
 		console.error(erro);
 		res.status(500).send(erro.message);
   	});
+
 	cep.create({
 		cidade : req.body.cidade,
 		bairro : req.body.bairro,
 		rua: req.body.rua,
 		complemento: req.body.complemento,
-		numero: req.body.numero,
+		numero: req.body.numero,	
 		estado:req.body.estado,
-		nCEP:req.body.cep
+		nCEP:req.body.nCEP,
+		fkimovel:req.body.fkImovel
 	}).then(resultado => {
 		console.log(`Registro criado: ${resultado}`)
         res.send(resultado);
