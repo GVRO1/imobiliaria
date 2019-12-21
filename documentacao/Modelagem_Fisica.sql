@@ -1,5 +1,7 @@
+create database imobiliaria;
+use imobiliaria;
 CREATE TABLE Usuario (
-idUsuario int PRIMARY KEY,
+idUsuario int PRIMARY KEY auto_increment,
 NomeUsuario varchar(50),
 CPF char(11),
 Senha varchar(20),
@@ -7,47 +9,38 @@ Email varchar(45),
 comprador char(1),
 Vendedor char(1),
 comissao int);
+insert into usuario values (null,'Gabriel Vieira Rodrigues de Oliveira',null,'123456','gabrieloliveirarodrigues01@hotmail.com',null,null,null);
 
 CREATE TABLE imoveis (
-idImovel int PRIMARY KEY identity(1,1) ,
-endereco varchar(30),
-nomeImovel varchar(30),
-preco int,
-fkUsuario int,
-descricao varchar(300),
-tamanho int
-
-FOREIGN KEY(fkUsuario) REFERENCES UsuarioImobiliaria (idUsuario)
+             idImovel int PRIMARY KEY auto_increment,
+			nomeImovel varchar(30),	
+            preco int,
+            tamanho int,
+                tipo varchar(15),
+                negocio varchar(10),
+               descricao varchar(300),
+                    imagem varchar(40),
+                   fkUsuario int,
+FOREIGN KEY(fkUsuario) REFERENCES Usuario (idUsuario)
 );
 
-drop table imoveis;
-select * from imoveis;
-select * from UsuarioImobiliaria;
-insert into imoveis values('Centro de Itapecerica da Serra','Casa Itapecerica',1000,1,'
-Aluga-se
-
-Residência no Centro de Itapecerica da Serra, Quarto e cozinha com armários, banheira, lareira, excelente localização, em frente ao Supermercado Bandeira.
-Não aceita animal de estimação.
-Casa nos fundos.
-',75);
-insert into imoveis values('Centro de Itapecerica da Serra','Sala Comercial',1000,1,'
-Aluga se sala comercial no centro de Itapecerica da Serra,com uma vaga de estacionamento.
-',42);
-insert into imoveis values('Próximo ao Centro Empresarial','Terreno Comercial',2000,1,'
-Aluga-se terreno comercial, Próximo ao Centro Empresarial de S.P
-',245);
-insert into imoveis values('Centro de Itapecerica da Serra','Casa comercial',2000,1,'
-Aluga-se casa comercial no centro de Itapecerica da Serra
-',200,'Comercial','Alugar');
-select * from imoveis;
-alter table imoveis add tipo varchar(30);
-alter table imoveis add negocio varchar(30);
-update imoveis set tipo = 'Residencial' where idImovel = 1;
-update imoveis set tipo = 'Comercial' where idImovel = 2;
-update imoveis set negocio = 'Alugar';
-
-Aluga=se casa comercial
-
-No centro de Itapecerica da Serra
-
-Valor do aluguel 2,000.00 200m2
+insert into imoveis values(null,"Casa Itapecerica",1000,75,"Residencial","Alugar","Residencia no Centro de Itapecerica da Serra, Quarto e cozinha com armÃ¡rios, banheira, lareira, excelente localizaÃ§Ã£o, em frente ao Supermercado Bandeira.NÃ£o aceita animal de estimaÃ§Ã£o.Casa nos fundos.","../fotos/imoveis/casa_itapecerica.jpg",1),
+	(null,"Sala Comercial",1000,42,"Comercial","Alugar","Sala comercial no centro de Itapecerica da Serra, com uma vaga de estacionamento.","../fotos/imoveis/sala_Itapecerica.jpg",1),
+	(null,"Terreno Comercial",2000,245,"Terreno","Alugar","Terreno comercial prÃ³ximo ao Centro Empresarial de SÃ£o Paulo","../fotos/imoveis/terreno_sao_paulo.jpg",1),
+	(null,"Casa comercial",2000,200,"Comercial","Alugar","Casa comercial no centro de Itapecerica da Serra","../fotos/imoveis/imovel_comercial_itapecerica.jpg",1);
+create table CEP (idCEP	int auto_increment,
+ nCEP varchar(10),
+ cidade varchar(30),
+ bairro varchar(30),
+ rua varchar(40),
+ numero int,
+ complemento varchar(50),
+ fkimovel int,
+ estado char(2),
+ primary key (idCEP,nCEP),
+ FOREIGN KEY(fkimovel) REFERENCES imoveis (idImovel)
+ );
+insert into CEP values (null,"?????","Itapecerica",null,null,null,null,1,"SP"),
+(null,"?????","Itapecerica",null,null,null,null,2,"SP"),
+(null,"?????","SÃ£o Paulo",null,null,null,null,3,"SP"),
+(null,"?????","Itapecerica",null,null,null,null,4,"SP");

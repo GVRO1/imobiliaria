@@ -9,12 +9,12 @@ module.exports = {
   },
   //Colocar os nossos dados
   production: {
-    username: 'userluxus',
-    password: '#Gfgrupo4b',
-    database: 'bdluxus',
-    host: 'srvluxus.database.windows.net',
+    username: 'rodriguesimobi',
+    password: 'Puribaby2!',
+    database: 'rodriguesimobi',
+    host: 'rodriguesimobi.mysql.dbaas.com.br',
   //
-    dialect: 'mssql',
+    dialect: 'mysql',
     xuse_env_variable: 'DATABASE_URL',
     dialectOptions: {
       options: {
