@@ -29,11 +29,10 @@ Organizar os Códigos
 Deixar a pagina responsiva
 
 Anuncie seu imovel:
-Verificar por que a rota não é encontrada na conexão com o banco de dados
 Organizar melhor para ficar visualmente mais bonito
 Organizar os Códigos
 Deixar a pagina responsiva
-Diferentes usuarios conseguirem cadastrar o imovel 
+Fazer para poder upar fotos
 
 Cadastro:
 Tentar fazer API para se cadastrar com facebook
@@ -54,6 +53,26 @@ Organizar os Códigos
     CSS:
     JS:Código organizado
 Deixar a pagina responsiva
+
+
+                                   
+                                   
+                                   
+                                   
+                                   
+                                   
+                                   
+                                    FAZER A IMPLEMENTAÇÃO NA LOCAWEB
+
+
+
+
+
+
+
+
+
+
 
                                             IMPLEMENTAÇÕES FUTURAS
 
