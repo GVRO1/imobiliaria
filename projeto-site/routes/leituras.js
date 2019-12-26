@@ -180,5 +180,33 @@ router.get('/estatisticas', function (req, res, next) {
   
 });
 
+// Parte do Upload de imagens
+
+var express = require('express')
+var multer  = require('multer')
+var router = express.Router();   
+
+var storage = multer.diskStorage({
+	destination: function (req, file, cb) {
+	  cb(null, '../uploads')
+	},
+	filename: function (req, file, cb) {
+		var ext = file.originalname.substr(file.originalname.lastIndexOf('.') + 1);
+		// pega a extensão do nome original e guarda na variavel ext
+	  cb(null, file.fieldname + '-' + Date.now() + '.' + ext)
+	}
+  })
+
+  var upload = multer({ storage: storage })
+  //Onde seus arquivos vão ser colocados
+router.post('/file', upload.single('arquivo'), function(req,res,next){
+    //single = por causa que é só um arquivo
+    // e o 'arquivo' é por causa que o name do input file é arquivo
+	console.log(req.file);
+	
+					//É Aqui onde eu coloco no banco de dados
+
+
+})	
 
 module.exports = router;
