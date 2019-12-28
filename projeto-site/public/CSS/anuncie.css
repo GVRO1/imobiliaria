@@ -288,3 +288,13 @@
     top: 55vh;
     left: 40vw;
 }
+#enviar_imagem{
+    position: absolute;
+    top: 51vh;
+    left: 66vw;
+}
+#btn_enviar{
+    position: absolute;
+    top: 61vh;
+    left: 73vw;
+}

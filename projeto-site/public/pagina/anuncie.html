@@ -97,6 +97,14 @@
                 onkeyup="#"
                 maxlength="300" placeholder="Complemento" name="complemento"></textarea>
 
+                <!-- Uploads de arquivos -->
+                <form action="/leituras/file" method="post" enctype="multipart/form-data">
+                    <!-- action: manda o arquivo para a rota leitura/file -->
+                    <input type="file" name="arquivo" id="enviar_imagem">
+                    <input type="submit" value="Enviar" id="btn_enviar">
+                </form>
+                <!-- Fim do upload de arquivos  -->
+
             <button id="id_btn_anunciar_vazio" class="btn_anunciar" onclick="cadastrar_imovel()">
                     <span id="text_anunciar">Anunciar</span>
             </button>

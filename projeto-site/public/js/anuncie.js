@@ -20,7 +20,7 @@ function alugar(){
     btn_comprar.classList.remove("btn_selecionado");
     negocio_busca = 'alugar';
     console.log(negocio_busca)
-
+    
 }
 
 function residencial(){
@@ -29,7 +29,7 @@ function residencial(){
     btn_comercial.classList.remove("btn_selecionado");
     tipo = 'residencial';
     console.log(tipo)
-
+    
 }
 function comercial(){
     btn_comercial.classList = "btn_selecionado";
@@ -37,7 +37,7 @@ function comercial(){
     btn_residencial.classList.remove("btn_selecionado");
     tipo = 'comercial';
     console.log(tipo)
-
+    
 }
 function terreno(){
     btn_terreno.classList = "btn_selecionado";
@@ -47,34 +47,46 @@ function terreno(){
     console.log(tipo)
     
 }
+
+/* Recuperar as últimas N leituras */
+
+
+
 // Cadastro 
-var maximo;
-fetch('/leituras/imoveis', {cache:'no-store'}).then(function (response) {
+
+var total = []; 
+
+fetch('/leituras/imoveis', { cache: 'no-store' }).then(function (response) {
     if (response.ok) {
         response.json().then(function (resposta) {
             
             resposta.reverse();
-
-            for (i = 0; i < resposta.length; i++) {
-                var registro = resposta[i];
-                // aqui, após registro. use os nomes 
+                var registro = resposta[0];
+                
+                // aqui, após 'registro.' use os nomes 
                 // dos atributos que vem no JSON 
                 // que gerou na consulta ao banco de dados
-
-                maximo = registro.maximo
-            }
-            maximo += 1
+                total.push(registro.total + 1)
+                console.log("Local:",total[0]);
+                // mostrar();
         });
-    } else {
-        console.error('Nenhum dado encontrado ou erro na API');
-    }
-})
-.catch(function (error) {
-    console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
-});
+        } else {
+            console.error('Nenhum dado encontrado ou erro na API');
+        }
+    })
+    .catch(function (error) {
+        console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
+    });
 
-console.log("maximo:",maximo)
+
+    // // Essa função força a api seguir o rumo certo
+    // function mostrar(){
+    // console.log("Global:",total[0])
+    // }
+
+
 function cadastrar_imovel() {
+    
     var tipos = {
         tipo: tipo,
         negocio: negocio_busca,
@@ -92,7 +104,7 @@ function cadastrar_imovel() {
         nCEP:inp_cep.value,
 
         fkUsuario: fkUsuario,
-        fkImovel: maximo
+        fkImovel: total[0]
     };
     console.log("tipos",tipos);
     //Vai até o caminho usuario/cadastrar

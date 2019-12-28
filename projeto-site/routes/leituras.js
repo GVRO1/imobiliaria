@@ -4,15 +4,19 @@ var sequelize = require('../models').sequelize;
 var imoveis = require('../models').imoveis;
 var cep = require('../models').cep;
 
-/* Recuperar as últimas N leituras */
+
+
+
+
 router.get('/imoveis', function(req, res, next) {
 	
-	const instrucaoSql = `select max(idImovel) as "maximo" from imoveis`;
+	const instrucaoSql = `select max(idImovel) as "total" from imoveis`;
 
 	sequelize.query(instrucaoSql, {
 		model: imoveis,
 		mapToModel: true 
 	  })
+
 	  .then(resultado => {
 			console.log(`Encontrados: ${resultado.length}`);
 			res.json(resultado);
@@ -39,6 +43,33 @@ router.get('/tempo-real', function (req, res, next) {
   
 });
 
+// Parte do Upload de imagens
+
+var multer  = require('multer')
+
+var storage = multer.diskStorage({
+	destination: function (req, file, cb) {
+	  cb(null, '../projeto-site/public/fotos/uploads')
+	},
+	filename: function (req, file, cb) {
+		var ext = file.originalname.substr(file.originalname.lastIndexOf('.') + 1);
+		// pega a extensão do nome original e guarda na variavel ext
+	  cb(null, file.fieldname + '-' + Date.now() + '.' + ext)
+	}
+  })
+
+  var upload = multer({ storage: storage })
+  var nome_imagem = "" ;
+  var caminho_imagem = "" ;
+  //Onde seus arquivos vão ser colocados
+router.post('/file', upload.single('arquivo'), function(req,res,next){
+    //single = por causa que é só um arquivo
+	// e o 'arquivo' é por causa que o name do input file é arquivo
+	nome_imagem = req.file.filename
+	console.log(nome_imagem);
+	// Coloca no banco de dados o caminho da imagem
+	caminho_imagem = `../fotos/uploads/${nome_imagem}`
+})	
 
 
 /* Cadastrar usuário */
@@ -52,7 +83,8 @@ router.post('/cadastrar_imoveis', function(req, res, next) {
 		tamanho: req.body.tamanho,
 		tipo: req.body.tipo,
 		negocio:req.body.negocio,
-		fkUsuario: req.body.fkUsuario // isso pega a informação no cache do navegador para cadastrar no usuario
+		fkUsuario: req.body.fkUsuario, // isso pega a informação no cache do navegador para cadastrar no usuario
+		imagem: caminho_imagem
 	}).then(resultado => {
 		console.log(`Registro criado: ${resultado}`)
         res.send(resultado);
@@ -76,7 +108,7 @@ router.post('/cadastrar_imoveis', function(req, res, next) {
     }).catch(erro => {
 		console.error(erro);
 		res.status(500).send(erro.message);
-  	});
+	  });
 });
 
 
@@ -156,57 +188,22 @@ router.post('/busca', function(req, res, next) {
 
 });
 
-// estatísticas (max, min, média, mediana, quartis etc)
-router.get('/estatisticas', function (req, res, next) {
-	
-	console.log(`Recuperando as estatísticas atuais`);
 
-	const instrucaoSql = `select 
-							max(temperatura) as temp_maxima, 
-							min(temperatura) as temp_minima, 
-							avg(temperatura) as temp_media,
-							max(umidade) as umidade_maxima, 
-							min(umidade) as umidade_minima, 
-							avg(umidade) as umidade_media 
-						from leitura`;
+router.get('/buscaa', function(req, res, next) {
+	var instrucaoSql = `SELECT * FROM imoveis, CEP 
+						WHERE fkimovel = idImovel;`;
 
+	// Aqui nós nos conectamos ao banco e enviamos uma Query (busca) á ele e
+	// esperamos o retorno disso.
 	sequelize.query(instrucaoSql, { type: sequelize.QueryTypes.SELECT })
 		.then(resultado => {
-			res.json(resultado[0]);
+			res.send(resultado);
 		}).catch(erro => {
 			console.error(erro);
 			res.status(500).send(erro.message);
 		});
-  
+
 });
 
-// Parte do Upload de imagens
-
-var express = require('express')
-var multer  = require('multer')
-var router = express.Router();   
-
-var storage = multer.diskStorage({
-	destination: function (req, file, cb) {
-	  cb(null, '../uploads')
-	},
-	filename: function (req, file, cb) {
-		var ext = file.originalname.substr(file.originalname.lastIndexOf('.') + 1);
-		// pega a extensão do nome original e guarda na variavel ext
-	  cb(null, file.fieldname + '-' + Date.now() + '.' + ext)
-	}
-  })
-
-  var upload = multer({ storage: storage })
-  //Onde seus arquivos vão ser colocados
-router.post('/file', upload.single('arquivo'), function(req,res,next){
-    //single = por causa que é só um arquivo
-    // e o 'arquivo' é por causa que o name do input file é arquivo
-	console.log(req.file);
-	
-					//É Aqui onde eu coloco no banco de dados
-
-
-})	
 
 module.exports = router;
